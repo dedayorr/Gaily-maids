@@ -12,7 +12,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
-    const [navOpen, setNavOpen] = useState(true);
+    const [navOpen, setNavOpen] = useState(false);
 
     const toggleMenu = () => {
         setNavOpen(!navOpen);
@@ -23,6 +23,11 @@ const Header = () => {
 
 
         <header className={`${styles.Hero} `}>
+        <div className="absolute w-[100%] h-[560px] top-[90px] right-0 left-0 bg-[#0000007b] md:h-[600px] md:top-[105px]"><div className='bg-red- mt-[23%] py-[10%] text-white tracking-widest px-[5%] flex flex-col gap-[20px] '>
+                <h1 className=' text-[35px] font-bold '>Refresh Your Space with Sparkling Clean Solutions</h1>
+                <p>Crafting a spotless legacy in home and office care is not just our mission, it's our passion</p>
+                <button className='bg-[#823ec9] w-[50%] py-[2%] hover:bg-white hover:text-[#823ec9]'>Book Now</button>
+            </div></div>
             <div className='bg-[#2f1e42] text-white flex items-center justify-between h-[30px] px-[3%]'>
                 <div className='flex text-[11px] gap-[2px]'>
                     <FaFacebook />
@@ -121,9 +126,7 @@ const Header = () => {
                     </div>
                 </div>
             )}
-            <div className='text-white text-[40px] text-center font-bold'>
-                <h1>Refresh Your Space with Sparkling Clean Solutions</h1>
-            </div>
+            
         </header>
 
 
