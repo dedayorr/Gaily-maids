@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Accordion } from "flowbite-react";
 import Link from "next/link";
-import styles from "./Header.module.css";
 import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
@@ -20,21 +19,8 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${styles.Hero} `}>
-        <div className="absolute w-[100%] h-[560px] top-[90px] right-0 left-0 bg-[#0000007b] md:h-[600px] md:top-[105px]">
-          <div className=" mt-[23%] py-[6%] text-white tracking-widest px-[5%] flex flex-col gap-[20px] ">
-            <h1 className=" text-[35px] font-bold ">
-              Refresh and Your Space with <span className="text-[#823ec9]">Sparkling Clean</span> Solutions
-            </h1>
-            <p>
-              Crafting a spotless legacy in home and office care is not just our
-              mission, it's our passion
-            </p>
-            <button className="bg-[#823ec9] w-[50%] py-[2%] hover:bg-white hover:text-[#823ec9]">
-              Book Now
-            </button>
-          </div>
-        </div>
+      <header className="sticky top-0 z-40">
+       
         <div className="bg-[#2f1e42] text-white flex items-center justify-between h-[30px] px-[3%]">
           <div className="flex text-[11px] gap-[2px]">
             <FaFacebook />
@@ -59,7 +45,7 @@ const Header = () => {
             {!navOpen ? (
               <GiHamburgerMenu className="text-2xl text-[#823ec9]" />
             ) : (
-              <FaTimes className="text-2xl" />
+              <FaTimes className="text-2xl text-[#823ec9]" />
             )}
           </div>
 
@@ -72,7 +58,7 @@ const Header = () => {
                 </div> */}
         </div>
         {navOpen && (
-          <div className="fixed top-0 w-[87%] h-full bg-white">
+          <div className="fixed top-0 w-[87%] h-full bg-white z-50">
             <Accordion className="md:hidden border-none flex flex-col gap-[25px] pt-[65px] px-[5%]">
               <Accordion.Panel>
                 <Accordion.Title className="text-[#823ec9] text-[18px] border-none">

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import "./offers.css"
+import "./offers.css";
+import Link from "next/link";
 
 const Offers = () => {
   return (
@@ -31,29 +32,33 @@ const Offers = () => {
           serve.{" "}
         </p>
       </div>
-      <div className="flex flex-col gap-[15px]">
+      <div className="flex flex-col gap-[20px]">
         <p className="text-[] font-semibold">
           Some of our custom cleaning services includes:
         </p>
-        
-          <ol className="list-disc ml-[5%] flex flex-col text-[#823ec9] hover:underline gap-[10px]">
-            <li className="">Apartment Cleaning</li>
-            <li className="">House Cleaning</li>
-            <li className="">Holiday Cleaning</li>
-            <li className="">Detailed Cleaning</li>
-            <li className="">Standard Cleaning</li>
-          </ol>
-        
-        <p className="italic text-[19px] text-[#6d3aa3] underline">Our full list of services</p>
+
+        <ol className="list-disc ml-[5%] flex flex-col text-[#823ec9] hover:underline gap-[10px]">
+          <li className="">Apartment Cleaning</li>
+          <li className="">House Cleaning</li>
+          <li className="">Holiday Cleaning</li>
+          <li className="">Detailed Cleaning</li>
+          <li className="">Standard Cleaning</li>
+        </ol>
+
+        <Link href="/cleaningservices">
+          <p className="italic text-[19px] text-[#6d3aa3] underline">
+            Our full list of services
+          </p>
+        </Link>
       </div>
 
       <Image
-            className="serviceImage my-[20%]"
-            src="/livingroom.png"
-            alt=""
-            width={200}
-            height={200}
-          />
+        className="serviceImage my-[20%]"
+        src="/livingroom.png"
+        alt=""
+        width={200}
+        height={200}
+      />
     </div>
   );
 };
