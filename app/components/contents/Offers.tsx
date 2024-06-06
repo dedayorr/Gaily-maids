@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Offers = () => {
   return (
-    <div className="mx-[5%]">
-      <div className="my-[20%]  flex flex-col gap-[15px]">
+    <div className="">
+      <div className="mx-[5%] my-[20%]  flex flex-col gap-[15px]">
         <h2 className="text-[25px] font-semibold leading-8 text-[#823ec9]">
           Gaily Maids Commitment to Excellence
         </h2>
@@ -32,17 +32,17 @@ const Offers = () => {
           serve.{" "}
         </p>
       </div>
-      <div className="flex flex-col gap-[20px]">
+      <div className="flex flex-col gap-[20px] bg-[#813ec94e] px-[5%] py-[5%] mx-[5%]">
         <p className="text-[] font-semibold">
           Some of our custom cleaning services includes:
         </p>
 
-        <ol className="list-disc ml-[5%] flex flex-col text-[#823ec9] hover:underline gap-[10px]">
-          <li className="">Apartment Cleaning</li>
-          <li className="">House Cleaning</li>
-          <li className="">Holiday Cleaning</li>
-          <li className="">Detailed Cleaning</li>
-          <li className="">Standard Cleaning</li>
+        <ol className="list-disc ml-[10%] flex flex-col text-[#26355D] gap-[10px]">
+          <li className="hover:underline">Apartment Cleaning</li>
+          <li className="hover:underline">House Cleaning</li>
+          <li className="hover:underline">Holiday Cleaning</li>
+          <li className="hover:underline">Detailed Cleaning</li>
+          <li className="hover:underline">Standard Cleaning</li>
         </ol>
 
         <Link href="/cleaningservices">
@@ -53,7 +53,7 @@ const Offers = () => {
       </div>
 
       <Image
-        className="serviceImage my-[20%]"
+        className="serviceImage my-[20%] px-[5%]"
         src="/livingroom.png"
         alt=""
         width={200}

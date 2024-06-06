@@ -9,6 +9,7 @@ import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
+import Marquee from "./marquee/Marquee";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -20,7 +21,6 @@ const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-40">
-       
         <div className="bg-[#2f1e42] text-white flex items-center justify-between h-[30px] px-[3%]">
           <div className="flex text-[11px] gap-[2px]">
             <FaFacebook />
@@ -33,6 +33,7 @@ const Header = () => {
           </a>
           <div className="text-[11px]">800 S. Mclean Blvd. Suite B 60123</div>
         </div>
+        {/* <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." /> */}
         <div className="sticky top-0 flex justify-between items-center px-[5%] bg-white h-[60px]">
           <Image
             className="Logo"
