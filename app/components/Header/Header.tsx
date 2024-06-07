@@ -41,27 +41,27 @@ const Header = () => {
           </div>
         </div>
         <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." />
-        <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9bc] h-[60px] lg:h-[100px]">
+        <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9f3] h-[80px] lg:h-[100px]">
           <Link href="/" className=" Logo ml-">
             {" "}
             <Image
               className=""
               src="/gailyminds.png "
               alt=""
-              width={100}
+              width={200}
               height={200}
               
             />
           </Link>
           <div className="md:hidden" onClick={toggleMenu}>
             {!navOpen ? (
-              <GiHamburgerMenu className="text-2xl text-white" />
+              <GiHamburgerMenu className="text-3xl text-white" />
             ) : (
-              <FaTimes className="text-2xl text-white" />
+              <FaTimes className="text-3xl text-white" />
             )}
           </div>
-          <div className="hidden md:flex gap-[10px] text-[14px] text-[#823ec9] lg:gap-[25px] lg:text-[20px] ">
-            <Link href="">
+          <div className="hidden md:flex gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] ">
+            <Link href="/cleaningservices">
               <p className="lg:hover:underline">Cleaning Services</p>
             </Link>
             <Link href="">

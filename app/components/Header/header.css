@@ -1,12 +1,21 @@
-/* .Logo{
+.Logo{
     height: auto;
-    width: 50%;
+    width: 40%;
     object-fit: cover;
     
-} */
+}
 
 .Logo2{
     height: 65px;
     width: 75%;
     object-fit: cover;
+}
+
+@media (min-width: 992px){
+    .Logo{
+        /* background-color: yellow; */
+        height: auto;
+        width: 20%;
+        object-fit: cover;
+    }
 }

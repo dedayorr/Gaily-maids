@@ -3,7 +3,8 @@
     width: 100%;
     /* overflow: hidden; */
     white-space: nowrap;
-    background-color: #26355dc1;
+    background-color: #26355d;
+    letter-spacing: 5px;
   }
   
   .marqueeContent {

@@ -141,7 +141,7 @@ const CleaningServicesPage = () => {
           />
         </div>
       </div>
-      <button className="bg-[#823ec9] mx-auto flex my-[10%] p-[3%] rounded-[10px] hover:bg-[#fff] hover:text-[#823ec9]">Request & Estimate</button>
+      <button className="bg-[#823ec9] mx-auto flex my-[10%] p-[3%] rounded-[10px] hover:bg-[#fff] hover:text-[#823ec9]">Request an Estimate</button>
     </>
   );
 };

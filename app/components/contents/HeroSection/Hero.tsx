@@ -16,7 +16,7 @@ const Hero = () => {
             mission, it&quot;s our passion
           </p>
           <button className="bg-[#823ec9] w-[55%] py-[3%] hover:bg-white hover:text-[#823ec9] md:text-[25px] lg:mx-auto lg:w-[25%] lg:rounded-[10px] lg:py-[1%]">
-            Request & Estimate
+            Request an Estimate
           </button>
         </div>
       </div>
