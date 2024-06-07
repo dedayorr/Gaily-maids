@@ -28,14 +28,14 @@
         height: 600px;
     }
     .overlay{
-        height: 675px;
+        height: 602px;
     }
 
 }
 
 @media (min-width: 1200px) {
     .overlay{
-        height: 724px;
+        height: 650px;
     }
 }
 
