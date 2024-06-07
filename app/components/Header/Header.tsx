@@ -19,10 +19,14 @@ const Header = () => {
     setNavOpen(!navOpen);
   };
 
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
   return (
     <>
       <header className="sticky top-0 z-40">
-        <div className="bg-[#2f1e42] text-white flex items-center justify-between h-[30px] px-[3%] lg:h-[40px]">
+        <div className="text-[#2f1e42] bg-white flex items-center justify-between h-[30px] px-[3%] lg:h-[40px]">
           <div className="flex text-[11px] gap-[2px] md:text-[18px] md:gap-[10px] ">
             <FaFacebook />
             <AiFillInstagram />
@@ -37,7 +41,7 @@ const Header = () => {
           </div>
         </div>
         <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." />
-        <div className="sticky top-0 flex justify-between items-center pr-[5%] bg-white h-[60px] lg:h-[100px]">
+        <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9bc] h-[60px] lg:h-[100px]">
           <Link href="/" className=" Logo ml-">
             {" "}
             <Image
@@ -46,14 +50,14 @@ const Header = () => {
               alt=""
               width={100}
               height={200}
-              // objectFit="cover"
+              
             />
           </Link>
           <div className="md:hidden" onClick={toggleMenu}>
             {!navOpen ? (
-              <GiHamburgerMenu className="text-2xl text-[#823ec9]" />
+              <GiHamburgerMenu className="text-2xl text-white" />
             ) : (
-              <FaTimes className="text-2xl text-[#823ec9]" />
+              <FaTimes className="text-2xl text-white" />
             )}
           </div>
           <div className="hidden md:flex gap-[10px] text-[14px] text-[#823ec9] lg:gap-[25px] lg:text-[20px] ">
@@ -81,7 +85,8 @@ const Header = () => {
                 alt=""
                 width={500}
                 height={500}
-                // objectFit="cover"
+                onClick={closeNav}
+                
               />
             </Link>
             <Accordion className=" md:hidden border-none flex flex-col gap-[25px] mt-[10px] px-[5%]">
@@ -92,17 +97,17 @@ const Header = () => {
 
                 <Accordion.Content>
                   <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
-                    <li>
+                    <li onClick={closeNav}>
                       <Link href="/cleaningservices">Apartment Cleaning</Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       {" "}
                       <Link href="/cleaningservices">House Cleaning</Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       <Link href="/cleaningservices">Detailed Cleaning </Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       {" "}
                       <Link href="/cleaningservices">Holiday Cleaning </Link>
                     </li>
