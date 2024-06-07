@@ -15,8 +15,34 @@
     /* width: %; */
   }
 
- 
+}
 
+.faq{
+  background: linear-gradient(
+  -95deg,
+  rgba(23, 102, 238, 0.295),
+  /* #ffdbde82, */
+  #5f1fff73,
+  #ff85ae7c,
+  rgba(107, 102, 255, 0.536),
+  /* #ffb58a7f, */
+  #be19df86
+);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+/* height: 100px; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media (min-width: 992px){

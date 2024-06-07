@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const EmbraceHealth = () => {
   return (
-    <div className="my-[10%] h-[300px] flex justify-center items-center text-center  bg-[#813ec94e] lg:h-[600px] lg:justify-normal">
+    <div className={`faq my-[10%] h-[300px] flex justify-center items-center text-center  bg-[#813ec94e] lg:h-[600px] lg:justify-normal`}>
       {" "}
       <Image
         className={`peace-image hidden lg:flex lg:justify-start`}
@@ -18,7 +18,7 @@ const EmbraceHealth = () => {
         <p className="lg:hidden font-bold cursive italic text-[35px]">
           Embrace a healthy and happy home
         </p>
-        <button className="lg:hidden border border-[#823ec9] p-[3%] text-[#823ec9] w-[60%] mx-auto">
+        <button className=" hover:bg-white hover:text-[#823ec9] lg:hidden border border-[#823ec9] p-[3%] text-[#823ec9] w-[60%] mx-auto">
           Book Gaily Maids Today
         </button>
         <div
