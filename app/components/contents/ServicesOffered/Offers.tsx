@@ -12,9 +12,9 @@ const Offers = () => {
         </h2>
         <p className="leading-8 text-justify">
           {" "}
-          Your home is more than just a house—it's where memories are made and
+          Your home is more than just a house—it&quot;s where memories are made and
           moments are cherished. Though life can be complicated, the simple
-          things shouldn't be. Gaily Maids strives to take the stress out of
+          things shouldn&quot;t be. Gaily Maids strives to take the stress out of
           your day so you can do life your way. With years of experience and an
           advanced, time-tested cleaning process, we can help you reclaim time
           with your loved ones.{" "}
@@ -86,7 +86,7 @@ const Offers = () => {
           width={200}
           height={200}
         />
-        <div className="NateBerkus italic hidden text-[50px] lg:flex flex-col justify-center items-center">"Your home should tell the story of who you are, and be a collection of what you love." <span className="text-[30px] not-italic"> - Nate Berkus</span></div>
+        <div className="NateBerkus italic hidden text-[50px] lg:flex flex-col justify-center items-center">&quot;Your home should tell the story of who you are, and be a collection of what you love.&quot; <span className="text-[30px] not-italic"> - Nate Berkus</span></div>
       </div>
     </div>
   );

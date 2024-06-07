@@ -142,11 +142,11 @@ const Process = () => {
             Full Service House Cleaning
           </p>
           <div className="leading-8 text-justify">
-            When you're balancing a busy family life, long hours at the office,
+            When you&quot;re balancing a busy family life, long hours at the office,
             and other important aspects of your weekly routine, finding time to
             keep your house in order can be difficult. Even though life gets
             busy, coming home should never be a chore – and with Gaily Maids, it
-            won’t be.
+            won&quot;t be.
           </div>
           <div className="hidden lg:flex justify-center my-[5%]">
             <Image

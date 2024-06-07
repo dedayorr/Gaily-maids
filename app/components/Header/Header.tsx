@@ -9,7 +9,8 @@ import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
-import Marquee from "./marquee/Marquee";
+import Marquee from "../marquee/Marquee";
+import "./header.css";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -36,14 +37,18 @@ const Header = () => {
           </div>
         </div>
         <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." />
-        <div className="sticky top-0 flex justify-between items-center px-[5%] bg-white h-[60px] lg:h-[100px]">
-          <Image
-            className="Logo"
-            src="/gaily_logo.png"
-            alt=""
-            width={20}
-            height={20}
-          />
+        <div className="sticky top-0 flex justify-between items-center pr-[5%] bg-white h-[60px] lg:h-[100px]">
+          <Link href="/" className=" Logo ml-">
+            {" "}
+            <Image
+              className=""
+              src="/gailyminds.png "
+              alt=""
+              width={100}
+              height={200}
+              // objectFit="cover"
+            />
+          </Link>
           <div className="md:hidden" onClick={toggleMenu}>
             {!navOpen ? (
               <GiHamburgerMenu className="text-2xl text-[#823ec9]" />
@@ -51,16 +56,35 @@ const Header = () => {
               <FaTimes className="text-2xl text-[#823ec9]" />
             )}
           </div>
-          <div className=" hidden md:flex gap-[10px] text-[14px] text-[#823ec9] lg:gap-[25px] lg:text-[20px] ">
-            <Link href=""><p className="lg:hover:underline">Cleaning Services</p></Link>
-            <Link href=""><p className="lg:hover:underline">Our Cleaning Process</p></Link>
-            <Link href=""><p className="lg:hover:underline">Why Hire Us</p></Link>
-            <Link href=""><p className="lg:hover:underline">About Us</p></Link>
+          <div className="hidden md:flex gap-[10px] text-[14px] text-[#823ec9] lg:gap-[25px] lg:text-[20px] ">
+            <Link href="">
+              <p className="lg:hover:underline">Cleaning Services</p>
+            </Link>
+            <Link href="">
+              <p className="lg:hover:underline">Our Cleaning Process</p>
+            </Link>
+            <Link href="">
+              <p className="lg:hover:underline">Why Hire Us</p>
+            </Link>
+            <Link href="">
+              <p className="lg:hover:underline">About Us</p>
+            </Link>
           </div>
         </div>
         {navOpen && (
           <div className="fixed top-0 w-[87%] h-full bg-white z-50">
-            <Accordion className="md:hidden border-none flex flex-col gap-[25px] pt-[65px] px-[5%]">
+            <Link href="/">
+              {" "}
+              <Image
+                className="Logo2 ml-[-13%] mt-[7%]"
+                src="/the_gaily_logo.png "
+                alt=""
+                width={500}
+                height={500}
+                // objectFit="cover"
+              />
+            </Link>
+            <Accordion className=" md:hidden border-none flex flex-col gap-[25px] mt-[10px] px-[5%]">
               <Accordion.Panel>
                 <Accordion.Title className="text-[#823ec9] text-[18px] border-none">
                   Cleaning Services
@@ -69,18 +93,18 @@ const Header = () => {
                 <Accordion.Content>
                   <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
                     <li>
-                      <Link href="">Apartment Cleaning</Link>
+                      <Link href="/cleaningservices">Apartment Cleaning</Link>
                     </li>
                     <li>
                       {" "}
-                      <Link href="">House Cleaning</Link>
+                      <Link href="/cleaningservices">House Cleaning</Link>
                     </li>
                     <li>
-                      <Link href="">Detailed Cleaning </Link>
+                      <Link href="/cleaningservices">Detailed Cleaning </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link href="">Holiday Cleaning </Link>
+                      <Link href="/cleaningservices">Holiday Cleaning </Link>
                     </li>
                   </ul>
                 </Accordion.Content>

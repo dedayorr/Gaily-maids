@@ -31,7 +31,7 @@ const CleaningServicesPage = () => {
           </p>
           <p>
             {" "}
-            With our "Worry Free Guarantee", you can be sure your house will be
+            With our &quot;Worry Free Guarantee&quot;, you can be sure your house will be
             cleaned the way you want everytime.
           </p>
         </div>

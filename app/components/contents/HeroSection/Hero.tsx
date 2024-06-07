@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
           <p className="md:text-[24px] lg:text-center">
             Crafting a spotless legacy in home and office care is not just our
-            mission, it's our passion
+            mission, it&quot;s our passion
           </p>
           <button className="bg-[#823ec9] w-[55%] py-[3%] hover:bg-white hover:text-[#823ec9] md:text-[25px] lg:mx-auto lg:w-[25%] lg:rounded-[10px] lg:py-[1%]">
             Request & Estimate
