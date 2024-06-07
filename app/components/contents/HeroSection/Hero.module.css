@@ -1,8 +1,41 @@
-.Hero{
+/* @media (min-width: 767px) { */
+  .Hero {
     background-image: url("/heroImage.png");
     height: 650px;
     width: 100%;
-    background-size:cover;
-    background-position: center ;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .overlay{
+    height: 650px;
+  }
+/* } */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .Hero{
+        height: 500px;
+    }
+    .overlay{
+        height: 500px;
+    }
 }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .Hero{
+        height: 600px;
+    }
+    .overlay{
+        height: 675px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .overlay{
+        height: 724px;
+    }
+}
+

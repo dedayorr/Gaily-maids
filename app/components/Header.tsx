@@ -21,20 +21,22 @@ const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-40">
-        <div className="bg-[#2f1e42] text-white flex items-center justify-between h-[30px] px-[3%]">
-          <div className="flex text-[11px] gap-[2px]">
+        <div className="bg-[#2f1e42] text-white flex items-center justify-between h-[30px] px-[3%] lg:h-[40px]">
+          <div className="flex text-[11px] gap-[2px] md:text-[18px] md:gap-[10px] ">
             <FaFacebook />
             <AiFillInstagram />
             <IoMdMail />
           </div>
-          <a className="text-[11px]" href="tel:+1-872-235-7202">
+          <a className="text-[11px] md:text-[18px]" href="tel:+1-872-235-7202">
             {" "}
             +1-872-235-7202{" "}
           </a>
-          <div className="text-[11px]">800 S. Mclean Blvd. Suite B 60123</div>
+          <div className="text-[11px] md:text-[18px]">
+            800 S. Mclean Blvd. Suite B 60123
+          </div>
         </div>
-        {/* <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." /> */}
-        <div className="sticky top-0 flex justify-between items-center px-[5%] bg-white h-[60px]">
+        <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." />
+        <div className="sticky top-0 flex justify-between items-center px-[5%] bg-white h-[60px] lg:h-[100px]">
           <Image
             className="Logo"
             src="/gaily_logo.png"
@@ -49,14 +51,12 @@ const Header = () => {
               <FaTimes className="text-2xl text-[#823ec9]" />
             )}
           </div>
-
-          {/* <div className='flex gap-[20px]'>
-                    <Link href="">Cleaning Services</Link>
-                    <Link href="">Our Cleaning Process</Link>
-                    <Link href="">Why Hire Us</Link>
-                    <Link href="">About Us</Link>
-                    
-                </div> */}
+          <div className=" hidden md:flex gap-[10px] text-[14px] text-[#823ec9] lg:gap-[25px] lg:text-[20px] ">
+            <Link href=""><p className="lg:hover:underline">Cleaning Services</p></Link>
+            <Link href=""><p className="lg:hover:underline">Our Cleaning Process</p></Link>
+            <Link href=""><p className="lg:hover:underline">Why Hire Us</p></Link>
+            <Link href=""><p className="lg:hover:underline">About Us</p></Link>
+          </div>
         </div>
         {navOpen && (
           <div className="fixed top-0 w-[87%] h-full bg-white z-50">

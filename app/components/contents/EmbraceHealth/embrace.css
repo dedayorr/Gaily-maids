@@ -1,3 +1,31 @@
 .cursive {
-    font-family: 'Cursive', cursive;
+  font-family: "Cursive", cursive;
+}
+
+@media (min-width: 768px) {
+  .e_image {
+    height: auto;
+    /* width: 100%; */
+    /* object-fit: fill; */
   }
+
+  .peace-image {
+    height: 600px;
+    object-fit: cover;
+    /* width: %; */
+  }
+
+ 
+
+}
+
+@media (min-width: 992px){
+  .bg-embrace{
+    background-image: url("/home.png");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
