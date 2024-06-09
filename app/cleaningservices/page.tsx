@@ -59,7 +59,7 @@ const CleaningServicesPage = () => {
           />
           <p className="leading-8 tracking-wide text-justify">
             Apartment cleaning is an essential aspect of maintaining a healthy
-            and comfortable living space. Whether you&quot;re a busy professional, a
+            and comfortable living space. Whether you&apos;re a busy professional, a
             student, or a family, keeping your apartment clean ensures not only
             an aesthetically pleasing environment but also contributes to your
             overall well-being.{" "}
@@ -207,7 +207,7 @@ const CleaningServicesPage = () => {
           <p className="leading-8 tracking-wide text-justify">
             Move-in cleaning, also known as pre-move-in cleaning, is a
             specialized cleaning service designed to prepare a residential or
-            commercial property for new occupants. Whether it's a newly
+            commercial property for new occupants. Whether it&quot;s a newly
             constructed home, a recently vacated apartment, or a commercial
             space, move-in cleaning ensures that the premises are thoroughly
             cleaned and sanitized before the new occupants settle in. This
