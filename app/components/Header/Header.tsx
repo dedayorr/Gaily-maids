@@ -12,8 +12,11 @@ import { FaTimes } from "react-icons/fa";
 import Marquee from "../marquee/Marquee";
 import "./header.css";
 
+import Estimate from "../EstimatePopUp/Estimate";
+
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const toggleMenu = () => {
     setNavOpen(!navOpen);
@@ -21,6 +24,10 @@ const Header = () => {
 
   const closeNav = () => {
     setNavOpen(false);
+  };
+
+  const openModal = () => {
+    setShowModal(true);
   };
 
   return (
@@ -50,7 +57,6 @@ const Header = () => {
               alt=""
               width={200}
               height={200}
-              
             />
           </Link>
           <div className="md:hidden" onClick={toggleMenu}>
@@ -86,7 +92,6 @@ const Header = () => {
                 width={500}
                 height={500}
                 onClick={closeNav}
-                
               />
             </Link>
             <Accordion className=" md:hidden border-none flex flex-col gap-[25px] mt-[10px] px-[5%]">
@@ -186,17 +191,21 @@ const Header = () => {
             </Accordion>
 
             <Link href="">
-              <button className="ml-[5%] mt-[15%] text-[20px] italic text-[#5f2b96] underline">
-                Request & Estimate
+              <button
+                // onClick={openModal}
+                className="ml-[5%] mt-[15%] text-[20px] italic text-[#5f2b96] underline"
+              >
+                Request an Estimate
               </button>
             </Link>
             <div className="flex gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic text-[#361f4d]">
-              <FaPhoneVolume />
-              <span>+1-872-235-7202</span>
+              {/* <FaPhoneVolume /> */}
+              <span>Contact Us</span>
             </div>
           </div>
         )}
       </header>
+      <Estimate showModal={showModal} />
     </>
   );
 };
