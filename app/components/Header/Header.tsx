@@ -192,7 +192,7 @@ const Header = () => {
 
             <Link href="">
               <button
-                // onClick={openModal}
+                onClick={openModal}
                 className="ml-[5%] mt-[15%] text-[20px] italic text-[#5f2b96] underline"
               >
                 Request an Estimate
