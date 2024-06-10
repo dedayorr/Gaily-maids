@@ -86,117 +86,122 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
       {showModal && (
         <Modal>
           <form
-            className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto"
+            className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto lg:w-[60%] lg:rounded-[15px]"
             onSubmit={handleSubmit}
           >
-            <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%]">
+            <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%] lg:py-[6%]">
               <FaTimes
                 onClick={closeModal}
-                className="text-[#823ec9] absolute right-[3%] top-[2%] text-2xl"
+                className="text-[#823ec9] absolute right-[3%] top-[2%] text-2xl lg:text-3xl"
               />
               <Image
-                className="Logo2 mb-[7%] mx-auto"
+                className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
                 src="/the_gaily_logo.png "
                 alt=""
                 width={500}
                 height={500}
                 // onClick={closeNav}
               />
-              <div className="flex items-center gap-[10px]">
-                {/* <label>First Name:</label> */}
-                <FaUser className="text-2xl text-[#823ec9]" />
-                <input
-                  type="text"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder="First Name"
-                  className="h-[35px] w-full focus:border-none focus:outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-[10px]">
-                {/* <label>Last Name:</label> */}
-                <FaUserAlt className="text-2xl text-[#823ec9]" />
-                <input
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder="Last Name"
-                  className="h-[35px] w-full focus:border-none focus:outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-[10px]">
-                {/* <label>Email:</label> */}
-                <MdEmail className="text-2xl text-[#823ec9]" />
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email"
-                  className="h-[35px] w-full focus:border-none focus:outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-[10px]">
-                {/* <label>Phone Number:</label> */}
-                <BsFillTelephoneFill className="text-2xl text-[#823ec9]" />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Telephone"
-                  className="h-[35px] w-full focus:border-none focus:outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-[10px]">
-                {/* <label>Number of Pets:</label> */}
-                <MdOutlinePets className="text-2xl text-[#823ec9]" />
-                <input
-                  type="number"
-                  name="numberOfPets"
-                  value={formData.numberOfPets}
-                  onChange={handleChange}
-                  placeholder="Number of pets"
-                  className="h-[35px] w-full focus:border-none focus:outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-[10px]">
-                {/* <label>Bedrooms:</label> */}
-                <IoBedSharp className="text-2xl text-[#823ec9]" />
-                <input
-                  type="number"
-                  name="bedrooms"
-                  value={formData.bedrooms}
-                  onChange={handleChange}
-                  placeholder="How many bedrooms"
-                  className="h-[35px] w-full focus:border-none focus:outline-none"
-                />
-              </div>
-              <div>
-                <label>Full Bathrooms:</label>
-                <input
-                  type="number"
-                  name="fullBathrooms"
-                  value={formData.fullBathrooms}
-                  onChange={handleChange}
-                  placeholder="Number of full bathrooms"
-                  className="focus:border-none focus:outline-none h-[35px] w-full"
-                />
-              </div>
-              <div>
-                <label>Half Bathrooms:</label>
-                <input
-                  type="number"
-                  name="halfBathrooms"
-                  value={formData.halfBathrooms}
-                  onChange={handleChange}
-                  placeholder="Number of half bathrooms"
-                  className="focus:border-none focus:outline-none h-[35px] w-full"
-                />
-              </div>
-
+              <div className="lg:grid grid-cols-2 flex flex-col gap-[25px]">
+                <div className="flex items-center gap-[10px]">
+                  {/* <label>First Name:</label> */}
+                  <FaUser className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    placeholder="First Name"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  {/* <label>Last Name:</label> */}
+                  <FaUserAlt className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    placeholder="Last Name"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  {/* <label>Email:</label> */}
+                  <MdEmail className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Email"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  {/* <label>Phone Number:</label> */}
+                  <BsFillTelephoneFill className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Telephone"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  {/* <label>Number of Pets:</label> */}
+                  <MdOutlinePets className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="number"
+                    name="numberOfPets"
+                    value={formData.numberOfPets}
+                    onChange={handleChange}
+                    placeholder="Number of pets"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  {/* <label>Bedrooms:</label> */}
+                  <IoBedSharp className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="number"
+                    name="bedrooms"
+                    value={formData.bedrooms}
+                    onChange={handleChange}
+                    placeholder="How many bedrooms"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                </div>
+                <div className="lg:my-[3%] flex flex-col gap-[15px] md:flex md:flex-row md:gap-[25px] ">
+                  {" "}
+                  <div className="lg:flex lg:w-full">
+                    <label>Full Bathrooms:</label>
+                    <input
+                      type="number"
+                      name="fullBathrooms"
+                      value={formData.fullBathrooms}
+                      onChange={handleChange}
+                      placeholder="Number of full bathrooms"
+                      className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
+                    />
+                  </div>
+                  <div className="lg:flex lg:w-full">
+                    <label>Half Bathrooms:</label>
+                    <input
+                      type="number"
+                      name="halfBathrooms"
+                      value={formData.halfBathrooms}
+                      onChange={handleChange}
+                      placeholder="Number of half bathrooms"
+                      className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
+                    />
+                  </div>
+                </div>
+              
               <p>Others:</p>
 
               <div className="grid grid-cols-2 gap-[10px]">

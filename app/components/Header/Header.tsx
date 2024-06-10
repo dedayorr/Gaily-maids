@@ -16,7 +16,7 @@ import Estimate from "../EstimatePopUp/Estimate";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const toggleMenu = () => {
     setNavOpen(!navOpen);
