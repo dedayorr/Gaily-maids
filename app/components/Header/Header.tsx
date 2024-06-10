@@ -29,6 +29,9 @@ const Header = () => {
   const openModal = () => {
     setShowModal(true);
   };
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -205,7 +208,7 @@ const Header = () => {
           </div>
         )}
       </header>
-      <Estimate showModal={showModal} />
+      <Estimate showModal={showModal} closeModal={closeModal}/>
     </>
   );
 };

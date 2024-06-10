@@ -8,12 +8,15 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { MdOutlinePets } from "react-icons/md";
 import { IoBedSharp } from "react-icons/io5";
+import { FaTimes } from "react-icons/fa";
+import "./estimate.css";
 
 interface EstimateProps {
   showModal: boolean;
+  closeModal: any;
 }
 
-const Estimate: React.FC<EstimateProps> = ({ showModal }) => {
+const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -83,198 +86,209 @@ const Estimate: React.FC<EstimateProps> = ({ showModal }) => {
       {showModal && (
         <Modal>
           <form
-            className="py-[10%] px-[5%] flex flex-col gap-[3%] outline-none text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-scroll"
+            className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto"
             onSubmit={handleSubmit}
           >
-            <Image
-              className="Logo2 mb-[7%] mx-auto"
-              src="/the_gaily_logo.png "
-              alt=""
-              width={500}
-              height={500}
-              // onClick={closeNav}
-            />
-            <div className="flex items-center gap-[10px]">
-              {/* <label>First Name:</label> */}
-              <FaUser className="text-2xl text-[#823ec9]"/>
-              <input
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                placeholder="First Name"
-                className="h-[35px] w-full focus:border-none focus:outline-none"
+            <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%]">
+              <FaTimes
+                onClick={closeModal}
+                className="text-[#823ec9] absolute right-[3%] top-[2%] text-2xl"
               />
-            </div>
-            <div className="flex items-center gap-[10px]">
-              {/* <label>Last Name:</label> */}
-              <FaUserAlt className="text-2xl text-[#823ec9]"/>
-              <input
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                placeholder="Last Name"
-                className="h-[35px] w-full focus:border-none focus:outline-none"
+              <Image
+                className="Logo2 mb-[7%] mx-auto"
+                src="/the_gaily_logo.png "
+                alt=""
+                width={500}
+                height={500}
+                // onClick={closeNav}
               />
-            </div>
-            <div className="flex items-center gap-[10px]">
-              {/* <label>Email:</label> */}
-              <MdEmail className="text-2xl text-[#823ec9]"/>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email"
-                className="h-[35px] w-full focus:border-none focus:outline-none"
-              />
-            </div>
-            <div className="flex items-center gap-[10px]">
-              {/* <label>Phone Number:</label> */}
-              <BsFillTelephoneFill className="text-2xl text-[#823ec9]"/>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Telephone"
-                className="h-[35px] w-full focus:border-none focus:outline-none"
-              />
-            </div>
-            <div className="flex items-center gap-[10px]">
-              {/* <label>Number of Pets:</label> */}
-              <MdOutlinePets className="text-2xl text-[#823ec9]"/>
-              <input
-                type="number"
-                name="numberOfPets"
-                value={formData.numberOfPets}
-                onChange={handleChange}
-                placeholder="Number of pets"
-                className="h-[35px] w-full focus:border-none focus:outline-none"
-              />
-            </div>
-            <div className="flex items-center gap-[10px]">
-              {/* <label>Bedrooms:</label> */}
-              <IoBedSharp className="text-2xl text-[#823ec9]"/>
-              <input
-                type="number"
-                name="bedrooms"
-                value={formData.bedrooms}
-                onChange={handleChange}
-                placeholder="Bedrooms"
-                className="h-[35px] w-full focus:border-none focus:outline-none"
-              />
-            </div>
-            <div>
-              <label>Full Bathrooms:</label>
-              <input
-                type="number"
-                name="fullBathrooms"
-                value={formData.fullBathrooms}
-                onChange={handleChange}
-                placeholder="Number of full bathrooms"
-                className="focus:border-none focus:outline-none h-[35px] w-full"
-              />
-            </div>
-            <div>
-              <label>Half Bathrooms:</label>
-              <input
-                type="number"
-                name="halfBathrooms"
-                value={formData.halfBathrooms}
-                onChange={handleChange}
-                placeholder="Number of half bathrooms"
-                className="focus:border-none focus:outline-none h-[35px] w-full"
-              />
-            </div>
+              <div className="flex items-center gap-[10px]">
+                {/* <label>First Name:</label> */}
+                <FaUser className="text-2xl text-[#823ec9]" />
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="First Name"
+                  className="h-[35px] w-full focus:border-none focus:outline-none"
+                />
+              </div>
+              <div className="flex items-center gap-[10px]">
+                {/* <label>Last Name:</label> */}
+                <FaUserAlt className="text-2xl text-[#823ec9]" />
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Last Name"
+                  className="h-[35px] w-full focus:border-none focus:outline-none"
+                />
+              </div>
+              <div className="flex items-center gap-[10px]">
+                {/* <label>Email:</label> */}
+                <MdEmail className="text-2xl text-[#823ec9]" />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  className="h-[35px] w-full focus:border-none focus:outline-none"
+                />
+              </div>
+              <div className="flex items-center gap-[10px]">
+                {/* <label>Phone Number:</label> */}
+                <BsFillTelephoneFill className="text-2xl text-[#823ec9]" />
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Telephone"
+                  className="h-[35px] w-full focus:border-none focus:outline-none"
+                />
+              </div>
+              <div className="flex items-center gap-[10px]">
+                {/* <label>Number of Pets:</label> */}
+                <MdOutlinePets className="text-2xl text-[#823ec9]" />
+                <input
+                  type="number"
+                  name="numberOfPets"
+                  value={formData.numberOfPets}
+                  onChange={handleChange}
+                  placeholder="Number of pets"
+                  className="h-[35px] w-full focus:border-none focus:outline-none"
+                />
+              </div>
+              <div className="flex items-center gap-[10px]">
+                {/* <label>Bedrooms:</label> */}
+                <IoBedSharp className="text-2xl text-[#823ec9]" />
+                <input
+                  type="number"
+                  name="bedrooms"
+                  value={formData.bedrooms}
+                  onChange={handleChange}
+                  placeholder="How many bedrooms"
+                  className="h-[35px] w-full focus:border-none focus:outline-none"
+                />
+              </div>
+              <div>
+                <label>Full Bathrooms:</label>
+                <input
+                  type="number"
+                  name="fullBathrooms"
+                  value={formData.fullBathrooms}
+                  onChange={handleChange}
+                  placeholder="Number of full bathrooms"
+                  className="focus:border-none focus:outline-none h-[35px] w-full"
+                />
+              </div>
+              <div>
+                <label>Half Bathrooms:</label>
+                <input
+                  type="number"
+                  name="halfBathrooms"
+                  value={formData.halfBathrooms}
+                  onChange={handleChange}
+                  placeholder="Number of half bathrooms"
+                  className="focus:border-none focus:outline-none h-[35px] w-full"
+                />
+              </div>
 
-            <p>Others:</p>
+              <p>Others:</p>
 
-            <div className="grid grid-cols-2 gap-[10px]">
-              <div>
-                <label>Dining Room:</label>
-                <input
-                  type="checkbox"
-                  name="dining"
-                  checked={formData.rooms.dining}
-                  onChange={handleChange}
-                />
+              <div className="grid grid-cols-2 gap-[10px]">
+                <div>
+                  <label>Dining Room:</label>
+                  <input
+                    type="checkbox"
+                    name="dining"
+                    checked={formData.rooms.dining}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Kitchen:</label>
+                  <input
+                    type="checkbox"
+                    name="kitchen"
+                    checked={formData.rooms.kitchen}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Living Room:</label>
+                  <input
+                    type="checkbox"
+                    name="livingRoom"
+                    checked={formData.rooms.livingRoom}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Family Room:</label>
+                  <input
+                    type="checkbox"
+                    name="familyRoom"
+                    checked={formData.rooms.familyRoom}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Laundry:</label>
+                  <input
+                    type="checkbox"
+                    name="laundry"
+                    checked={formData.rooms.laundry}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Utility Room:</label>
+                  <input
+                    type="checkbox"
+                    name="utilityRoom"
+                    checked={formData.rooms.utilityRoom}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Den:</label>
+                  <input
+                    type="checkbox"
+                    name="den"
+                    checked={formData.rooms.den}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Loft:</label>
+                  <input
+                    type="checkbox"
+                    name="loft"
+                    checked={formData.rooms.loft}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label>Basement:</label>
+                  <input
+                    type="checkbox"
+                    name="basement"
+                    checked={formData.rooms.basement}
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
-              <div>
-                <label>Kitchen:</label>
-                <input
-                  type="checkbox"
-                  name="kitchen"
-                  checked={formData.rooms.kitchen}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Living Room:</label>
-                <input
-                  type="checkbox"
-                  name="livingRoom"
-                  checked={formData.rooms.livingRoom}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Family Room:</label>
-                <input
-                  type="checkbox"
-                  name="familyRoom"
-                  checked={formData.rooms.familyRoom}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Laundry:</label>
-                <input
-                  type="checkbox"
-                  name="laundry"
-                  checked={formData.rooms.laundry}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Utility Room:</label>
-                <input
-                  type="checkbox"
-                  name="utilityRoom"
-                  checked={formData.rooms.utilityRoom}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Den:</label>
-                <input
-                  type="checkbox"
-                  name="den"
-                  checked={formData.rooms.den}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Loft:</label>
-                <input
-                  type="checkbox"
-                  name="loft"
-                  checked={formData.rooms.loft}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Basement:</label>
-                <input
-                  type="checkbox"
-                  name="basement"
-                  checked={formData.rooms.basement}
-                  onChange={handleChange}
-                />
-              </div>
+              <button
+                type="submit"
+                className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
+              >
+                Submit
+              </button>
             </div>
-            <button type="submit">Submit</button>
           </form>
         </Modal>
       )}
