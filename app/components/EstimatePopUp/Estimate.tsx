@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Modal from "../Modal/Modal";
 import { useState } from "react";
@@ -17,69 +18,6 @@ interface EstimateProps {
 }
 
 const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    numberOfPets: "",
-    bedrooms: "",
-    fullBathrooms: "",
-    halfBathrooms: "",
-    rooms: {
-      dining: false,
-      kitchen: false,
-      livingRoom: false,
-      familyRoom: false,
-      laundry: false,
-      utilityRoom: false,
-      den: false,
-      loft: false,
-      basement: false,
-    },
-  });
-
-  const handleChange = (e: {
-    target: { name: any; value: any; type: any; checked: any };
-  }) => {
-    const { name, value, type, checked } = e.target;
-    if (type === "checkbox") {
-      setFormData({
-        ...formData,
-        rooms: {
-          ...formData.rooms,
-          [name]: checked,
-        },
-      });
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
-    }
-  };
-
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:3000/api/form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-
-      const result = await response.json();
-      console.log("Form data submitted successfully:", result);
-    } catch (error) {
-      console.error("Error submitting form data:", error);
-    }
-  };
 
   return (
     <div>
@@ -87,7 +25,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
         <Modal>
           <form
             className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto lg:w-[60%] lg:rounded-[15px]"
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xqkrredp"
+            method="POST"
           >
             <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%] lg:py-[6%]">
               <FaTimes
@@ -100,29 +39,22 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                 alt=""
                 width={500}
                 height={500}
-                // onClick={closeNav}
               />
               <div className="lg:grid grid-cols-2 flex flex-col gap-[25px]">
                 <div className="flex items-center gap-[10px]">
-                  {/* <label>First Name:</label> */}
                   <FaUser className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="text"
                     name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
                     placeholder="First Name"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
                 <div className="flex items-center gap-[10px]">
-                  {/* <label>Last Name:</label> */}
                   <FaUserAlt className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="text"
                     name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
                     placeholder="Last Name"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
@@ -133,8 +65,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input
                     type="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     placeholder="Email"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
@@ -145,8 +75,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input
                     type="tel"
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
                     placeholder="Telephone"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
@@ -157,8 +85,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input
                     type="number"
                     name="numberOfPets"
-                    value={formData.numberOfPets}
-                    onChange={handleChange}
                     placeholder="Number of pets"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
@@ -169,127 +95,76 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input
                     type="number"
                     name="bedrooms"
-                    value={formData.bedrooms}
-                    onChange={handleChange}
                     placeholder="How many bedrooms"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
+              </div>
+              <div className="lg:my-[3%] flex flex-col gap-[15px] md:flex md:flex-row md:gap-[25px] ">
+                {" "}
+                <div className="lg:flex lg:w-full">
+                  <label>Full Bathrooms:</label>
+                  <input
+                    type="number"
+                    name="fullBathrooms"
+                    placeholder="Number of full bathrooms"
+                    className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
+                  />
                 </div>
-                <div className="lg:my-[3%] flex flex-col gap-[15px] md:flex md:flex-row md:gap-[25px] ">
-                  {" "}
-                  <div className="lg:flex lg:w-full">
-                    <label>Full Bathrooms:</label>
-                    <input
-                      type="number"
-                      name="fullBathrooms"
-                      value={formData.fullBathrooms}
-                      onChange={handleChange}
-                      placeholder="Number of full bathrooms"
-                      className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
-                    />
-                  </div>
-                  <div className="lg:flex lg:w-full">
-                    <label>Half Bathrooms:</label>
-                    <input
-                      type="number"
-                      name="halfBathrooms"
-                      value={formData.halfBathrooms}
-                      onChange={handleChange}
-                      placeholder="Number of half bathrooms"
-                      className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
-                    />
-                  </div>
+                <div className="lg:flex lg:w-full">
+                  <label>Half Bathrooms:</label>
+                  <input
+                    type="number"
+                    name="halfBathrooms"
+                    placeholder="Number of half bathrooms"
+                    className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
+                  />
                 </div>
-              
+              </div>
+
               <p>Others:</p>
 
               <div className="grid grid-cols-2 gap-[10px]">
                 <div>
                   <label>Dining Room:</label>
-                  <input
-                    type="checkbox"
-                    name="dining"
-                    checked={formData.rooms.dining}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="dining" />
                 </div>
                 <div>
                   <label>Kitchen:</label>
-                  <input
-                    type="checkbox"
-                    name="kitchen"
-                    checked={formData.rooms.kitchen}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="kitchen" />
                 </div>
                 <div>
                   <label>Living Room:</label>
-                  <input
-                    type="checkbox"
-                    name="livingRoom"
-                    checked={formData.rooms.livingRoom}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="livingRoom" />
                 </div>
                 <div>
                   <label>Family Room:</label>
-                  <input
-                    type="checkbox"
-                    name="familyRoom"
-                    checked={formData.rooms.familyRoom}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="familyRoom" />
                 </div>
                 <div>
                   <label>Laundry:</label>
-                  <input
-                    type="checkbox"
-                    name="laundry"
-                    checked={formData.rooms.laundry}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="laundry" />
                 </div>
                 <div>
                   <label>Utility Room:</label>
-                  <input
-                    type="checkbox"
-                    name="utilityRoom"
-                    checked={formData.rooms.utilityRoom}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="utilityRoom" />
                 </div>
                 <div>
                   <label>Den:</label>
-                  <input
-                    type="checkbox"
-                    name="den"
-                    checked={formData.rooms.den}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="den" />
                 </div>
                 <div>
                   <label>Loft:</label>
-                  <input
-                    type="checkbox"
-                    name="loft"
-                    checked={formData.rooms.loft}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="loft" />
                 </div>
                 <div>
                   <label>Basement:</label>
-                  <input
-                    type="checkbox"
-                    name="basement"
-                    checked={formData.rooms.basement}
-                    onChange={handleChange}
-                  />
+                  <input type="checkbox" name="basement" />
                 </div>
               </div>
               <button
                 type="submit"
-                className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
+                className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
               >
                 Submit
               </button>

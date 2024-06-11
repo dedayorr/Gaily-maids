@@ -7,32 +7,29 @@ import { AiFillInstagram } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaPhoneVolume } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import Marquee from "../marquee/Marquee";
 import "./header.css";
-
 import Estimate from "../EstimatePopUp/Estimate";
 
 const Header = () => {
+
   const [navOpen, setNavOpen] = useState(false);
-  const [showModal, setShowModal] = useState(true);
-
+  const [showModal, setShowModal] = useState(false);
   const toggleMenu = () => {
-    setNavOpen(!navOpen);
-  };
-
-  const closeNav = () => {
-    setNavOpen(false);
-  };
-
-  const openModal = () => {
-    setShowModal(true);
-  };
-  const closeModal = () => {
-    setShowModal(false);
-  };
-
+      setNavOpen(!navOpen);
+    };
+  
+    const closeNav = () => {
+      setNavOpen(false);
+    };
+  
+    const openModal = () => {
+      setShowModal(true);
+    };
+    const closeModal = () => {
+      setShowModal(false);
+    };
   return (
     <>
       <header className="sticky top-0 z-40">
@@ -209,6 +206,7 @@ const Header = () => {
         )}
       </header>
       <Estimate showModal={showModal} closeModal={closeModal}/>
+  
     </>
   );
 };

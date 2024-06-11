@@ -3,22 +3,24 @@
 }
 
 .logo-estimate {
-    height: 65px;
-    width: 75%;
-    object-fit: cover;
+  height: 65px;
+  width: 75%;
+  object-fit: cover;
 }
 
 .estimate-bg {
   background: linear-gradient(
     -95deg,
     rgba(23, 102, 238, 0.267),
-    /* #ffdbde82, */ /* #5f1fff73, */ /* #ff85ae7c, */
-      rgba(107, 102, 255, 0.211),
-    /* #ffb58a7f, */ #be19df30
+    /* #ffdbde82, */ 
+    /* #5f1fff73, */ 
+    /* #ff85ae7c, */
+    rgba(107, 102, 255, 0.211),
+    #ffb58a7f,
+    #be19df30
   );
   background-size: 400% 400%;
   animation: gradient 2s ease infinite;
-  /* height: 100px; */
 }
 
 @keyframes gradient {
@@ -34,20 +36,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-    .logo-estimate {
-        height: 95px;
-        width: 50%;
-        object-fit: cover;
-    }
+  .logo-estimate {
+    height: 95px;
+    width: 50%;
+    object-fit: cover;
+  }
 }
 
-
-@media (min-width: 992px){
-    .logo-estimate {
-        height: 85px;
-        width: 30%;
-        object-fit: cover;
-    }
-
+@media (min-width: 992px) {
+  .logo-estimate {
+    height: 85px;
+    width: 30%;
+    object-fit: cover;
+  }
 }

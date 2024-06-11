@@ -1,6 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import Header from "./components/Header/Header";
+"use client"
+// import Image from "next/image";
+// import Link from "next/link";
+// import Header from "./components/Header/Header";
 // import Services from "./components/contents/services";
 import Offers from "./components/contents/ServicesOffered/Offers";
 import Process from "./components/contents/Process/Process";
