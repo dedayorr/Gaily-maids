@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Modal from "../Modal/Modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaUser } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
@@ -18,6 +18,33 @@ interface EstimateProps {
 }
 
 const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    numberOfPets: "",
+    bedrooms: "",
+    fullBathrooms: "",
+    halfBathrooms: "",
+  });
+
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    const checkFormValidity = () => {
+      const isValid = Object.values(formData).every(
+        (value) => value.trim() !== ""
+      );
+      setIsFormValid(isValid);
+    };
+    checkFormValidity();
+  }, [formData]);
+  
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   return (
     <div>
@@ -47,6 +74,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     type="text"
                     name="firstName"
                     placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -56,46 +85,53 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
                 <div className="flex items-center gap-[10px]">
-                  {/* <label>Email:</label> */}
                   <MdEmail className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="email"
                     name="email"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
                 <div className="flex items-center gap-[10px]">
-                  {/* <label>Phone Number:</label> */}
                   <BsFillTelephoneFill className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="tel"
                     name="phone"
                     placeholder="Telephone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
                 <div className="flex items-center gap-[10px]">
-                  {/* <label>Number of Pets:</label> */}
                   <MdOutlinePets className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="number"
                     name="numberOfPets"
                     placeholder="Number of pets"
+                    value={formData.numberOfPets}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
                 <div className="flex items-center gap-[10px]">
-                  {/* <label>Bedrooms:</label> */}
                   <IoBedSharp className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="number"
                     name="bedrooms"
                     placeholder="How many bedrooms"
+                    value={formData.bedrooms}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -108,6 +144,9 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     type="number"
                     name="fullBathrooms"
                     placeholder="Number of full bathrooms"
+                    value={formData.fullBathrooms}
+                    onChange={handleChange}
+
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
                   />
                 </div>
@@ -117,6 +156,9 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     type="number"
                     name="halfBathrooms"
                     placeholder="Number of half bathrooms"
+                    value={formData.halfBathrooms}
+                    onChange={handleChange}
+
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
                   />
                 </div>
@@ -164,7 +206,10 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
               </div>
               <button
                 type="submit"
-                className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
+                disabled={!isFormValid}
+                className={`bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]  ${
+                  !isFormValid ? "bg-[#828080] opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 Submit
               </button>

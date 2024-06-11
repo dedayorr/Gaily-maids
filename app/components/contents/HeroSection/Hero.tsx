@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import Modal from "../../Modal/Modal";
 import Image from "next/image";
@@ -13,6 +13,33 @@ import { FaUserAlt } from "react-icons/fa";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    numberOfPets: "",
+    bedrooms: "",
+    fullBathrooms: "",
+    halfBathrooms: "",
+  });
+
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    const checkFormValidity = () => {
+      const isValid = Object.values(formData).every(
+        (value) => value.trim() !== ""
+      );
+      setIsFormValid(isValid);
+    };
+    checkFormValidity();
+  }, [formData]);
+  
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
   const openModal = () => {
     setShowModal(true);
   };
@@ -184,7 +211,10 @@ const Hero = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
+                disabled={!isFormValid}
+                className={`bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]  ${
+                  !isFormValid ? "bg-[#828080] opacity-50 cursor-not-allowed" : ""
+                }`}
               >
                 Submit
               </button>
