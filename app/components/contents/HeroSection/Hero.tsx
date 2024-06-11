@@ -94,6 +94,8 @@ const Hero = () => {
                     type="text"
                     name="firstName"
                     placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -103,6 +105,8 @@ const Hero = () => {
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -113,6 +117,8 @@ const Hero = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -123,6 +129,8 @@ const Hero = () => {
                     type="tel"
                     name="phone"
                     placeholder="Telephone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -133,6 +141,8 @@ const Hero = () => {
                     type="number"
                     name="numberOfPets"
                     placeholder="Number of pets"
+                    value={formData.numberOfPets}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -143,6 +153,8 @@ const Hero = () => {
                     type="number"
                     name="bedrooms"
                     placeholder="How many bedrooms"
+                    value={formData.bedrooms}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -155,6 +167,8 @@ const Hero = () => {
                     type="number"
                     name="fullBathrooms"
                     placeholder="Number of full bathrooms"
+                    value={formData.fullBathrooms}
+                    onChange={handleChange}
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
                   />
                 </div>
@@ -164,6 +178,8 @@ const Hero = () => {
                     type="number"
                     name="halfBathrooms"
                     placeholder="Number of half bathrooms"
+                    value={formData.halfBathrooms}
+                    onChange={handleChange}
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
                   />
                 </div>

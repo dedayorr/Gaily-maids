@@ -13,23 +13,23 @@ import "./header.css";
 import Estimate from "../EstimatePopUp/Estimate";
 
 const Header = () => {
-
   const [navOpen, setNavOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+ 
   const toggleMenu = () => {
-      setNavOpen(!navOpen);
-    };
-  
-    const closeNav = () => {
-      setNavOpen(false);
-    };
-  
-    const openModal = () => {
-      setShowModal(true);
-    };
-    const closeModal = () => {
-      setShowModal(false);
-    };
+    setNavOpen(!navOpen);
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
       <header className="sticky top-0 z-40">
@@ -52,7 +52,7 @@ const Header = () => {
           <Link href="/" className=" Logo ml-">
             {" "}
             <Image
-              className=""
+              className="hover:w-[300px]"
               src="/gailyminds.png "
               alt=""
               width={200}
@@ -66,18 +66,21 @@ const Header = () => {
               <FaTimes className="text-3xl text-white" />
             )}
           </div>
-          <div className="hidden md:flex gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] ">
+          <div className=" hidden md:flex gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] ">
             <Link href="/cleaningservices">
-              <p className="lg:hover:underline">Cleaning Services</p>
+              <p  className="lg:hover:text-2xl" >
+                Cleaning Services
+              </p>
+            </Link>
+
+            <Link href="">
+              <p className="lg:hover:text-2xl">Our Cleaning Process</p>
             </Link>
             <Link href="">
-              <p className="lg:hover:underline">Our Cleaning Process</p>
+              <p className="lg:hover:text-2xl">Why Hire Us</p>
             </Link>
             <Link href="">
-              <p className="lg:hover:underline">Why Hire Us</p>
-            </Link>
-            <Link href="">
-              <p className="lg:hover:underline">About Us</p>
+              <p className="lg:hover:text-2xl">About Us</p>
             </Link>
           </div>
         </div>
@@ -205,8 +208,8 @@ const Header = () => {
           </div>
         )}
       </header>
-      <Estimate showModal={showModal} closeModal={closeModal}/>
-  
+     
+      <Estimate showModal={showModal} closeModal={closeModal} />
     </>
   );
 };

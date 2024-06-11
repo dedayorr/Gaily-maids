@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import "./offers.css";
@@ -13,12 +13,12 @@ const Offers = () => {
         </h2>
         <p className="leading-8 text-justify">
           {" "}
-          Your home is more than just a house—it&quot;s where memories are made and
-          moments are cherished. Though life can be complicated, the simple
-          things shouldn&quot;t be. Gaily Maids strives to take the stress out of
-          your day so you can do life your way. With years of experience and an
-          advanced, time-tested cleaning process, we can help you reclaim time
-          with your loved ones.{" "}
+          Your home is more than just a house—it&quot;s where memories are made
+          and moments are cherished. Though life can be complicated, the simple
+          things shouldn&quot;t be. Gaily Maids strives to take the stress out
+          of your day so you can do life your way. With years of experience and
+          an advanced, time-tested cleaning process, we can help you reclaim
+          time with your loved ones.{" "}
         </p>
         <p className="leading-8 text-justify">
           {" "}
@@ -40,23 +40,57 @@ const Offers = () => {
             Some of our custom cleaning services includes:
           </p>
           <ol className="list-disc ml-[10%] flex flex-col text-[#26355D] gap-[10px] lg:ml-[5%]">
-            <li className="hover:underline cursor-pointer">
-              Apartment Cleaning
-            </li>
-            <li className="hover:underline cursor-pointer">House Cleaning</li>
-            <li className="hover:underline cursor-pointer">Holiday Cleaning</li>
-            <li className="hover:underline cursor-pointer">
-              Detailed Cleaning
-            </li>
-            <li className="hover:underline cursor-pointer">
-              Standard Cleaning
-            </li>
+            <Link href="/cleaningservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">
+                Apartment Cleaning
+              </li>
+            </Link>
+            <Link href="/cleaningservices">
+              <li className="hover:underline cursor-pointer">House Cleaning</li>
+            </Link>
+            <Link href="/cleanigservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">
+                Kitchen Appliances Cleaning
+              </li>
+            </Link>
+            <Link href="/cleaningservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">
+                Office Cleaning
+              </li>
+            </Link>
+            <Link href="/cleaningservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">
+                Specialty Cleaning
+              </li>
+            </Link>
+            <Link href="/cleaningservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">Deep Cleaning</li>
+            </Link>
+            {/* <li className="hover:underline cursor-pointer">Holiday Cleaning</li> */}
+
+            <Link href="/cleaningservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">
+                Move-in Cleaning
+              </li>
+            </Link>
+            <Link href="/cleaningservices">
+              {" "}
+              <li className="hover:underline cursor-pointer">
+                Move-out Cleaning
+              </li>
+            </Link>
           </ol>
-          <Link href="/cleaningservices">
+          {/* <Link href="/cleaningservices">
             <p className="cursor-pointer italic text-[19px] text-[#6d3aa3] underline lg:text-[22px]">
               Our full list of services
             </p>
-          </Link>
+          </Link> */}
         </div>
         <div className="hidden lg:flex h-[300px] w-[60%] justify-between items-center px-[2%]">
           <Image
@@ -87,7 +121,11 @@ const Offers = () => {
           width={200}
           height={200}
         />
-        <div className="NateBerkus italic hidden text-[50px] lg:flex flex-col justify-center items-center">&quot;Your home should tell the story of who you are, and be a collection of what you love.&quot; <span className="text-[30px] not-italic"> - Nate Berkus</span></div>
+        <div className="NateBerkus italic hidden text-[50px] lg:flex flex-col justify-center items-center">
+          &quot;Your home should tell the story of who you are, and be a
+          collection of what you love.&quot;{" "}
+          <span className="text-[30px] not-italic"> - Nate Berkus</span>
+        </div>
       </div>
     </div>
   );

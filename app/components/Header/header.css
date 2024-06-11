@@ -11,11 +11,25 @@
     object-fit: cover;
 }
 
+.dropdown-content{
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 @media (min-width: 992px){
     .Logo{
         /* background-color: yellow; */
         height: auto;
         width: 20%;
+        object-fit: cover;
+    }
+
+    .dropdown-image{
+        height: 300px;
+        width: 40%;
         object-fit: cover;
     }
 }
