@@ -37,7 +37,7 @@ const Offers = () => {
         <div className="flex flex-col gap-[20px]">
           {" "}
           <p className="text-[] font-semibold lg:text-[22px]">
-            Some of our custom cleaning services includes:
+            Our custom cleaning services include:
           </p>
           <ol className="list-disc ml-[10%] flex flex-col text-[#26355D] gap-[10px] lg:ml-[5%]">
             <Link href="/cleaningservices">

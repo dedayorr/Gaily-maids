@@ -128,27 +128,27 @@ const Header = () => {
                 </Accordion.Title>
                 <Accordion.Content>
                   <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
-                    <li>
-                      <Link href="">Bathroom Cleaning</Link>
+                    <li onClick={closeNav}>
+                      <Link href="/cleaningprocess">Bathroom Cleaning</Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       {" "}
-                      <Link href="">Bedroom Cleaning</Link>
+                      <Link href="/cleaningprocess">Bedroom Cleaning</Link>
                     </li>
-                    <li>
-                      <Link href="">Kitchen Cleaning </Link>
+                    <li onClick={closeNav}>
+                      <Link href="/cleaningprocess">Kitchen Cleaning </Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       {" "}
-                      <Link href="">Laundry Room Cleaning </Link>
+                      <Link href="/cleaningprocess">Laundry Room Cleaning </Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       {" "}
-                      <Link href="">Dinning Room Cleaning </Link>
+                      <Link href="/cleaningprocess">Dinning Room Cleaning </Link>
                     </li>
-                    <li>
+                    <li onClick={closeNav}>
                       {" "}
-                      <Link href="">Living Room Cleaning </Link>
+                      <Link href="/cleaningprocess">Living Room Cleaning </Link>
                     </li>
                   </ul>
                 </Accordion.Content>
