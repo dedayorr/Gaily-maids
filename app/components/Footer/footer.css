@@ -1,0 +1,17 @@
+.footer-logo{
+    height: 90px;
+    width: 80%;
+    object-fit: cover;
+}
+
+
+@media (min-width: 992px){
+    .footer-logo{
+        /* background-color: yellow; */
+        height: 100px;
+        width: 23%;
+        object-fit: cover;
+    }
+
+
+}

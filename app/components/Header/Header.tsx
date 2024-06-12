@@ -73,7 +73,7 @@ const Header = () => {
               </p>
             </Link>
 
-            <Link href="">
+            <Link href="/cleaningprocess">
               <p className="lg:hover:text-2xl">Our Cleaning Process</p>
             </Link>
             <Link href="">
