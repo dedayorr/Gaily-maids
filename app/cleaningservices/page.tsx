@@ -10,12 +10,14 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
+import { HiHome } from "react-icons/hi";
 
 const CleaningServicesPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    houseAddress: "",
     email: "",
     phone: "",
     numberOfPets: "",
@@ -319,6 +321,8 @@ const CleaningServicesPage = () => {
                     type="text"
                     name="firstName"
                     placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -328,6 +332,19 @@ const CleaningServicesPage = () => {
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  <HiHome className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="text"
+                    name="houseAddress"
+                    placeholder="House Address"
+                    value={formData.houseAddress}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -338,6 +355,8 @@ const CleaningServicesPage = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -348,6 +367,8 @@ const CleaningServicesPage = () => {
                     type="tel"
                     name="phone"
                     placeholder="Telephone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -358,6 +379,8 @@ const CleaningServicesPage = () => {
                     type="number"
                     name="numberOfPets"
                     placeholder="Number of pets"
+                    value={formData.numberOfPets}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -368,6 +391,8 @@ const CleaningServicesPage = () => {
                     type="number"
                     name="bedrooms"
                     placeholder="How many bedrooms"
+                    value={formData.bedrooms}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -380,6 +405,8 @@ const CleaningServicesPage = () => {
                     type="number"
                     name="fullBathrooms"
                     placeholder="Number of full bathrooms"
+                    value={formData.fullBathrooms}
+                    onChange={handleChange}
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
                   />
                 </div>
@@ -389,6 +416,8 @@ const CleaningServicesPage = () => {
                     type="number"
                     name="halfBathrooms"
                     placeholder="Number of half bathrooms"
+                    value={formData.halfBathrooms}
+                    onChange={handleChange}
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
                   />
                 </div>

@@ -22,6 +22,7 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    houseAddress: "",
     email: "",
     phone: "",
     numberOfPets: "",
@@ -97,6 +98,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     type="text"
                     name="houseAddress"
                     placeholder="House Address"
+                    value={formData.houseAddress}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>

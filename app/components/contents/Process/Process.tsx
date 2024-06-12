@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
@@ -143,11 +143,11 @@ const Process = () => {
             Full Service House Cleaning
           </p>
           <div className="leading-8 text-justify">
-            When you&quot;re balancing a busy family life, long hours at the office,
-            and other important aspects of your weekly routine, finding time to
-            keep your house in order can be difficult. Even though life gets
-            busy, coming home should never be a chore – and with Gaily Maids, it
-            won&quot;t be.
+            When you&quot;re balancing a busy family life, long hours at the
+            office, and other important aspects of your weekly routine, finding
+            time to keep your house in order can be difficult. Even though life
+            gets busy, coming home should never be a chore – and with Gaily
+            Maids, it won&quot;t be.
           </div>
           <div className="hidden lg:flex justify-center my-[5%]">
             <Image
@@ -173,7 +173,7 @@ const Process = () => {
             />
           </div>
           <Link
-            href=""
+            href="/cleaningprocess"
             className="text-[18px] text-[#823ec9] flex items-center gap-[10px] lg:text-[30px]"
           >
             <p className="italic hover:underline">See More</p>

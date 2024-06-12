@@ -17,6 +17,7 @@ const Hero = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    houseAddress: "",
     email: "",
     phone: "",
     numberOfPets: "",
@@ -117,6 +118,8 @@ const Hero = () => {
                     type="text"
                     name="houseAddress"
                     placeholder="House Address"
+                    value={formData.houseAddress}
+                    onChange={handleChange}
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
