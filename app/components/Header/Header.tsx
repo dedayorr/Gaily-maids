@@ -81,7 +81,7 @@ const Header = () => {
               <p className="lg:hover:text-2xl">About Us</p>
             </Link>
             <Link href="">
-              <p className="lg:hover:text-2xl">Hiring</p>
+              <p className="lg:hover:text-2xl">We&apos;re Hiring</p>
             </Link>
           </div>
         </div>
@@ -195,7 +195,7 @@ const Header = () => {
               </Accordion.Panel>
             </Accordion>
             <p className="ml-[6%] text-[18px] mt-[8%] font-semibold text-[#823ec9]">
-              <Link href="">Hiring </Link>
+              <Link href="">We&apos;re Hiring </Link>
             </p>
             <Link href="">
               <button

@@ -25,13 +25,12 @@ const aboutus = () => {
         </p>
       </div>
       {/* <Image className="about" src="/deep-cleaning.png" alt="/" height={100} width={100}/> */}
-      <div className="text-black mx-[5%] mt-10
-      ">
+      <div
+        className="text-black mx-[5%] mt-10
+      "
+      >
         {" "}
-        <h2 className=" text-[25px] font-bold text-[#823ec9]">
-          {" "}
-          Our Story
-        </h2>
+        <h2 className=" text-[25px] font-bold text-[#823ec9]"> Our Story</h2>
         <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
           {" "}
           Gaily Maids was born out of a simple belief: a clean environment
@@ -41,6 +40,22 @@ const aboutus = () => {
           office we serve. With years of experience in the cleaning industry,
           gathered a team of like-minded professionals who share a commitment to
           quality and customer satisfaction.
+        </p>
+      </div>
+
+      <div
+        className="text-black mx-[5%] mt-10
+      "
+      >
+        {" "}
+        <h2 className=" text-[25px] font-bold text-[#823ec9]"> Our Mission</h2>
+        <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
+          {" "}
+          At Gaily Maids, our mission is to provide exceptional cleaning
+          services that exceed your expectations and create a joyful and healthy
+          environment for you and your loved ones. We believe in the power of a
+          clean space to enhance productivity, improve well-being, and bring
+          peace of mind.
         </p>
       </div>
     </>
