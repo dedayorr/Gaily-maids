@@ -10,6 +10,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
+import { HiHome } from "react-icons/hi";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
@@ -35,8 +36,8 @@ const Hero = () => {
     };
     checkFormValidity();
   }, [formData]);
-  
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+
+  const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -107,6 +108,15 @@ const Hero = () => {
                     placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleChange}
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  <HiHome className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="text"
+                    name="houseAddress"
+                    placeholder="House Address"
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -229,7 +239,9 @@ const Hero = () => {
                 type="submit"
                 disabled={!isFormValid}
                 className={`bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]  ${
-                  !isFormValid ? "bg-[#828080] opacity-50 cursor-not-allowed" : ""
+                  !isFormValid
+                    ? "bg-[#828080] opacity-50 cursor-not-allowed"
+                    : ""
                 }`}
               >
                 Submit

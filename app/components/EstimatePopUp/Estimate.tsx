@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { MdOutlinePets } from "react-icons/md";
 import { IoBedSharp } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
+import { HiHome } from "react-icons/hi";
 import "./estimate.css";
 
 interface EstimateProps {
@@ -40,8 +41,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
     };
     checkFormValidity();
   }, [formData]);
-  
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+
+  const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -91,6 +92,15 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   />
                 </div>
                 <div className="flex items-center gap-[10px]">
+                  <HiHome className="text-2xl lg:text-3xl text-[#823ec9]" />
+                  <input
+                    type="text"
+                    name="houseAddress"
+                    placeholder="House Address"
+                    className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
+                  />
+                </div>
+                <div className="flex items-center gap-[10px]">
                   <MdEmail className="text-2xl lg:text-3xl text-[#823ec9]" />
                   <input
                     type="email"
@@ -98,7 +108,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
-
                     className="h-[35px] lg:h-[45px] w-full focus:border-none focus:outline-none"
                   />
                 </div>
@@ -146,7 +155,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     placeholder="Number of full bathrooms"
                     value={formData.fullBathrooms}
                     onChange={handleChange}
-
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full "
                   />
                 </div>
@@ -158,7 +166,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                     placeholder="Number of half bathrooms"
                     value={formData.halfBathrooms}
                     onChange={handleChange}
-
                     className="focus:border-none focus:outline-none h-[35px] lg:h-[45px] w-full"
                   />
                 </div>
@@ -176,10 +183,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input type="checkbox" name="kitchen" />
                 </div>
                 <div>
-                  <label>Living Room:</label>
-                  <input type="checkbox" name="livingRoom" />
-                </div>
-                <div>
                   <label>Family Room:</label>
                   <input type="checkbox" name="familyRoom" />
                 </div>
@@ -188,12 +191,17 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input type="checkbox" name="laundry" />
                 </div>
                 <div>
-                  <label>Utility Room:</label>
-                  <input type="checkbox" name="utilityRoom" />
+                  <label>Living Room:</label>
+                  <input type="checkbox" name="livingRoom" />
                 </div>
+
                 <div>
                   <label>Den:</label>
                   <input type="checkbox" name="den" />
+                </div>
+                <div>
+                  <label>Utility Room:</label>
+                  <input type="checkbox" name="utilityRoom" />
                 </div>
                 <div>
                   <label>Loft:</label>
@@ -208,7 +216,9 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                 type="submit"
                 disabled={!isFormValid}
                 className={`bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]  ${
-                  !isFormValid ? "bg-[#828080] opacity-50 cursor-not-allowed" : ""
+                  !isFormValid
+                    ? "bg-[#828080] opacity-50 cursor-not-allowed"
+                    : ""
                 }`}
               >
                 Submit

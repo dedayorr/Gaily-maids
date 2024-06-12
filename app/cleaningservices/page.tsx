@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./cleaningservices.module.css";
 import Modal from "../components/Modal/Modal";
@@ -13,6 +13,33 @@ import { FaUserAlt } from "react-icons/fa";
 
 const CleaningServicesPage = () => {
   const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    numberOfPets: "",
+    bedrooms: "",
+    fullBathrooms: "",
+    halfBathrooms: "",
+  });
+
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    const checkFormValidity = () => {
+      const isValid = Object.values(formData).every(
+        (value) => value.trim() !== ""
+      );
+      setIsFormValid(isValid);
+    };
+    checkFormValidity();
+  }, [formData]);
+
+  const handleChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
   const openModal = () => {
     setShowModal(true);
   };
@@ -379,10 +406,6 @@ const CleaningServicesPage = () => {
                   <input type="checkbox" name="kitchen" />
                 </div>
                 <div>
-                  <label>Living Room:</label>
-                  <input type="checkbox" name="livingRoom" />
-                </div>
-                <div>
                   <label>Family Room:</label>
                   <input type="checkbox" name="familyRoom" />
                 </div>
@@ -391,12 +414,17 @@ const CleaningServicesPage = () => {
                   <input type="checkbox" name="laundry" />
                 </div>
                 <div>
-                  <label>Utility Room:</label>
-                  <input type="checkbox" name="utilityRoom" />
+                  <label>Living Room:</label>
+                  <input type="checkbox" name="livingRoom" />
                 </div>
+
                 <div>
                   <label>Den:</label>
                   <input type="checkbox" name="den" />
+                </div>
+                <div>
+                  <label>Utility Room:</label>
+                  <input type="checkbox" name="utilityRoom" />
                 </div>
                 <div>
                   <label>Loft:</label>
@@ -409,7 +437,12 @@ const CleaningServicesPage = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
+                disabled={!isFormValid}
+                className={`bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]  ${
+                  !isFormValid
+                    ? "bg-[#828080] opacity-50 cursor-not-allowed"
+                    : ""
+                }`}
               >
                 Submit
               </button>

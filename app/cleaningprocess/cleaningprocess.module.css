@@ -1,13 +1,34 @@
 .process {
-    height:auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.processes {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.processBG {
+  background-image: url("/process-two.png");
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  .process {
+    height: 700px;
+    width: 80%;
     object-fit: cover;
   }
 
-@media (min-width: 1200px) {
-    .process {
-      height:700px;
-      width: 80%;
-      object-fit: cover;
-    }
+  .processes {
+    height: 750px;
+    width: 20%;
+    object-fit: contain;
   }
+}
