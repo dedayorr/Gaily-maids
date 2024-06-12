@@ -1,0 +1,13 @@
+.process {
+    height:auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+@media (min-width: 1200px) {
+    .process {
+      height:700px;
+      width: 80%;
+      object-fit: cover;
+    }
+  }
