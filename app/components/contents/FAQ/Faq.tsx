@@ -52,7 +52,7 @@ const Faq = () => {
             are offered. We use a proven system to clean thoroughly,
             consistently, and efficiently. For a list of items we generally
             clean during a visit, please visit our cleaning services page. We
-            also tailor our visit to your individual needs and your home's
+            also tailor our visit to your individual needs and your home&quot;s
             cleaning requirements. Please contact your local office for more
             information.
           </AccordionContent>
@@ -62,7 +62,7 @@ const Faq = () => {
             Do you bring your own cleaning supplies, chemicals, and equipment?
           </AccordionTitle>
           <AccordionContent className="p-2 ">
-            Yes, we bring everything we need to clean your home. You don't have
+            Yes, we bring everything we need to clean your home. You don&quot;t have
             to provide a thing.
           </AccordionContent>
         </AccordionPanel>
