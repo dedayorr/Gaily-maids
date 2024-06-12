@@ -15,7 +15,7 @@ import Estimate from "../EstimatePopUp/Estimate";
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
- 
+
   const toggleMenu = () => {
     setNavOpen(!navOpen);
   };
@@ -68,9 +68,7 @@ const Header = () => {
           </div>
           <div className=" hidden md:flex gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] ">
             <Link href="/cleaningservices">
-              <p  className="lg:hover:text-2xl" >
-                Cleaning Services
-              </p>
+              <p className="lg:hover:text-2xl">Cleaning Services</p>
             </Link>
 
             <Link href="/cleaningprocess">
@@ -79,8 +77,11 @@ const Header = () => {
             <Link href="">
               <p className="lg:hover:text-2xl">Why Hire Us</p>
             </Link>
-            <Link href="">
+            <Link href="/aboutUs">
               <p className="lg:hover:text-2xl">About Us</p>
+            </Link>
+            <Link href="">
+              <p className="lg:hover:text-2xl">Hiring</p>
             </Link>
           </div>
         </div>
@@ -140,11 +141,15 @@ const Header = () => {
                     </li>
                     <li onClick={closeNav}>
                       {" "}
-                      <Link href="/cleaningprocess">Laundry Room Cleaning </Link>
+                      <Link href="/cleaningprocess">
+                        Laundry Room Cleaning{" "}
+                      </Link>
                     </li>
                     <li onClick={closeNav}>
                       {" "}
-                      <Link href="/cleaningprocess">Dinning Room Cleaning </Link>
+                      <Link href="/cleaningprocess">
+                        Dinning Room Cleaning{" "}
+                      </Link>
                     </li>
                     <li onClick={closeNav}>
                       {" "}
@@ -179,20 +184,19 @@ const Header = () => {
                 <Accordion.Content>
                   <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
                     <li>
-                      <Link href="">Our Values</Link>
+                      <Link href="/aboutUÏs">Our Story</Link>
                     </li>
+
                     <li>
-                      {" "}
-                      <Link href="">Best Cleaning Service</Link>
-                    </li>
-                    <li>
-                      <Link href="">Custom Cleaning </Link>
+                      <Link href="/aboutUs">Our Mission </Link>
                     </li>
                   </ul>
                 </Accordion.Content>
               </Accordion.Panel>
             </Accordion>
-
+            <p className="ml-[6%] text-[18px] mt-[8%] font-semibold text-[#823ec9]">
+              <Link href="">Hiring </Link>
+            </p>
             <Link href="">
               <button
                 onClick={openModal}
@@ -201,14 +205,14 @@ const Header = () => {
                 Request an Estimate
               </button>
             </Link>
-            <div className="flex gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic text-[#361f4d]">
+            <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
               <span>Contact Us</span>
             </div>
           </div>
         )}
       </header>
-     
+
       <Estimate showModal={showModal} closeModal={closeModal} />
     </>
   );
