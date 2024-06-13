@@ -13,9 +13,9 @@ const Offers = () => {
         </h2>
         <p className="leading-8 text-justify">
           {" "}
-          Your home is more than just a house—it&quot;s where memories are made
+          Your home is more than just a house it&apos;s where memories are made
           and moments are cherished. Though life can be complicated, the simple
-          things shouldn&quot;t be. Gaily Maids strives to take the stress out
+          things shouldn&apos;t be. Gaily Maids strives to take the stress out
           of your day so you can do life your way. With years of experience and
           an advanced, time-tested cleaning process, we can help you reclaim
           time with your loved ones.{" "}

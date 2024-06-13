@@ -67,7 +67,7 @@ const CleaningProcess = () => {
           office, and other important aspects of your weekly routine, finding
           time to keep your house in order can be difficult. Even though life
           gets busy, coming home should never be a chore and with Gaily Maids,
-          it won&quot;t be. We understand your home is your space to unwind and
+          it won&apos;t be. We understand your home is your space to unwind and
           feel safe and secure. Our professional house cleaning services are
           designed to keep your home looking its best, based on your cleaning
           preferences and desired frequency. Learn about our room by room

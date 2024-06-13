@@ -177,24 +177,11 @@ const Header = () => {
                   </ul>
                 </Accordion.Content>
               </Accordion.Panel>
-              <Accordion.Panel>
-                <Accordion.Title className="text-[#823ec9] text-[18px]">
-                  About Us
-                </Accordion.Title>
-                <Accordion.Content>
-                  <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
-                    <li onClick={closeNav}>
-                      <Link href="/aboutUs">Our Story</Link>
-                    </li>
-
-                    <li onClick={closeNav}>
-                      <Link href="/aboutUs">Our Mission </Link>
-                    </li>
-                  </ul>
-                </Accordion.Content>
-              </Accordion.Panel>
+              <p onClick={closeNav} className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]">
+              <Link href="/aboutUs">About Us </Link>
+            </p>
             </Accordion>
-            <p onClick={closeNav} className="ml-[6%] text-[18px] mt-[8%] font-semibold text-[#823ec9]">
+            <p onClick={closeNav} className="ml-[5%] text-[18px] mt-[8%] font-medium text-[#823ec9]">
               <Link href="/hiring">We&apos;re Hiring </Link>
             </p>
             <Link href="">

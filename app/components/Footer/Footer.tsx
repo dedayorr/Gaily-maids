@@ -28,17 +28,17 @@ const Footer = () => {
           </p>
         </Link>
 
-        <Link href="cleaningprocess">
+        <Link href="/cleaningprocess">
           <p className=" flex justify-center text-[20px] text-[#823ec9]  lg:hover:text-2xl lg:justify-normal ">
             Our Cleaning Process
           </p>
         </Link>
-        <Link href="">
+        <Link href="/why-us">
           <p className="flex justify-center text-[20px] text-[#823ec9]  lg:hover:text-2xl lg:justify-normal">
             Why Hire Us
           </p>
         </Link>
-        <Link href="aboutUs">
+        <Link href="/aboutUs">
           <p className="flex justify-center text-[20px] text-[#823ec9]  lg:hover:text-2xl lg:justify-normal">
             About Us
           </p>

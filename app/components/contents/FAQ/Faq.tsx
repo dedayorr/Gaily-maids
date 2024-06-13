@@ -16,14 +16,14 @@ const Faq = () => {
       <div
         className={`mx-auto text-[30px] font-semibold h-[50px] w-[40%] flex justify-center items-center text-[#823ec9] lg:text-[40px]`}
       >
-        FAQ
+        FAQs
       </div>
       <div className="leading-8 flex flex-col gap-[10px]">
         <h2 className="font-bold text-[20px] lg:text-[25px]">
           Most Common Questions And Answers
         </h2>
         <p className="text-justify ">
-          Molly Maid is committed to your complete satisfaction, which is why we
+          Gaily Maid is committed to your complete satisfaction, which is why we
           strive to offer the most consistent, reliable, and affordable
           housecleaning services around. Our team of experienced professionals
           has taken the time to answer some of our most frequently asked
@@ -62,8 +62,8 @@ const Faq = () => {
             Do you bring your own cleaning supplies, chemicals, and equipment?
           </AccordionTitle>
           <AccordionContent className="p-2 ">
-            Yes, we bring everything we need to clean your home. You don&quot;t have
-            to provide a thing.
+            Yes, we bring everything we need to clean your home. You don&quot;t
+            have to provide a thing.
           </AccordionContent>
         </AccordionPanel>
         <AccordionPanel className="">
@@ -106,7 +106,7 @@ const Faq = () => {
         </AccordionPanel>
       </Accordion>
       <Link
-        href=""
+        href="/faq"
         className="text-[18px] text-[#823ec9] flex items-center gap-[10px] lg:text-[30px]"
       >
         <p className="italic hover:underline">See More</p>

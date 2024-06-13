@@ -123,7 +123,7 @@ const CleaningServicesPage = () => {
           <p className="leading-8 tracking-wide text-justify">
             House cleaning is a vital practice that goes beyond mere aesthetics.
             It encompasses a range of tasks and routines designed to maintain a
-            home&quot;s cleanliness, orderliness, and functionality. Regular and
+            home&apos;s cleanliness, orderliness, and functionality. Regular and
             thorough cleaning not only enhances the appearance of your living
             space but also contributes significantly to your health and
             well-being.
@@ -253,7 +253,7 @@ const CleaningServicesPage = () => {
           <p className="leading-8 tracking-wide text-justify">
             Move-in cleaning, also known as pre-move-in cleaning, is a
             specialized cleaning service designed to prepare a residential or
-            commercial property for new occupants. Whether it&quot;s a newly
+            commercial property for new occupants. Whether it&apos;s a newly
             constructed home, a recently vacated apartment, or a commercial
             space, move-in cleaning ensures that the premises are thoroughly
             cleaned and sanitized before the new occupants settle in. This
