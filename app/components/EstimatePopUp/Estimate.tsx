@@ -66,17 +66,17 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
 
     emailjs
       .send(
-        'service_og1ae8q', 
-        'template_vothj2g', 
+        "service_og1ae8q",
+        "template_vothj2g",
         templateParams,
-        'prU2mq4C_eMpPOd3_'
+        "prU2mq4C_eMpPOd3_"
       )
       .then(
         (response) => {
-          console.log('SUCCESS!', response.status, response.text);
+          console.log("SUCCESS!", response.status, response.text);
         },
         (error) => {
-          console.log('FAILED...', error);
+          console.log("FAILED...", error);
         }
       );
   };
@@ -88,7 +88,6 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
           <form
             className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto lg:w-[60%] lg:rounded-[15px]"
             onSubmit={handleSubmit}
-
           >
             <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%] lg:py-[6%]">
               <FaTimes
@@ -215,7 +214,7 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input type="checkbox" name="dining" />
                 </div>
                 <div>
-                  <label>Kitchen:</label>
+                  <label>Laundry:</label>
                   <input type="checkbox" name="kitchen" />
                 </div>
                 <div>
@@ -223,17 +222,16 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                   <input type="checkbox" name="familyRoom" />
                 </div>
                 <div>
-                  <label>Laundry:</label>
+                  <label>Kitchen:</label>
                   <input type="checkbox" name="laundry" />
                 </div>
                 <div>
                   <label>Living Room:</label>
                   <input type="checkbox" name="livingRoom" />
                 </div>
-
                 <div>
-                  <label>Den:</label>
-                  <input type="checkbox" name="den" />
+                  <label>Stairs:</label>
+                  <input type="checkbox" name="loft" />
                 </div>
                 <div>
                   <label>Utility Room:</label>
@@ -246,6 +244,14 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                 <div>
                   <label>Basement:</label>
                   <input type="checkbox" name="basement" />
+                </div>
+                <div>
+                  <label>Den:</label>
+                  <input type="checkbox" name="den" />
+                </div>
+                <div>
+                  <label>Hallways:</label>
+                  <input type="checkbox" name="loft" />
                 </div>
               </div>
               <button
