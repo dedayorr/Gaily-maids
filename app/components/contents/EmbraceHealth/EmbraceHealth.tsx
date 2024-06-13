@@ -19,7 +19,7 @@ const EmbraceHealth = () => {
         <p className="lg:hidden font-bold cursive italic text-[35px]">
           Embrace a healthy and happy home
         </p>
-        <button className=" hover:bg-white hover:text-[#823ec9] lg:hidden border border-[#823ec9] p-[3%] text-[#823ec9] w-[60%] mx-auto">
+        <button className="lg:hidden border border-[#823ec9] p-[3%] text-[#823ec9] w-[60%] mx-auto">
           Book Gaily Maids Today
         </button>
         <div
@@ -30,7 +30,7 @@ const EmbraceHealth = () => {
             <p className="hidden lg:flex font-bold cursive italic text-[55px]">
               Embrace a healthy and happy home
             </p>
-            <button className="lg:flex hidden border border-[#823ec9] p-[3%] text-[#fff] hover:bg-white hover:text-[#823ec9] w-[50%] justify-center items-center mx-auto">
+            <button className="lg:flex hidden border border-[#823ec9] p-[3%] text-[#fff] w-[50%] justify-center items-center mx-auto">
               Book Gaily Maids Today
             </button>
           </div>
