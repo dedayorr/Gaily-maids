@@ -74,7 +74,7 @@ const Header = () => {
             <Link href="/cleaningprocess">
               <p className="lg:hover:text-2xl">Our Cleaning Process</p>
             </Link>
-            <Link href="">
+            <Link href="/why-us">
               <p className="lg:hover:text-2xl">Why Hire Us</p>
             </Link>
             <Link href="/aboutUs">
@@ -158,25 +158,9 @@ const Header = () => {
                   </ul>
                 </Accordion.Content>
               </Accordion.Panel>
-              <Accordion.Panel>
-                <Accordion.Title className="text-[#823ec9] text-[18px]">
-                  Why Hire Us
-                </Accordion.Title>
-                <Accordion.Content>
-                  <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
-                    <li>
-                      <Link href="">Afforable Cleaning</Link>
-                    </li>
-                    <li>
-                      {" "}
-                      <Link href="">Best Cleaning Service</Link>
-                    </li>
-                    <li>
-                      <Link href="">Custom Cleaning </Link>
-                    </li>
-                  </ul>
-                </Accordion.Content>
-              </Accordion.Panel>
+              <p onClick={closeNav} className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]">
+              <Link href="/why-us">Why Hire Us </Link>
+            </p>
               <p onClick={closeNav} className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]">
               <Link href="/aboutUs">About Us </Link>
             </p>
