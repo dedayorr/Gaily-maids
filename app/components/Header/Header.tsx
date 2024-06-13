@@ -80,7 +80,7 @@ const Header = () => {
             <Link href="/aboutUs">
               <p className="lg:hover:text-2xl">About Us</p>
             </Link>
-            <Link href="">
+            <Link href="/hiring">
               <p className="lg:hover:text-2xl">We&apos;re Hiring</p>
             </Link>
           </div>
@@ -183,19 +183,19 @@ const Header = () => {
                 </Accordion.Title>
                 <Accordion.Content>
                   <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
-                    <li>
-                      <Link href="/aboutUÏs">Our Story</Link>
+                    <li onClick={closeNav}>
+                      <Link href="/aboutUs">Our Story</Link>
                     </li>
 
-                    <li>
+                    <li onClick={closeNav}>
                       <Link href="/aboutUs">Our Mission </Link>
                     </li>
                   </ul>
                 </Accordion.Content>
               </Accordion.Panel>
             </Accordion>
-            <p className="ml-[6%] text-[18px] mt-[8%] font-semibold text-[#823ec9]">
-              <Link href="">We&apos;re Hiring </Link>
+            <p onClick={closeNav} className="ml-[6%] text-[18px] mt-[8%] font-semibold text-[#823ec9]">
+              <Link href="/hiring">We&apos;re Hiring </Link>
             </p>
             <Link href="">
               <button
