@@ -72,10 +72,10 @@ const Hiring = () => {
 
   return (
     <div>
-      <h1 className="text-[#823ec9] mt-[10%] text-center text-[18px] font-bold">
+      <h1 className="text-[#823ec9] mt-[10%] text-center text-[30px] font-bold lg:text-[45px] lg:mt-[3%]">
         Join Our Team and Make a Difference!
       </h1>
-      <p className="mt-3 text-black text-center mx-4">
+      <p className="mt-3 text-black text-center mx-4 lg:text-[20px] lg:w-[60%] lg:mx-auto">
         Looking for a fun place to work, with a flexible schedule and
         competitive pay? Then come live the Gaily Maids™ life!
       </p>{" "}

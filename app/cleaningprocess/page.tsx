@@ -111,8 +111,8 @@ const CleaningProcess = () => {
           className={`${styles.process}`}
           src="/cleanprocess.png"
           alt=""
-          width={100}
-          height={100}
+          width={500}
+          height={500}
         />
       </div>
       {/* ====For large screen ==== */}
