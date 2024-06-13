@@ -11,6 +11,7 @@ import { MdOutlinePets } from "react-icons/md";
 import { IoBedSharp } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
+import emailjs from "emailjs-com";
 import "./estimate.css";
 
 interface EstimateProps {
@@ -48,14 +49,46 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      houseAddress: formData.houseAddress,
+      email: formData.email,
+      phone: formData.phone,
+      numberOfPets: formData.numberOfPets,
+      bedrooms: formData.bedrooms,
+      fullBathrooms: formData.fullBathrooms,
+      halfBathrooms: formData.halfBathrooms,
+    };
+
+    emailjs
+      .send(
+        'service_og1ae8q', 
+        'template_vothj2g', 
+        templateParams,
+        'prU2mq4C_eMpPOd3_'
+      )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        }
+      );
+  };
+
   return (
     <div>
       {showModal && (
         <Modal>
           <form
             className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto lg:w-[60%] lg:rounded-[15px]"
-            action="https://formspree.io/f/xqkrredp"
-            method="POST"
+            onSubmit={handleSubmit}
+
           >
             <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%] lg:py-[6%]">
               <FaTimes

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
 
 const Hiring = () => {
   const [formData, setFormData] = useState({
@@ -7,37 +8,80 @@ const Hiring = () => {
     lastName: "",
     email: "",
     phone: "",
-    // workedWithCleaningBusiness: false,
-    // hasCar: false,
-    // hasInsurance: false,
+    workedWithCleaningBusiness: false,
+    hasCar: "",
+    hasInsurance: "",
   });
 
-  const [isFormValid, setIsFormValid] = useState(false);
+  // const [isFormValid, setIsFormValid] = useState(false);
 
-  useEffect(() => {
-    const checkFormValidity = () => {
-      const isValid = Object.values(formData).every(
-        (value) => value.trim() !== ""
-      );
-      setIsFormValid(isValid);
-    };
-    checkFormValidity();
-  }, [formData]);
+  // const handleChange = (e: { target: { name: any; value: any } }) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({ ...prev, [name]: value }));
+  // };
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+  const handleChange = (e: {
+    target: { name: any; value: any; type: any; checked: any };
+  }) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      workedWithCleaningBusiness: formData.workedWithCleaningBusiness
+        ? "Yes"
+        : "No",
+      hasCar: formData.hasCar === "true" ? "Yes" : "No",
+      hasInsurance: formData.hasInsurance === "true" ? "Yes" : "No",
+    };
+
+    emailjs
+      .send(
+        "service_qay4sdq",
+        "template_5ot0m66",
+        templateParams,
+        "prU2mq4C_eMpPOd3_"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
+  };
+
+  const isFormValid =
+    formData.firstName &&
+    formData.lastName &&
+    formData.email &&
+    formData.phone &&
+    formData.hasCar &&
+    formData.hasInsurance;
 
   return (
     <div>
-      <h1 className="text-[#823ec9] mt-[10%] text-center text-[18px] font-bold">Join Our Team and Make a Difference!</h1>
-      <p className="mt-3 text-black text-center mx-4">Looking for a fun place to work, with a flexible schedule and competitive pay? Then come live the Gaily Maids™ life!</p>
-      {" "}
+      <h1 className="text-[#823ec9] mt-[10%] text-center text-[18px] font-bold">
+        Join Our Team and Make a Difference!
+      </h1>
+      <p className="mt-3 text-black text-center mx-4">
+        Looking for a fun place to work, with a flexible schedule and
+        competitive pay? Then come live the Gaily Maids™ life!
+      </p>{" "}
       <form
         className="max-w-md mx-auto mt-5 p-6 bg-white rounded shadow-md"
-        action="https://formspree.io/f/xqkrredp"
-        method="POST"
+        onSubmit={handleSubmit}
       >
         <div className="mb-4">
           <label className="block text-gray-700">First Name</label>
