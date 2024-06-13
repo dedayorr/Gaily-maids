@@ -99,7 +99,7 @@ const CleaningServicesPage = () => {
             {" "}
             <Image
               className={`${styles.image}`}
-              src="/cleaning-service-one.png"
+              src="/process-image.png"
               alt=""
               width={500}
               height={200}
