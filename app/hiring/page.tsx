@@ -230,11 +230,9 @@ const Hiring = () => {
       {showThankYou && (
         <Modal>
           <div className="thank-you-card animate-fadeIn mx-[5%] flex flex-col justify-center items-center text-center text-white bg-[#823ec9] p-6 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold mb-4">Thank You!</h2>
+            <h2 className="text-3xl font-bold mb-4">Thank You for Applying!</h2>
             <p>
-              Thank you for reaching out to us! Your request for an estimate has
-              been successfully submitted. Our team will review the details and
-              get back to you.
+            We appreciate your interest in joining our team. Your application has been successfully submitted and is now under review.
             </p>
             <Player
               autoplay
@@ -242,7 +240,7 @@ const Hiring = () => {
               src="https://lottie.host/0e63735e-34b6-41e2-85e9-a2f71785627a/ApS5VmH7TG.json"
               style={{ height: "100px", width: "100px" }}
             ></Player>
-            <p>We look forward to helping you with your home cleaning needs!</p>
+            <p>Thank you for considering a career with us. We will be in touch soon!</p>
             <button
               className="mt-4 bg-white text-[#823ec9] px-4 py-2 rounded hover:bg-gray-100"
               onClick={confirmClose}
