@@ -11,6 +11,8 @@ const Hiring = () => {
     email: "",
     phone: "",
     workedWithCleaningBusiness: false,
+    partTime: false,
+    fullTime: false,
     hasCar: "",
     hasInsurance: "",
   });
@@ -40,6 +42,8 @@ const Hiring = () => {
       workedWithCleaningBusiness: formData.workedWithCleaningBusiness
         ? "Yes"
         : "No",
+      partTime: formData.partTime ? "Yes" : "No",
+      fullTime: formData.fullTime ? "Yes" : "No",
       hasCar: formData.hasCar === "true" ? "Yes" : "No",
       hasInsurance: formData.hasInsurance === "true" ? "Yes" : "No",
     };
@@ -56,7 +60,6 @@ const Hiring = () => {
           console.log("SUCCESS!", response.status, response.text);
           setIsLoading(false);
           setShowThankYou(true);
-
         },
         (error) => {
           console.log("FAILED...", error);
@@ -72,22 +75,24 @@ const Hiring = () => {
     formData.hasCar &&
     formData.hasInsurance;
 
-    const resetForm = () => {
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        workedWithCleaningBusiness: false,
-        hasCar: "",
-        hasInsurance: "",
-      });
-    };
+  const resetForm = () => {
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      workedWithCleaningBusiness: false,
+      partTime: false,
+      fullTime: false,
+      hasCar: "",
+      hasInsurance: "",
+    });
+  };
 
-    const confirmClose = () => {
-      setShowThankYou(false);
-      resetForm()
-    };
+  const confirmClose = () => {
+    setShowThankYou(false);
+    resetForm();
+  };
 
   return (
     <div>
@@ -142,6 +147,31 @@ const Hiring = () => {
             className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
+
+        <div className="flex gap-[20px]">
+          {" "}
+          <div className="my-4 flex gap-[10px] items-center">
+            <label className=" text-gray-700 ">Part Time</label>
+            <input
+              type="checkbox"
+              name="partTime"
+              // checked={formData.workedWithCleaningBusiness}
+              onChange={handleChange}
+              className=""
+            />
+          </div>
+          <div className="my-4 flex gap-[10px] items-center">
+            <label className=" text-gray-700 ">Full Time</label>
+            <input
+              type="checkbox"
+              name="fullTime"
+              // checked={formData.workedWithCleaningBusiness}
+              onChange={handleChange}
+              className=""
+            />
+          </div>
+        </div>
+
         <div className="mb-4">
           <label className="block text-gray-700">
             Have you worked with a cleaning business before?
@@ -157,7 +187,7 @@ const Hiring = () => {
         <div className="mb-4">
           <label className="block text-gray-700">Do you have a car?</label>
           <div className="flex items-center">
-            <label className="mr-4">
+            <label className="mr-4 text-black">
               <input
                 type="radio"
                 name="hasCar"
@@ -168,7 +198,7 @@ const Hiring = () => {
               />
               Yes
             </label>
-            <label>
+            <label className="text-black">
               <input
                 type="radio"
                 name="hasCar"
@@ -184,7 +214,7 @@ const Hiring = () => {
         <div className="mb-4">
           <label className="block text-gray-700">Do you have insurance?</label>
           <div className="flex items-center">
-            <label className="mr-4">
+            <label className="mr-4 text-black">
               <input
                 type="radio"
                 name="hasInsurance"
@@ -195,14 +225,14 @@ const Hiring = () => {
               />
               Yes
             </label>
-            <label>
+            <label className="text-black">
               <input
                 type="radio"
                 name="hasInsurance"
                 value="false"
                 // checked={formData.hasInsurance === 'false'}
                 onChange={handleChange}
-                className="mr-2"
+                className="mr-2 "
               />
               No
             </label>
@@ -218,7 +248,6 @@ const Hiring = () => {
           Submit
         </button>
       </form>
-
       {isLoading && (
         <Modal>
           <div className="flex justify-center items-center h-full">
@@ -226,13 +255,13 @@ const Hiring = () => {
           </div>
         </Modal>
       )}
-
       {showThankYou && (
         <Modal>
           <div className="thank-you-card animate-fadeIn mx-[5%] flex flex-col justify-center items-center text-center text-white bg-[#823ec9] p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-4">Thank You for Applying!</h2>
             <p>
-            We appreciate your interest in joining our team. Your application has been successfully submitted and is now under review.
+              We appreciate your interest in joining our team. Your application
+              has been successfully submitted and is now under review.
             </p>
             <Player
               autoplay
@@ -240,7 +269,10 @@ const Hiring = () => {
               src="https://lottie.host/0e63735e-34b6-41e2-85e9-a2f71785627a/ApS5VmH7TG.json"
               style={{ height: "100px", width: "100px" }}
             ></Player>
-            <p>Thank you for considering a career with us. We will be in touch soon!</p>
+            <p>
+              Thank you for considering a career with us. We will be in touch
+              soon!
+            </p>
             <button
               className="mt-4 bg-white text-[#823ec9] px-4 py-2 rounded hover:bg-gray-100"
               onClick={confirmClose}
