@@ -26,6 +26,17 @@ const CleaningProcess = () => {
     bedrooms: "",
     fullBathrooms: "",
     halfBathrooms: "",
+    dining: false,
+    kitchen: false,
+    familyRoom: false,
+    laundry: false,
+    livingRoom: false,
+    den: false,
+    utilityRoom: false,
+    loft: false,
+    basement: false,
+    hallway: false,
+    stairs: false,
   });
 
   const [isFormValid, setIsFormValid] = useState(false);
@@ -35,16 +46,21 @@ const CleaningProcess = () => {
   useEffect(() => {
     const checkFormValidity = () => {
       const isValid = Object.values(formData).every(
-        (value) => value.trim() !== ""
+        (value) => typeof value === "boolean" || value.trim() !== ""
       );
       setIsFormValid(isValid);
     };
     checkFormValidity();
   }, [formData]);
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+  const handleChange = (e: {
+    target: { name: any; value: any; type: string; checked: boolean };
+  }) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -61,6 +77,17 @@ const CleaningProcess = () => {
       bedrooms: formData.bedrooms,
       fullBathrooms: formData.fullBathrooms,
       halfBathrooms: formData.halfBathrooms,
+      dining: formData.dining ? "Yes" : "No",
+      kitchen: formData.kitchen ? "Yes" : "No",
+      familyRoom: formData.familyRoom ? "Yes" : "No",
+      laundry: formData.laundry ? "Yes" : "No",
+      livingRoom: formData.livingRoom ? "Yes" : "No",
+      hallway: formData.hallway ? "Yes" : "No",
+      stairs: formData.stairs ? "Yes" : "No",
+      den: formData.den ? "Yes" : "No",
+      utilityRoom: formData.utilityRoom ? "Yes" : "No",
+      loft: formData.loft ? "Yes" : "No",
+      basement: formData.basement ? "Yes" : "No",
     };
 
     emailjs
@@ -311,47 +338,102 @@ const CleaningProcess = () => {
               <div className="grid grid-cols-2 gap-[10px]">
                 <div>
                   <label>Dining Room:</label>
-                  <input type="checkbox" name="dining" />
+                  <input
+                    type="checkbox"
+                    name="dining"
+                    checked={formData.dining}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Laundry:</label>
-                  <input type="checkbox" name="kitchen" />
+                  <input
+                    type="checkbox"
+                    name="laundry"
+                    checked={formData.laundry}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Family Room:</label>
-                  <input type="checkbox" name="familyRoom" />
+                  <input
+                    type="checkbox"
+                    name="familyRoom"
+                    checked={formData.familyRoom}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Kitchen:</label>
-                  <input type="checkbox" name="laundry" />
+                  <input
+                    type="checkbox"
+                    name="kitchen"
+                    checked={formData.kitchen}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Living Room:</label>
-                  <input type="checkbox" name="livingRoom" />
+                  <input
+                    type="checkbox"
+                    name="livingRoom"
+                    checked={formData.livingRoom}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Stairs:</label>
-                  <input type="checkbox" name="loft" />
+                  <input
+                    type="checkbox"
+                    name="stairs"
+                    checked={formData.stairs}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Utility Room:</label>
-                  <input type="checkbox" name="utilityRoom" />
+                  <input
+                    type="checkbox"
+                    name="utilityRoom"
+                    checked={formData.utilityRoom}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Loft:</label>
-                  <input type="checkbox" name="loft" />
+                  <input
+                    type="checkbox"
+                    name="loft"
+                    checked={formData.loft}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Basement:</label>
-                  <input type="checkbox" name="basement" />
+                  <input
+                    type="checkbox"
+                    name="basement"
+                    checked={formData.basement}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Den:</label>
-                  <input type="checkbox" name="den" />
+                  <input
+                    type="checkbox"
+                    name="den"
+                    checked={formData.den}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <label>Hallways:</label>
-                  <input type="checkbox" name="loft" />
+                  <input
+                    type="checkbox"
+                    name="hallway"
+                    checked={formData.hallway}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <button
@@ -369,7 +451,6 @@ const CleaningProcess = () => {
           </form>
         </Modal>
       )}
-      
       {isLoading && (
         <Modal>
           <div className="flex justify-center items-center h-full">
@@ -377,7 +458,6 @@ const CleaningProcess = () => {
           </div>
         </Modal>
       )}
-
       {showThankYou && (
         <Modal>
           <div className="thank-you-card animate-fadeIn mx-[5%] flex flex-col justify-center items-center text-center text-white bg-[#823ec9] p-6 rounded-lg shadow-lg">

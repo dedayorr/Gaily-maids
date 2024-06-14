@@ -40,8 +40,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
     utilityRoom: false,
     loft: false,
     basement: false,
-    hallway:false,
-    stairs:false
+    hallway: false,
+    stairs: false,
   });
 
   const [isFormValid, setIsFormValid] = useState(false);
@@ -341,8 +341,12 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
                 </div>
                 <div>
                   <label>Hallways:</label>
-                  <input type="checkbox" name="hallway"  checked={formData.hallway}
-                    onChange={handleChange} />
+                  <input
+                    type="checkbox"
+                    name="hallway"
+                    checked={formData.hallway}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <button
