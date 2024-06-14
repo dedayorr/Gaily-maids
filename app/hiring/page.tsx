@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import Modal from "../components/Modal/Modal";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Hiring = () => {
   const [formData, setFormData] = useState({
@@ -13,12 +15,8 @@ const Hiring = () => {
     hasInsurance: "",
   });
 
-  // const [isFormValid, setIsFormValid] = useState(false);
-
-  // const handleChange = (e: { target: { name: any; value: any } }) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prev) => ({ ...prev, [name]: value }));
-  // };
+  const [showThankYou, setShowThankYou] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e: {
     target: { name: any; value: any; type: any; checked: any };
@@ -32,6 +30,7 @@ const Hiring = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    setIsLoading(true);
 
     const templateParams = {
       firstName: formData.firstName,
@@ -55,6 +54,9 @@ const Hiring = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          setIsLoading(false);
+          setShowThankYou(true);
+
         },
         (error) => {
           console.log("FAILED...", error);
@@ -69,6 +71,23 @@ const Hiring = () => {
     formData.phone &&
     formData.hasCar &&
     formData.hasInsurance;
+
+    const resetForm = () => {
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        workedWithCleaningBusiness: false,
+        hasCar: "",
+        hasInsurance: "",
+      });
+    };
+
+    const confirmClose = () => {
+      setShowThankYou(false);
+      resetForm()
+    };
 
   return (
     <div>
@@ -199,6 +218,40 @@ const Hiring = () => {
           Submit
         </button>
       </form>
+
+      {isLoading && (
+        <Modal>
+          <div className="flex justify-center items-center h-full">
+            <div className="loader"></div>
+          </div>
+        </Modal>
+      )}
+
+      {showThankYou && (
+        <Modal>
+          <div className="thank-you-card animate-fadeIn mx-[5%] flex flex-col justify-center items-center text-center text-white bg-[#823ec9] p-6 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold mb-4">Thank You!</h2>
+            <p>
+              Thank you for reaching out to us! Your request for an estimate has
+              been successfully submitted. Our team will review the details and
+              get back to you.
+            </p>
+            <Player
+              autoplay
+              loop
+              src="https://lottie.host/0e63735e-34b6-41e2-85e9-a2f71785627a/ApS5VmH7TG.json"
+              style={{ height: "100px", width: "100px" }}
+            ></Player>
+            <p>We look forward to helping you with your home cleaning needs!</p>
+            <button
+              className="mt-4 bg-white text-[#823ec9] px-4 py-2 rounded hover:bg-gray-100"
+              onClick={confirmClose}
+            >
+              Close
+            </button>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };
