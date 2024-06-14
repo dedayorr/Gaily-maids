@@ -12,10 +12,8 @@
   background: linear-gradient(
     -95deg,
     rgba(23, 102, 238, 0.267),
-    /* #ffdbde82, */ 
-    /* #5f1fff73, */ 
-    /* #ff85ae7c, */
-    rgba(107, 102, 255, 0.211),
+    /* #ffdbde82, */ /* #5f1fff73, */ /* #ff85ae7c, */
+      rgba(107, 102, 255, 0.211),
     #ffb58a7f,
     #be19df30
   );
@@ -35,6 +33,43 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2.1s ease-in-out;
+}
+
+.thank-you-card {
+  /* min-width: 500px; */
+  width: 97%;
+}
+
+.loader {
+  border: 7px solid #f3f3f3; /* Light grey */
+  border-top: 7px solid #823ec9; /* Purple */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .logo-estimate {
     height: 95px;
@@ -49,4 +84,10 @@
     width: 30%;
     object-fit: cover;
   }
+  .thank-you-card {
+    /* max-width: 700px; */
+    width: 40%;
+    height: 430px;
+  }
+  
 }

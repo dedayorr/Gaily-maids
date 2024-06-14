@@ -26,6 +26,7 @@ const Header = () => {
 
   const openModal = () => {
     setShowModal(true);
+    setNavOpen(false)
   };
   const closeModal = () => {
     setShowModal(false);

@@ -13,6 +13,7 @@ import { FaTimes } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import "./estimate.css";
+import { Player, } from "@lottiefiles/react-lottie-player";
 
 interface EstimateProps {
   showModal: boolean;
@@ -33,6 +34,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
   });
 
   const [isFormValid, setIsFormValid] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const checkFormValidity = () => {
@@ -51,6 +54,7 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
 
     const templateParams = {
       firstName: formData.firstName,
@@ -74,6 +78,8 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          setIsLoading(false);
+          setShowThankYou(true);
         },
         (error) => {
           console.log("FAILED...", error);
@@ -81,9 +87,14 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
       );
   };
 
+  const confirmClose = () => {
+    setShowThankYou(false);
+    closeModal();
+  };
+
   return (
     <div>
-      {showModal && (
+      {showModal && !showThankYou && (
         <Modal>
           <form
             className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto lg:w-[60%] lg:rounded-[15px]"
@@ -267,6 +278,40 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
               </button>
             </div>
           </form>
+        </Modal>
+      )}
+
+      {isLoading && (
+        <Modal>
+          <div className="flex justify-center items-center h-full">
+            <div className="loader"></div>
+          </div>
+        </Modal>
+      )}
+
+      {showThankYou && (
+        <Modal>
+          <div className="thank-you-card animate-fadeIn mx-[5%] flex flex-col justify-center items-center text-center text-white bg-[#823ec9] p-6 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold mb-4">Thank You!</h2>
+            <p>
+              Thank you for reaching out to us! Your request for an estimate has
+              been successfully submitted. Our team will review the details and
+              get back to you.
+            </p>
+            <Player
+              autoplay
+              loop
+              src="https://lottie.host/0e63735e-34b6-41e2-85e9-a2f71785627a/ApS5VmH7TG.json"
+              style={{ height: "100px", width: "100px" }}
+            ></Player>
+            <p>We look forward to helping you with your home cleaning needs!</p>
+            <button
+              className="mt-4 bg-white text-[#823ec9] px-4 py-2 rounded hover:bg-gray-100"
+              onClick={confirmClose}
+            >
+              Close
+            </button>
+          </div>
         </Modal>
       )}
     </div>
