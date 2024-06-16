@@ -11,9 +11,9 @@ const Questions = () => {
       <div className="lg:flex lg:mx-[15%] lg:gap-[10%] mb-[15%] lg:mb-[10%]">
         <p className="leading-8 text-justify mb-3 lg:text-[18px] lg:leading-[50px]">
           At Gaily Maids, we understand that maintaining a clean home can be
-          challenging with a busy lifestyle. That's why we're here to help! To
+          challenging with a busy lifestyle. That&apos;s why we&apos;re here to help! To
           ensure you have all the information you need about our home cleaning
-          services, we've compiled answers to some of the most frequently asked
+          services, we&apos;ve compiled answers to some of the most frequently asked
           questions from our clients.
         </p>
         <Image
@@ -50,7 +50,7 @@ const Questions = () => {
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
             You do not need to be home during the cleaning. Many of our clients
             provide us with access to their homes while they are away. However,
-            if you prefer to be present, that's perfectly fine too.
+            if you prefer to be present, that&apos;s perfectly fine too.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ const Questions = () => {
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
             Absolutely! We understand that every home is unique. We offer
             customized cleaning plans tailored to your specific needs and
-            preferences. Just let us know your requirements, and we'll create a
+            preferences. Just let us know your requirements, and we&apos;ll create a
             plan that works for you.
           </p>
         </div>
@@ -105,7 +105,7 @@ const Questions = () => {
             are offered. We use a proven system to clean thoroughly,
             consistently, and efficiently. For a list of items we generally
             clean during a visit, please visit our cleaning services page. We
-            also tailor our visit to your individual needs and your home's
+            also tailor our visit to your individual needs and your home&apos;s
             cleaning requirements.
           </p>
         </div>
@@ -117,7 +117,7 @@ const Questions = () => {
             </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-            Yes, we bring everything we need to clean your home. You don't have
+            Yes, we bring everything we need to clean your home. You don&apos;t have
             to provide a thing.
           </p>
         </div>
@@ -155,7 +155,7 @@ const Questions = () => {
           <div className="flex gap-4 ">
             <MdDoubleArrow className="lg: text-[25px] text-[#823ec9] " />
             <p className="lg:mb-3 font-bold lg:text-[20px]">
-              I'm interested in working for you. How do I apply?
+              I&apos;m interested in working for you. How do I apply?
             </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">- - - - - - - - -</p>
