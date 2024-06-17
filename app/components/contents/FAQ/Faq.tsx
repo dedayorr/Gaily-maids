@@ -23,7 +23,7 @@ const Faq = () => {
           Most Common Questions And Answers
         </h2>
         <p className="text-justify ">
-          Gaily Maid is committed to your complete satisfaction, which is why we
+          Gaily Maids is committed to your complete satisfaction, which is why we
           strive to offer the most consistent, reliable, and affordable
           housecleaning services around. Our team of experienced professionals
           has taken the time to answer some of our most frequently asked
@@ -37,10 +37,9 @@ const Faq = () => {
             What are your rates ?
           </AccordionTitle>
           <AccordionContent className="p-2 ">
-            Our pricing is completely individualized. xperience have helped us
+            Our pricing is completely individualized experience have helped us
             learn that every home is as unique as the people living there. We
-            base our pricing on many factors, including the presence of pet
-            hair, clutter, and even your lifestyle.
+            base our pricing on some factors such as the frequency of the cleaning, the size of the home, and the areas in your homeyou would like us to clean.
           </AccordionContent>
         </AccordionPanel>
         <AccordionPanel className="">
@@ -50,10 +49,7 @@ const Faq = () => {
           <AccordionContent className="p-2 ">
             We completely individualize our cleanings, so no specific packages
             are offered. We use a proven system to clean thoroughly,
-            consistently, and efficiently. For a list of items we generally
-            clean during a visit, please visit our cleaning services page. We
-            also tailor our visit to your individual needs and your home&quot;s
-            cleaning requirements. Please contact your local office for more
+            consistently, and efficiently. Please contact our office <span></span> for more
             information.
           </AccordionContent>
         </AccordionPanel>
@@ -62,8 +58,8 @@ const Faq = () => {
             Do you bring your own cleaning supplies, chemicals, and equipment?
           </AccordionTitle>
           <AccordionContent className="p-2 ">
-            Yes, we bring everything we need to clean your home. You don&quot;t
-            have to provide a thing.
+            Yes, we bring everything we need to clean your home. You don&apos;t
+            have to provide any cleaning supplies. However, if you would like us to use any of your products for a particular area, please let the office know upon booking.
           </AccordionContent>
         </AccordionPanel>
         <AccordionPanel className="">
@@ -72,7 +68,7 @@ const Faq = () => {
           </AccordionTitle>
           <AccordionContent className="p-2 ">
             While most of our customers prefer a weekly cleaning on a regularly
-            scheduled day, we also clean homes every other week or less
+            scheduled day, we also clean homes every other week, every three weeks, every four weeks or less
             frequently. Even special occasions.
           </AccordionContent>
         </AccordionPanel>
@@ -83,7 +79,7 @@ const Faq = () => {
           <AccordionContent className="p-2 ">
             Gaily Maids offices may send one, two, or three team members to
             clean a home. Our goal is to customize the cleaning to meet our
-            client&quot;s needs and also provide our team members with the
+            client&apos;s needs and also provide our team members with the
             greatest opportunities for career advancement. We will work with you
             so that you know how many people will be in your home. We respect
             that your home is private, and the trust you place in us by inviting
@@ -98,10 +94,7 @@ const Faq = () => {
           <AccordionContent className="p-2 ">
             We make every effort to ensure that we keep the same team who serves
             your home cleans during each visit. If a member of the team changes,
-            our office staff contacts you beforehand to learn if you prefer
-            someone other than your regular cleaning professional or would
-            rather change your scheduled day so your favorite team member can
-            clean.
+            our office staff contacts you beforehand. 
           </AccordionContent>
         </AccordionPanel>
       </Accordion>

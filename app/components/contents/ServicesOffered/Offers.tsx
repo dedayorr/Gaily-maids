@@ -28,7 +28,7 @@ const Offers = () => {
           team has the solution you are looking for. Alongside basic home
           cleaning, we even help individuals who are moving, running property
           rentals, or who have recently finished a construction project. Our
-          locally-owned offices are made up of community-minded professionals
+          locally-owned office is made up of community-minded professionals
           who love giving back free time and tranquility to the people they
           serve.{" "}
         </p>

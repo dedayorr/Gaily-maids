@@ -99,7 +99,7 @@ const Process = () => {
                 satisfaction, boosting your overall mood and emotional state.
               </li>
               <li className="leading-8 text-justify ">
-                <span className="font-bold">Promotes Relaxation:</span>
+                <span className="font-bold">Promotes Relaxation: </span>
                 An orderly environment is more conducive to relaxation and
                 leisure. It allows you to unwind and enjoy your personal space
                 without the constant reminder of chores left undone.
@@ -143,11 +143,11 @@ const Process = () => {
             Full Service House Cleaning
           </p>
           <div className="leading-8 text-justify">
-            When you&quot;re balancing a busy family life, long hours at the
+            When you&apos;re balancing a busy family life, long hours at the
             office, and other important aspects of your weekly routine, finding
             time to keep your house in order can be difficult. Even though life
             gets busy, coming home should never be a chore – and with Gaily
-            Maids, it won&quot;t be.
+            Maids, it won&apos;t be.
           </div>
           <div className="hidden lg:flex justify-center my-[5%]">
             <Image

@@ -151,11 +151,7 @@ const CleaningServicesPage = () => {
               and seasonal services, our professional house cleaners can provide
               you with an unrivaled experience.
             </p>
-            <p>
-              {" "}
-              With our &quot;Worry Free Guarantee&quot;, you can be sure your
-              house will be cleaned the way you want everytime.
-            </p>
+          
           </div>
         </div>
       </div>
