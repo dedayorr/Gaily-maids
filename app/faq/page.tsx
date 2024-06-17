@@ -101,12 +101,10 @@ const Questions = () => {
             <p className="lg:mb-3 font-bold lg:text-[20px]">Do you offer packages?</p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-            We completely individualize our cleanings, so no specific packages
+          We completely individualize our cleanings, so no specific packages
             are offered. We use a proven system to clean thoroughly,
-            consistently, and efficiently. For a list of items we generally
-            clean during a visit, please visit our cleaning services page. We
-            also tailor our visit to your individual needs and your home&apos;s
-            cleaning requirements.
+            consistently, and efficiently. Please contact our office <span></span> for more
+            information.
           </p>
         </div>
         <div className="">
@@ -117,8 +115,8 @@ const Questions = () => {
             </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-            Yes, we bring everything we need to clean your home. You don&apos;t have
-            to provide a thing.
+          Yes, we bring everything we need to clean your home. You don&apos;t
+            have to provide any cleaning supplies. However, if you would like us to use any of your products for a particular area, please let the office know upon booking.
           </p>
         </div>
         <div className="">
@@ -143,12 +141,9 @@ const Questions = () => {
             </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-            We make every effort to ensure that we keep the same team who serves
+          We make every effort to ensure that we keep the same team who serves
             your home cleans during each visit. If a member of the team changes,
-            our office staff contacts you beforehand to learn if you prefer
-            someone other than your regular cleaning professional or would
-            rather change your scheduled day so your favorite team member can
-            clean.
+            our office staff contacts you beforehand. 
           </p>
         </div>
         <div className="">
