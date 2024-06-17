@@ -39,7 +39,7 @@ const Faq = () => {
           <AccordionContent className="p-2 ">
             Our pricing is completely individualized experience have helped us
             learn that every home is as unique as the people living there. We
-            base our pricing on some factors such as the frequency of the cleaning, the size of the home, and the areas in your homeyou would like us to clean.
+            base our pricing on some factors such as the frequency of the cleaning, the size of the home, and the areas in your home you would like us to clean.
           </AccordionContent>
         </AccordionPanel>
         <AccordionPanel className="">
