@@ -158,7 +158,7 @@ const Questions = () => {
               I&apos;m interested in working for you. How do I apply?
             </p>
           </div>
-          <p className="ml-8 lg:text-[16px] text-justify leading-8">- - - - - - - - -</p>
+          <p className="ml-8 lg:text-[16px] text-justify leading-8">Visit </p>
         </div>
       </div>
 

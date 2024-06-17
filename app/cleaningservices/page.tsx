@@ -151,7 +151,6 @@ const CleaningServicesPage = () => {
               and seasonal services, our professional house cleaners can provide
               you with an unrivaled experience.
             </p>
-          
           </div>
         </div>
       </div>
