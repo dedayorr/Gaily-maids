@@ -74,7 +74,7 @@ const Process = () => {
               </li>
               <li className="leading-8 text-justify ">
                 <span className="font-bold">Encourages Physical Activity: 
-                </span>
+                {" "}</span>
                 The act of cleaning itself is a form of physical exercise.
                 Activities such as vacuuming, mopping, and scrubbing can help
                 burn calories and keep you active.
