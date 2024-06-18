@@ -179,7 +179,7 @@ const Header = () => {
             </Link>
             <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
-              <span>Contact Us</span>
+              <a href="tel:+18722357202"><p>Contact Us</p></a>
             </div>
           </div>
         )}
