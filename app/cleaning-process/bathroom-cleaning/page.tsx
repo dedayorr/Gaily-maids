@@ -12,8 +12,8 @@ const Bathroom = () => {
         <div className="flex flex-col gap-[20px] ">
           <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
             Bathroom cleaning is a crucial part of maintaining a hygienic and
-            pleasant home environment. Given the bathroom's role as a place for
-            personal hygiene, it's essential to keep it clean to prevent the
+            pleasant home environment. Given the bathroom&apos;s role as a place for
+            personal hygiene, it&apos;s essential to keep it clean to prevent the
             buildup of germs, mold, and mildew. Regular and thorough cleaning
             ensures the bathroom remains a safe and inviting space.
           </p>

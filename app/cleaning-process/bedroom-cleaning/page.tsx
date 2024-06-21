@@ -12,13 +12,13 @@ const Bedroom = () => {
         <div className="flex flex-col gap-[20px] ">
           <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
             The bedroom is a sanctuary for rest and relaxation, so keeping it
-            clean and organized is essential for a good night's sleep and
+            clean and organized is essential for a good night&apos;s sleep and
             overall well-being. Regular bedroom cleaning not only enhances the
-            room's appearance but also promotes a healthy living environment by
+            room&apos;s appearance but also promotes a healthy living environment by
             reducing allergens and dust.
           </p>
           <p className="font-bold text-xl lg:text-[25px]">
-            Gaily Maids' bedroom cleaning service includes the following tasks:
+            Gaily Maids bedroom cleaning service includes the following tasks:
           </p>
           <ul className="list-disc custom-list-disc mx-[10%] flex flex-col gap-[15px]  lg:text-[20px]">
             <li>

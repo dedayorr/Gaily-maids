@@ -12,7 +12,7 @@ const Dining = () => {
         <div className="flex flex-col gap-[20px] ">
           <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
             Cleaning the dining area is an important part of maintaining a
-            pleasant and inviting space for meals and gatherings. Whether it's a
+            pleasant and inviting space for meals and gatherings. Whether it&apos;s a
             formal dining room or an informal dining area within your kitchen,
             regular cleaning helps ensure hygiene, tidiness, and comfort for you
             and your guests.
