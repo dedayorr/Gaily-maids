@@ -39,47 +39,47 @@ const Offers = () => {
           <p className="text-[] font-semibold lg:text-[22px]">
             Our custom cleaning services include:
           </p>
-          <ol className="list-disc ml-[10%] flex flex-col text-[#26355D] gap-[10px] lg:ml-[5%]">
-            <Link href="/cleaningservices">
+          <ol className="list-disc custom-list-disc ml-[10%] flex flex-col text-[#26355D] gap-[10px] lg:ml-[5%]">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">
                 Apartment Cleaning
               </li>
             </Link>
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               <li className="hover:underline cursor-pointer">House Cleaning</li>
             </Link>
-            <Link href="/cleanigservices">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">
                 Kitchen Appliances Cleaning
               </li>
             </Link>
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">
                 Office Cleaning
               </li>
             </Link>
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">
                 Specialty Cleaning
               </li>
             </Link>
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">Deep Cleaning</li>
             </Link>
             {/* <li className="hover:underline cursor-pointer">Holiday Cleaning</li> */}
 
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">
                 Move-in Cleaning
               </li>
             </Link>
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               {" "}
               <li className="hover:underline cursor-pointer">
                 Move-out Cleaning

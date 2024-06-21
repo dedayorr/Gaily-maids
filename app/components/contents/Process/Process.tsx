@@ -174,7 +174,7 @@ const Process = () => {
             />
           </div>
           <Link
-            href="/cleaningprocess"
+            href="/cleaning-process"
             className="text-[18px] text-[#823ec9] flex items-center gap-[10px] lg:text-[30px]"
           >
             <p className="italic hover:underline">See More</p>

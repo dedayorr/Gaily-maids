@@ -26,7 +26,7 @@ const Header = () => {
 
   const openModal = () => {
     setShowModal(true);
-    setNavOpen(false)
+    setNavOpen(false);
   };
   const closeModal = () => {
     setShowModal(false);
@@ -68,11 +68,11 @@ const Header = () => {
             )}
           </div>
           <div className=" hidden md:flex gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] ">
-            <Link href="/cleaningservices">
+            <Link href="/cleaning-services">
               <p className="lg:hover:text-2xl">Cleaning Services</p>
             </Link>
 
-            <Link href="/cleaningprocess">
+            <Link href="/cleaning-process">
               <p className="lg:hover:text-2xl">Our Cleaning Process</p>
             </Link>
             <Link href="/why-us">
@@ -108,23 +108,29 @@ const Header = () => {
                 <Accordion.Content>
                   <ul className="flex flex-col ml-[6%] gap-5 font-light text-[#823ec9]">
                     <li onClick={closeNav}>
-                      <Link href="/cleaningservices">Apartment Cleaning</Link>
+                      <Link href="/cleaning-services">Apartment Cleaning</Link>
                     </li>
                     <li onClick={closeNav}>
                       {" "}
-                      <Link href="/cleaningservices">House Cleaning</Link>
+                      <Link href="/cleaning-services">House Cleaning</Link>
                     </li>
                     <li onClick={closeNav}>
-                      <Link href="/cleaningservices">Detailed Cleaning </Link>
+                      <Link href="/cleaning-services">Detailed Cleaning </Link>
                     </li>
                     <li onClick={closeNav}>
                       {" "}
-                      <Link href="/cleaningservices">Holiday Cleaning </Link>
+                      <Link href="/cleaning-services">Holiday Cleaning </Link>
                     </li>
                   </ul>
                 </Accordion.Content>
               </Accordion.Panel>
-              <Accordion.Panel>
+              <p
+                onClick={closeNav}
+                className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]"
+              >
+                <Link href="/cleaning-process">Our Cleaning Process</Link>
+              </p>
+              {/* <Accordion.Panel>
                 <Accordion.Title className="text-[#823ec9] text-[18px]">
                   Our Cleaning Process
                 </Accordion.Title>
@@ -158,15 +164,24 @@ const Header = () => {
                     </li>
                   </ul>
                 </Accordion.Content>
-              </Accordion.Panel>
-              <p onClick={closeNav} className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]">
-              <Link href="/why-us">Why Hire Us </Link>
-            </p>
-              <p onClick={closeNav} className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]">
-              <Link href="/aboutUs">About Us </Link>
-            </p>
+              </Accordion.Panel> */}
+              <p
+                onClick={closeNav}
+                className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]"
+              >
+                <Link href="/why-us">Why Hire Us </Link>
+              </p>
+              <p
+                onClick={closeNav}
+                className="ml-[%] text-[18px] mt-[%] font-medium text-[#823ec9]"
+              >
+                <Link href="/aboutUs">About Us </Link>
+              </p>
             </Accordion>
-            <p onClick={closeNav} className="ml-[5%] text-[18px] mt-[8%] font-medium text-[#823ec9]">
+            <p
+              onClick={closeNav}
+              className="ml-[5%] text-[18px] mt-[8%] font-medium text-[#823ec9]"
+            >
               <Link href="/hiring">We&apos;re Hiring </Link>
             </p>
             <Link href="">
@@ -179,7 +194,9 @@ const Header = () => {
             </Link>
             <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
-              <a href="tel:+18722357202"><p>Contact Us</p></a>
+              <a href="tel:+18722357202">
+                <p>Contact Us</p>
+              </a>
             </div>
           </div>
         )}

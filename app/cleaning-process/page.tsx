@@ -13,6 +13,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Link from "next/link";
 
 const CleaningProcess = () => {
   const [showModal, setShowModal] = useState(false);
@@ -163,13 +164,25 @@ const CleaningProcess = () => {
           height={100}
         />
 
-        <ul className="list-disc text-[50px] font-thin">
-          <li className="">Living Room Cleaning</li>
-          <li className="">Bathroom Cleaning</li>
-          <li className="">Bedroom Cleaning</li>
-          <li className="">Kitchen Cleaning</li>
-          <li className="">Laundry Room Cleaning</li>
-          <li className="">Dining Room Cleaning</li>
+        <ul className="list-disc text-[50px] font-thin custom-list-disc">
+        <Link href="/cleaning-process/living-room-cleaning">
+            <li className="hover:underline">Living Room Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/bathroom-cleaning">
+            <li className="hover:underline">Bathroom Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/bedroom-cleaning">
+            <li className="hover:underline">Bedroom Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/kitchen-cleaning">
+            <li className="hover:underline">Kitchen Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/laundry-room-cleaning">
+            <li className="hover:underline">Laundry Room Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/dining-room-cleaning">
+            <li className="hover:underline">Dining Room Cleaning</li>
+          </Link>
         </ul>
 
         <Image
@@ -183,12 +196,24 @@ const CleaningProcess = () => {
       {/* =====For mobile screen==== */}
       <div className="lg:hidden">
         <ul className="mx-[5%] list-disc lg:block flex flex-col gap-[20px] italic text-white bg-[#823ec9] p-[10%]">
-          <li className="">Living Room Cleaning</li>
-          <li className="">Bathroom Cleaning</li>
-          <li className="">Bedroom Cleaning</li>
-          <li className="">Kitchen Cleaning</li>
-          <li className="">Laundry Room Cleaning</li>
-          <li className="">Dining Room Cleaning</li>
+          <Link href="/cleaning-process/living-room-cleaning">
+            <li className="">Living Room Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/bathroom-cleaning">
+            <li className="">Bathroom Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/bedroom-cleaning">
+            <li className="">Bedroom Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/kitchen-cleaning">
+            <li className="">Kitchen Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/laundry-room-cleaning">
+            <li className="">Laundry Room Cleaning</li>
+          </Link>
+          <Link href="/cleaning-process/dining-room-cleaning">
+            <li className="">Dining Room Cleaning</li>
+          </Link>
         </ul>
 
         <div className={`${styles.processBG} relative  `}>

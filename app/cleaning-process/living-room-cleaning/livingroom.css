@@ -1,0 +1,3 @@
+.custom-list-disc li::marker {
+    color: #823ec9; /* Example color (Tomato) */
+  }
