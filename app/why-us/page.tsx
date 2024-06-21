@@ -59,8 +59,8 @@ const WhyUs = () => {
         you can focus on what matters most to you.
       </p>
 
-      <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[20px]">
-        Contact us today{" "}
+      <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
+        Contact us today at{" "}
         <a href="tel:+18722357202">
           <p>+18722357202</p>
         </a>{" "}
