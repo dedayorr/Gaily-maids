@@ -5,7 +5,9 @@ import "./whyUS.css";
 const WhyUs = () => {
   return (
     <div className="text-black mx-[5%] lg:mx-[25%]">
-      <div className="insured-banner mt-[15%] italic">Gaily Maids is Fully Insured and bonded for Your Peace of Mind</div>
+      <div className="insured-banner mt-[15%] italic">
+        Gaily Maids is Fully Insured and bonded for Your Peace of Mind
+      </div>
 
       <h1 className="text-[30px] leading-8 text-[#823ec9] mt-[50px] lg:text-[45px] font-bold lg:mt-[60px]">
         Why Choose Gaily Maids?
@@ -57,10 +59,14 @@ const WhyUs = () => {
         you can focus on what matters most to you.
       </p>
 
-      <p className="border p-2 font-bond text-center w-[90%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[20px]">
-        Contact us today to schedule your first cleaning and discover why Gaily
-        Maids is the trusted choice for countless homes and businesses.
-      </p>
+      <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[20px]">
+        Contact us today{" "}
+        <a href="tel:+18722357202">
+          <p>+18722357202</p>
+        </a>{" "}
+        to schedule your first cleaning and discover why Gaily Maids is the
+        trusted choice for countless homes and businesses.
+      </div>
     </div>
   );
 };

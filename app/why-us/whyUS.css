@@ -19,7 +19,7 @@
   color: #fff;
   animation: glow 3s infinite;
   padding: 1%;
-  border:  1px solid #813ec98a;
+  border:  1px solid #823ec9;
 }
 
 @keyframes glow {
