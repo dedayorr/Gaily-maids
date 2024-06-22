@@ -27,7 +27,7 @@ const Laundry = () => {
               Wipe down countertops and cabinets to eliminate dust and dirt
             </li>
             <li>
-              Clean the floors, whether they're vinyl, laminate, tile, or wood
+              Clean the floors, whether they&apos;re vinyl, laminate, tile, or wood
             </li>
             <li>
               Empty and clean wastebaskets that may be full of dryer lint, dryer
