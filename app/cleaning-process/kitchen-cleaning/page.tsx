@@ -6,7 +6,7 @@ const Kitchen = () => {
   return (
     <div className="text-black mt-[80px] mx-[5%]">
       <h2 className="mb-[10px] text-[30px] font-bold leading-8 text-[#823ec9] lg:text-[45px] lg:mb-[30px]">
-        Dining Room Cleaning
+        Kitchen Cleaning
       </h2>
       <div className="md:flex md:mx-[12%] md:gap-[60px]">
         <div className="flex flex-col gap-[20px] ">
