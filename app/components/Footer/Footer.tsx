@@ -22,13 +22,13 @@ const Footer = () => {
       </Link>
 
       <div className="lg:ml-[5%] flex flex-col gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] font-thin">
-        <Link href="/cleaningservices">
+        <Link href="/cleaning-services">
           <p className="flex justify-center text-[20px] text-[#823ec9]  lg:hover:text-2xl lg:justify-normal">
             Cleaning Services
           </p>
         </Link>
 
-        <Link href="/cleaningprocess">
+        <Link href="/cleaning-process">
           <p className=" flex justify-center text-[20px] text-[#823ec9]  lg:hover:text-2xl lg:justify-normal ">
             Our Cleaning Process
           </p>

@@ -50,7 +50,7 @@ const Kitchen = () => {
           your kitchen remains the heart of your home.
         </p>
       </div>
-      x
+      
       <div className="md:flex md:mt-[10%] md:mx-[12%] md:gap-[60px]">
         <Image
           className={`my-[15%] md:my-0`}
