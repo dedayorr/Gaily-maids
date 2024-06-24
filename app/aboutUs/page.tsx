@@ -34,8 +34,7 @@ const aboutus = () => {
         <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
           {" "}
           Gaily Maids was born out of a simple belief: a clean environment
-          contributes to a happy and healthy life. Our founder, Abigail
-          Thompson, envisioned a service that not only met the highest standards
+          contributes to a happy and healthy life. Our founder envisioned a service that not only met the highest standards
           of cleanliness but also brought a touch of happiness to every home and
           office we serve. With years of experience in the cleaning industry,
           gathered a team of like-minded professionals who share a commitment to

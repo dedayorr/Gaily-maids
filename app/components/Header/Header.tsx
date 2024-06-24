@@ -38,11 +38,17 @@ const Header = () => {
           <div className="flex text-[11px] gap-[2px] md:text-[18px] md:gap-[10px] ">
             <FaFacebook />
             <AiFillInstagram />
-            <IoMdMail />
+            <a
+              href="mailto:gailymaids@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IoMdMail />
+            </a>
           </div>
-          <a className="text-[11px] md:text-[18px]" href="tel:+1-872-235-7202">
+          <a className="text-[11px] md:text-[18px]" href="tel:+1-847-393-9704">
             {" "}
-            +1-872-235-7202{" "}
+            +1-847-393-9704{" "}
           </a>
           <div className="text-[11px] md:text-[18px]">
             800 S. Mclean Blvd. Suite B 60123
@@ -184,17 +190,17 @@ const Header = () => {
             >
               <Link href="/hiring">We&apos;re Hiring </Link>
             </p>
-            <Link href="">
+           
               <button
                 onClick={openModal}
                 className="ml-[5%] mt-[15%] text-[20px] italic text-[#5f2b96] underline"
               >
                 Request an Estimate
               </button>
-            </Link>
+         
             <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
-              <a href="tel:+18722357202">
+              <a href="tel:+18473939704">
                 <p>Contact Us</p>
               </a>
             </div>
