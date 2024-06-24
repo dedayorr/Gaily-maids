@@ -10,9 +10,10 @@ const Hiring = () => {
     lastName: "",
     email: "",
     phone: "",
-    workedWithCleaningBusiness: false,
+    // workedWithCleaningBusiness: false,
     partTime: false,
     fullTime: false,
+    workedWithCB: "",
     hasCar: "",
     hasInsurance: "",
   });
@@ -39,11 +40,12 @@ const Hiring = () => {
       lastName: formData.lastName,
       email: formData.email,
       phone: formData.phone,
-      workedWithCleaningBusiness: formData.workedWithCleaningBusiness
-        ? "Yes"
-        : "No",
+      // workedWithCleaningBusiness: formData.workedWithCleaningBusiness
+      //   ? "Yes"
+      //   : "No",
       partTime: formData.partTime ? "Yes" : "No",
       fullTime: formData.fullTime ? "Yes" : "No",
+      workedWithCB: formData.workedWithCB === "true" ? "Yes" : "No",
       hasCar: formData.hasCar === "true" ? "Yes" : "No",
       hasInsurance: formData.hasInsurance === "true" ? "Yes" : "No",
     };
@@ -72,6 +74,7 @@ const Hiring = () => {
     formData.lastName &&
     formData.email &&
     formData.phone &&
+    formData.workedWithCB &&
     formData.hasCar &&
     formData.hasInsurance;
 
@@ -81,10 +84,11 @@ const Hiring = () => {
       lastName: "",
       email: "",
       phone: "",
-      workedWithCleaningBusiness: false,
+      // workedWithCleaningBusiness: false,
       partTime: false,
       fullTime: false,
       hasCar: "",
+      workedWithCB: "",
       hasInsurance: "",
     });
   };
@@ -171,7 +175,7 @@ const Hiring = () => {
             />
           </div>
         </div>
-
+        {/* 
         <div className="mb-4">
           <label className="block text-gray-700">
             Have you worked with a cleaning business before?
@@ -183,7 +187,38 @@ const Hiring = () => {
             onChange={handleChange}
             className="mt-2"
           />
+        </div> */}
+        <div className="mb-4">
+          <label className="block text-gray-700">
+            {" "}
+            Have you worked with a cleaning business before?
+          </label>
+          <div className="flex items-center">
+            <label className="mr-4 text-black">
+              <input
+                type="radio"
+                name="workedWithCB"
+                value="true"
+                // checked={formData.hasInsurance === 'true'}
+                onChange={handleChange}
+                className="mr-2"
+              />
+              Yes
+            </label>
+            <label className="text-black">
+              <input
+                type="radio"
+                name="workedWithCB"
+                value="false"
+                // checked={formData.hasInsurance === 'false'}
+                onChange={handleChange}
+                className="mr-2 "
+              />
+              No
+            </label>
+          </div>
         </div>
+
         <div className="mb-4">
           <label className="block text-gray-700">Do you have a car?</label>
           <div className="flex items-center">

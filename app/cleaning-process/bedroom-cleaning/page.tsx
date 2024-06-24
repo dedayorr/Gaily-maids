@@ -95,9 +95,10 @@ const Bedroom = () => {
 
       <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
         Contact us today at{" "}
-        <a href="tel:+18722357202">
-          <p>+18722357202</p>
-        </a>{" "}
+        <a href="tel:+1-847-393-9704">
+            {" "}
+            +1-847-393-9704{" "}
+          </a>
         to schedule your first cleaning and discover why Gaily Maids is the
         trusted choice for countless homes and businesses.
       </div>
