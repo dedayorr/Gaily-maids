@@ -124,9 +124,9 @@ const Hero = () => {
   return (
     <div className={`${styles.Hero} `}>
       {" "}
-      <div className=" mt-[%] py-[6%] text-white tracking-widest px-[5%] flex flex-col gap-[20px] md:py-0 md:mt-[8%] lg:mt-0 lg:py-0 lg:gap-[25px]">
+      <div className=" mt-[%] py-[6%] text-white tracking-widest px-[5%] flex flex-col gap-[20px] md:py-0 lg:mt-0 lg:py-0 lg:gap-[25px]">
         <h1
-          className={`pt-[25%] text-[37px] font-extrabold md:text-[47px] lg:text-[70px] lg:w-[80%] lg:mx-auto lg:text-center lg:pt-[8%] `}
+          className={`pt-[25%] text-[37px] font-extrabold md:pt-[3%] md:text-[47px] lg:text-[70px] lg:w-[80%] lg:mx-auto lg:text-center lg:pt-[8%] `}
         >
           Refresh Your Space with{" "}
           <span className="text-[#823ec9]">Sparkling Clean</span> Solution
@@ -137,7 +137,7 @@ const Hero = () => {
         </p>
         <button
           onClick={openModal}
-          className="bg-[#823ec9] w-[60%] py-[4%] hover:bg-white hover:text-[#823ec9] md:text-[25px] lg:mx-auto lg:w-[25%] lg:rounded-[10px] lg:py-[1%]"
+          className="bg-[#823ec9] w-[60%] py-[4%] hover:bg-white hover:text-[#823ec9] md:text-[25px] md:w-[45%] lg:mx-auto lg:w-[25%] lg:py-[1%]"
         >
           Request an Estimate
         </button>
