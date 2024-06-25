@@ -11,10 +11,10 @@ const Questions = () => {
       <div className="lg:flex lg:mx-[15%] lg:gap-[10%] mb-[15%] lg:mb-[10%]">
         <p className="leading-8 text-justify mb-3 lg:text-[18px] lg:leading-[50px]">
           At Gaily Maids, we understand that maintaining a clean home can be
-          challenging with a busy lifestyle. That&apos;s why we&apos;re here to help! To
-          ensure you have all the information you need about our home cleaning
-          services, we&apos;ve compiled answers to some of the most frequently asked
-          questions from our clients.
+          challenging with a busy lifestyle. That&apos;s why we&apos;re here to
+          help! To ensure you have all the information you need about our home
+          cleaning services, we&apos;ve compiled answers to some of the most
+          frequently asked questions from our clients.
         </p>
         <Image
           className="faqnature "
@@ -86,25 +86,29 @@ const Questions = () => {
         <div className="">
           <div className="flex gap-4 ">
             <MdDoubleArrow className="lg: text-[25px] text-[#823ec9] " />
-            <p className="lg:mb-3 font-bold lg:text-[20px]">Do you offer customized cleaning plans?</p>
+            <p className="lg:mb-3 font-bold lg:text-[20px]">
+              Do you offer customized cleaning plans?
+            </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
             Absolutely! We understand that every home is unique. We offer
             customized cleaning plans tailored to your specific needs and
-            preferences. Just let us know your requirements, and we&apos;ll create a
-            plan that works for you.
+            preferences. Just let us know your requirements, and we&apos;ll
+            create a plan that works for you.
           </p>
         </div>
         <div className="">
           <div className="flex gap-4 ">
             <MdDoubleArrow className="lg: text-[25px] text-[#823ec9] " />
-            <p className="lg:mb-3 font-bold lg:text-[20px]">Do you offer packages?</p>
+            <p className="lg:mb-3 font-bold lg:text-[20px]">
+              Do you offer packages?
+            </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-          We completely individualize our cleanings, so no specific packages
+            We completely individualize our cleanings, so no specific packages
             are offered. We use a proven system to clean thoroughly,
-            consistently, and efficiently. Please contact our office <span></span> for more
-            information.
+            consistently, and efficiently. Please contact our office{" "}
+            <span></span> for more information.
           </p>
         </div>
         <div className="">
@@ -115,8 +119,10 @@ const Questions = () => {
             </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-          Yes, we bring everything we need to clean your home. You don&apos;t
-            have to provide any cleaning supplies. However, if you would like us to use any of your products for a particular area, please let the office know upon booking.
+            Yes, we bring everything we need to clean your home. You don&apos;t
+            have to provide any cleaning supplies. However, if you would like us
+            to use any of your products for a particular area, please let the
+            office know upon booking.
           </p>
         </div>
         <div className="">
@@ -141,9 +147,9 @@ const Questions = () => {
             </p>
           </div>
           <p className="ml-8 lg:text-[16px] text-justify leading-8">
-          We make every effort to ensure that we keep the same team who serves
+            We make every effort to ensure that we keep the same team who serves
             your home cleans during each visit. If a member of the team changes,
-            our office staff contacts you beforehand. 
+            our office staff contacts you beforehand.
           </p>
         </div>
         <div className="">
@@ -159,8 +165,8 @@ const Questions = () => {
 
       <div className="border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
         Still have some questions or concerns? Don&apos;t hesitate to give us a
-        call at <span>+1 (872) 235-7202</span> and we&apos;ll be sure to help
-        you!
+        call at <a href="tel:+1-847-393-9704"> +1-847-393-9704 </a> and
+        we&apos;ll be sure to help you!
       </div>
     </div>
   );

@@ -350,11 +350,14 @@ const CleaningServicesPage = () => {
         </div>
       </div>
       <div className="border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
-        Discover the benefits of a deeply cleaned apartment. Contact us today at
+        Discover the benefits of a deeply cleaned apartment. Contact us today at   <a href="tel:+1-847-393-9704">
+            {" "}
+            +1-847-393-9704{" "}
+          </a>
       </div>
       <button
         onClick={openModal}
-        className="bg-[#823ec9] mx-auto flex my-[10%] p-[3%] lg:p-[1%] rounded-[6px] hover:bg-[#fff] hover:text-[#823ec9] lg:text-[20px]"
+        className="bg-[#823ec9] mx-auto flex my-[10%] p-[3%] lg:p-[1%] rounded-[6px] hover:bg-[#fff] hover:text-[#823ec9] hover:border lg:text-[20px]"
       >
         Request an Estimate
       </button>
