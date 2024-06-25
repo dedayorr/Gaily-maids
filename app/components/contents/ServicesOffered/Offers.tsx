@@ -8,7 +8,7 @@ const Offers = () => {
   return (
     <div className="">
       <div className="mx-[5%] my-[20%]  flex flex-col gap-[15px] md:my-[13%] lg:my-[8%]">
-        <h2 className="text-[25px] font-semibold leading-8 text-[#823ec9] lg:text-[40px]">
+        <h2 className="text-[25px] font-semibold leading-8 text-[#823ec9] lg:text-[40px] lg:mb-4">
           Gaily Maids Commitment to Excellence
         </h2>
         <p className="leading-8 text-justify">

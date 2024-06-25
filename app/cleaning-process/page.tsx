@@ -164,9 +164,9 @@ const CleaningProcess = () => {
           height={100}
         />
 
-        <ul className="list-disc text-[50px] font-thin custom-list-disc">
+        <ul className="list-disc text-[50px] font-extralight custom-list-disc">
         <Link href="/cleaning-process/living-room-cleaning">
-            <li className="hover:underline">Living Room Cleaning</li>
+            <li className="hover:underline ">Living Room Cleaning</li>
           </Link>
           <Link href="/cleaning-process/bathroom-cleaning">
             <li className="hover:underline">Bathroom Cleaning</li>
@@ -174,7 +174,7 @@ const CleaningProcess = () => {
           <Link href="/cleaning-process/bedroom-cleaning">
             <li className="hover:underline">Bedroom Cleaning</li>
           </Link>
-          <Link href="/cleaning-process/kitchen-cleaning">
+          <Link href="/cleaning-process/kitchen-cleaning ">
             <li className="hover:underline">Kitchen Cleaning</li>
           </Link>
           <Link href="/cleaning-process/laundry-room-cleaning">
@@ -194,7 +194,7 @@ const CleaningProcess = () => {
         />
       </div>
       {/* =====For mobile screen==== */}
-      <div className="lg:hidden">
+      <div className="lg:hidden ">
         <ul className="mx-[5%] list-disc lg:block flex flex-col gap-[20px] italic text-white bg-[#823ec9] p-[10%]">
           <Link href="/cleaning-process/living-room-cleaning">
             <li className="">Living Room Cleaning</li>
@@ -230,10 +230,11 @@ const CleaningProcess = () => {
       </div>
       <button
         onClick={openModal}
-        className="bg-[#823ec9] text-white mx-auto flex my-[10%] p-[3%] lg:p-[1%] lg:my-0 rounded-[6px] hover:bg-[#fff] hover:text-[#823ec9] lg:text-[20px]"
+        className="bg-[#823ec9] text-white mx-auto flex my-[10%] p-[3%] lg:p-[1%] lg:my-0 rounded-[6px] hover:bg-[#fff] hover:text-[#823ec9] hover:border lg:text-[20px]"
       >
         Request an Estimate
       </button>
+
       {/* ======Estimate Modal====== */}
       {showModal && !showThankYou && (
         <Modal>
