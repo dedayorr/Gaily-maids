@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { MdDoubleArrow } from "react-icons/md";
+import Link from "next/link";
 
 const Questions = () => {
   return (
@@ -159,7 +160,7 @@ const Questions = () => {
               I&apos;m interested in working for you. How do I apply?
             </p>
           </div>
-          <p className="ml-8 lg:text-[16px] text-justify leading-8">Visit </p>
+          <p className="ml-8 lg:text-[16px] text-justify leading-8">Apply <Link href="/hiring" className="italic underline font-extralight text-[#823ec9]">HERE</Link> </p>
         </div>
       </div>
 
