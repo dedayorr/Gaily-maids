@@ -59,11 +59,11 @@ const Header = () => {
           <Link href="/" className=" Logo ml-">
             {" "}
             <Image
-              className="hover:w-[300px]"
-              src="/gailyminds.png "
+              className=""
+              src="/Gailyminds.png "
               alt="LOGO"
-              width={200}
-              height={200}
+              width={500}
+              height={500}
             />
           </Link>
           <div className="md:hidden" onClick={toggleMenu}>

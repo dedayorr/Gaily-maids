@@ -16,8 +16,8 @@ const Footer = () => {
           className="footer-logo mx-auto lg:mx-0"
           src="/gaily-bg.png "
           alt=""
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       </Link>
 
