@@ -56,11 +56,11 @@ const Header = () => {
         </div>
         <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." />
         <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9f3] h-[80px] lg:h-[100px]">
-          <Link href="/" className=" Logo ml- hover:w-[200px]">
+          <Link href="/" className=" Logo ml- ">
             {" "}
             <Image
               className=""
-              src="/Gailyminds.png "
+              src="/broom.png "
               alt="LOGO"
               width={500}
               height={500}
