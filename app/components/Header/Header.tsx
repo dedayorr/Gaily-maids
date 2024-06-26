@@ -61,7 +61,7 @@ const Header = () => {
             <Image
               className="hover:w-[300px]"
               src="/gailyminds.png "
-              alt=""
+              alt="LOGO"
               width={200}
               height={200}
             />
