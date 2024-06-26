@@ -8,9 +8,9 @@ import { IoMdMail } from "react-icons/io";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import Marquee from "../marquee/Marquee";
+import Marquee from "../components/marquee/Marquee";
 import "./header.css";
-import Estimate from "../estimatePopUp/Estimate";
+import Estimate from "../components/estimatePopUp/Estimate";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
