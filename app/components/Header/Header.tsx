@@ -10,7 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import Marquee from "../marquee/Marquee";
 import "./header.css";
-import Estimate from "../EstimatePopUp/Estimate";
+import Estimate from "../estimatePopUp/Estimate";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -60,7 +60,7 @@ const Header = () => {
             {" "}
             <Image
               className=""
-              src="/broom.png "
+              src="/Gailyminds.png "
               alt="LOGO"
               width={500}
               height={500}
