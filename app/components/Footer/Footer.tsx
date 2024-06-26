@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="lg:flex lg:mx-[5%]">
         <Image
           className="hidden lg:block "
-          src="/footer-image.png "
+          src="/broom.png "
           alt=""
           width={500}
           height={500}
