@@ -10,7 +10,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import Marquee from "../components/marquee/Marquee";
 import "./header.css";
-import Estimate from "../components/estimatePopUp/Estimate";
+import Estimate from "../estimatePopUp/Estimate";
+
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -218,7 +219,9 @@ const Header = () => {
         )}
       </header>
 
-      <Estimate showModal={showModal} closeModal={closeModal} />
+      {/* <Estimate showModal={showModal} closeModal={closeModal} />
+       */}
+       <Estimate showModal={showModal} closeModal={closeModal}/>
     </>
   );
 };
