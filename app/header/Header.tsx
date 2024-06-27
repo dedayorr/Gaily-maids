@@ -12,6 +12,7 @@ import Marquee from "../components/marquee/Marquee";
 import "./header.css";
 import Estimate from "../estimatePopUp/Estimate";
 import Gailyminds from "../../public/static/images/Gailyminds.png";
+import TheGailyLogo from "../../public/static/images/TheGailyLogo.png"
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -102,7 +103,7 @@ const Header = () => {
               {" "}
               <Image
                 className="Logo2 ml-[-13%] mt-[7%]"
-                src="/the_gaily_logo.png "
+                src={TheGailyLogo}
                 alt=""
                 width={500}
                 height={500}
