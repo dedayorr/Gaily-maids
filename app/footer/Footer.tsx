@@ -10,7 +10,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="flex flex-col gap-[20px] py-[10%] font-bold text-[40px] text-black mt-[10%] bg-[#813ec927] lg:py-[3%]">
-      <Link href="/" className="">
+      {/* <Link href="/" className=""> */}
         {" "}
         <Image
           className="footer-logo mx-auto lg:mx-0"
@@ -19,7 +19,7 @@ const Footer = () => {
           width={500}
           height={500}
         />
-      </Link>
+      {/* </Link> */}
 
       <div className="lg:ml-[5%] flex flex-col gap-[10px] text-[14px] text-white lg:gap-[25px] lg:text-[20px] font-thin">
         <Link href="/cleaning-services">
