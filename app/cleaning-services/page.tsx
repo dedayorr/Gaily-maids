@@ -13,6 +13,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import { Player } from "@lottiefiles/react-lottie-player";
+import TheGailyLogo from "../../public/static/images/TheGailyLogo.png"
 
 const CleaningServicesPage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -376,7 +377,7 @@ const CleaningServicesPage = () => {
               />
               <Image
                 className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
-                src="/the_gaily_logo.png "
+                src={TheGailyLogo}
                 alt=""
                 width={500}
                 height={500}

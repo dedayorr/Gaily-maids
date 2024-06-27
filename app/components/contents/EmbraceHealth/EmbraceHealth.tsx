@@ -13,6 +13,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import { Player } from "@lottiefiles/react-lottie-player";
+import TheGailyLogo from "../../public/static/images/TheGailyLogo.png";
 
 const EmbraceHealth = () => {
   const [showModal, setShowModal] = useState(false);
@@ -151,13 +152,15 @@ const EmbraceHealth = () => {
             <p className="hidden lg:flex font-bold cursive italic text-[55px]">
               Embrace a healthy and happy home
             </p>
-            <button  onClick={openModal} className="lg:flex hidden border border-[#823ec9] p-[3%] text-[#fff] hover:bg-white hover:text-[#823ec9] w-[50%] justify-center items-center mx-auto">
+            <button
+              onClick={openModal}
+              className="lg:flex hidden border border-[#823ec9] p-[3%] text-[#fff] hover:bg-white hover:text-[#823ec9] w-[50%] justify-center items-center mx-auto"
+            >
               Book Gaily Maids Today
             </button>
           </div>
         </div>
       </div>
-
       {showModal && !showThankYou && (
         <Modal>
           <form
@@ -171,7 +174,7 @@ const EmbraceHealth = () => {
               />
               <Image
                 className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
-                src="/the_gaily_logo.png "
+                src={TheGailyLogo}
                 alt=""
                 width={500}
                 height={500}
@@ -399,7 +402,6 @@ const EmbraceHealth = () => {
           </form>
         </Modal>
       )}
-
       {isLoading && (
         <Modal>
           <div className="flex justify-center items-center h-full">
@@ -407,7 +409,6 @@ const EmbraceHealth = () => {
           </div>
         </Modal>
       )}
-      
       {showThankYou && (
         <Modal>
           <div className="thank-you-card animate-fadeIn mx-[5%] flex flex-col justify-center items-center text-center text-white bg-[#823ec9] p-6 rounded-lg shadow-lg">
