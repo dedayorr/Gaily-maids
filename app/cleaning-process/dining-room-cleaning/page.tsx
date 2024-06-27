@@ -55,7 +55,7 @@ const Dining = () => {
         <Image
           className={`my-[15%] md:my-0`}
           src="/dining-room-two.png"
-          alt=""
+          alt="dining-room"
           width={500}
           height={500}
         />
