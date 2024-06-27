@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./embrace.css";
 import Image from "next/image";
+import TheGailyLogo from "../../../../public/static/images/TheGailyLogo.png";
 import Modal from "../../Modal/Modal";
 import { FaTimes } from "react-icons/fa";
 import { MdOutlinePets } from "react-icons/md";
@@ -13,7 +14,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import { Player } from "@lottiefiles/react-lottie-player";
-import TheGailyLogo from "../../public/static/images/TheGailyLogo.png";
+
 
 const EmbraceHealth = () => {
   const [showModal, setShowModal] = useState(false);
