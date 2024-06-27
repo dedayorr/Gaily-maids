@@ -53,7 +53,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Additional meta tags if needed */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gailymaids.com/" />
         {/* <meta name="twitter:site" content="@your_twitter_handle" /> */}
