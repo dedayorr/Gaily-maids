@@ -14,7 +14,7 @@ const Footer = () => {
         {" "}
         <Image
           className="footer-logo mx-auto lg:mx-0"
-          src="/static/gaily-bg.png "
+          src="/gaily-bg.png "
           alt=""
           width={500}
           height={500}
