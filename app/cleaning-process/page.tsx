@@ -14,6 +14,7 @@ import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Link from "next/link";
+import TheGailyLogo from "./image/TheGailyLogo.png";
 
 const CleaningProcess = () => {
   const [showModal, setShowModal] = useState(false);
@@ -165,7 +166,7 @@ const CleaningProcess = () => {
         />
 
         <ul className="list-disc text-[50px] font-extralight custom-list-disc">
-        <Link href="/cleaning-process/living-room-cleaning">
+          <Link href="/cleaning-process/living-room-cleaning">
             <li className="hover:underline ">Living Room Cleaning</li>
           </Link>
           <Link href="/cleaning-process/bathroom-cleaning">
@@ -234,7 +235,6 @@ const CleaningProcess = () => {
       >
         Request an Estimate
       </button>
-
       {/* ======Estimate Modal====== */}
       {showModal && !showThankYou && (
         <Modal>
@@ -249,7 +249,7 @@ const CleaningProcess = () => {
               />
               <Image
                 className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
-                src="/the_gaily_logo.png "
+                src={TheGailyLogo}
                 alt=""
                 width={500}
                 height={500}

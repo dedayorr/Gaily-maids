@@ -13,7 +13,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import emailjs from "emailjs-com";
 import { Player } from "@lottiefiles/react-lottie-player";
-import TheGailyLogo from "../../public/static/images/TheGailyLogo.png"
+import TheGailyLogo from "./image/TheGailyLogo.png"
 
 const CleaningServicesPage = () => {
   const [showModal, setShowModal] = useState(false);
