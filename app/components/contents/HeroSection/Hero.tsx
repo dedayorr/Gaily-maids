@@ -129,8 +129,8 @@ const Hero = () => {
         <h1
           className={`pt-[25%] text-[37px] font-extrabold md:pt-[3%] md:text-[47px] lg:text-[70px] lg:w-[80%] lg:mx-auto lg:text-center lg:pt-[8%] `}
         >
-          Refresh Your Space with{" "}
-          <span className="text-[#823ec9]">Sparkling Clean</span> Solution
+          Refresh Your Life With{" "}
+          <span className="text-[#823ec9]">Sparkling Clean</span> Solution In Your Space
         </h1>
         <p className="md:text-[24px] text-justify lg:text-center text-[#773bb8] bg-[#ffffffa0] p-[1%] lg:w-[80%] lg:mx-auto ">
           Crafting a spotless legacy in your home or office is not just our
