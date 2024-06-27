@@ -11,6 +11,7 @@ import { FaTimes } from "react-icons/fa";
 import Marquee from "../components/marquee/Marquee";
 import "./header.css";
 import Estimate from "../estimatePopUp/Estimate";
+import Gailyminds from "../../public/static/images/Gailyminds.png"
 
 
 const Header = () => {
@@ -61,7 +62,7 @@ const Header = () => {
             {" "}
             <Image
               className=""
-              src="/static/images/Gailyminds.png "
+              src={Gailyminds}
               alt="LOGO"
               width={500}
               height={500}

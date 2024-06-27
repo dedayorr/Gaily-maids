@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import "./footer.css";
+import gailybg from "../../public/static/images/gailybg.png"
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
         {" "}
         <Image
           className="footer-logo mx-auto lg:mx-0"
-          src="/gaily-bg.png "
+          src={gailybg}
           alt=""
           width={500}
           height={500}
