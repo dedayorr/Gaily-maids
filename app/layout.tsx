@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       description: "Gaily Maids is your trusted partner in maintaining a clean and healthy environment.",
       images: [
         {
-          url: "./metaImage/image/metaImage.png",
+          url: "./metaImage/image/metaImage",
           width: 1200,
           height: 630,
           alt: "Gaily Maids"
@@ -53,7 +53,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Additional meta tags if needed */}
-        <link rel="icon" href="./" />
+        <link rel="icon" href="/favicon.ico" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gailymaids.com/" />
         {/* <meta name="twitter:site" content="@your_twitter_handle" /> */}
