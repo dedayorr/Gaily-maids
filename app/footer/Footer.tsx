@@ -6,7 +6,8 @@ import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import "./footer.css";
-import gailybg from "../../public/static/images/gailybg.png"
+import gailybg from "../../public/static/images/gailybg.png";
+import footerimage from "../../public/static/images/footerimage.png";
 
 const Footer = () => {
   return (
@@ -48,7 +49,7 @@ const Footer = () => {
       <div className="lg:flex lg:mx-[5%]">
         <Image
           className="hidden lg:block "
-          src="/static/footer-image.png "
+          src={footerimage}
           alt=""
           width={500}
           height={500}

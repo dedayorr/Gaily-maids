@@ -11,8 +11,7 @@ import { FaTimes } from "react-icons/fa";
 import Marquee from "../components/marquee/Marquee";
 import "./header.css";
 import Estimate from "../estimatePopUp/Estimate";
-import Gailyminds from "../../public/static/images/Gailyminds.png"
-
+import Gailyminds from "../../public/static/images/Gailyminds.png";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -222,7 +221,7 @@ const Header = () => {
 
       {/* <Estimate showModal={showModal} closeModal={closeModal} />
        */}
-       <Estimate showModal={showModal} closeModal={closeModal}/>
+      <Estimate showModal={showModal} closeModal={closeModal} />
     </>
   );
 };
