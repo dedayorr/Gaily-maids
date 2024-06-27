@@ -61,7 +61,7 @@ const Header = () => {
             {" "}
             <Image
               className=""
-              src="/images/Gailyminds.png "
+              src="/static/Gailyminds.png "
               alt="LOGO"
               width={500}
               height={500}

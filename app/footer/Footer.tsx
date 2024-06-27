@@ -14,7 +14,7 @@ const Footer = () => {
         {" "}
         <Image
           className="footer-logo mx-auto lg:mx-0"
-          src="/images/gaily-bg.png "
+          src="/static/gaily-bg.png "
           alt=""
           width={500}
           height={500}
@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="lg:flex lg:mx-[5%]">
         <Image
           className="hidden lg:block "
-          src="/images/footer-image.png "
+          src="/static/footer-image.png "
           alt=""
           width={500}
           height={500}
