@@ -154,18 +154,20 @@ const Offers = () => {
           </div>
 
           <div className="mx-5 mb-3 lg:mx-0 ">
-            <div className="font-extrabold mb-3 lg:text-[25px]">SERVICE AREAS: </div>
+            <div className="font-extrabold mb-3 lg:text-[25px]">
+              SERVICE AREAS:{" "}
+            </div>
             <div className="text-[#26355d]">
               Elgin, South Elgin, Saints Charles, Gilberts, Bartlett, Wayne,
               Hoffman Estates, Huntley, Crystal lake
             </div>
           </div>
 
-          <a href="tel:+18473939704">
+          {/* <a href="tel:+18473939704">
             <p className="hover:underline ml-5 text-[#823ec9] italic  text-[16px] lg:text-[20px] lg:ml-0">
               +1-847-393-9704
             </p>
-          </a>
+          </a> */}
         </div>
 
         {/* <Map/> */}
