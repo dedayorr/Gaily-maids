@@ -143,18 +143,18 @@ const Offers = () => {
               <div className="font-bold">Friday</div>
               <div className="text-[#26355d]">8:00 am - 5:00 pm</div>
             </div>
-            <div className="flex gap-[32%] lg:text-[25px] lg:gap-[36%]">
+            <div className="flex gap-[15%] lg:text-[25px] lg:gap-[36%]">
               <div className="font-bold">Saturday</div>
               <div className="text-[#26355d]">Closed</div>
             </div>
-            <div className="flex gap-[30%] lg:text-[25px] lg:gap-[34%]">
+            <div className="flex gap-[19%] lg:text-[25px] lg:gap-[39%]">
               <div className="font-bold">Sunday</div>
               <div className="text-[#26355d]">Closed</div>
             </div>
           </div>
 
           <div className="mx-5 mb-3 lg:mx-0 ">
-            <div className="font-extrabold lg:text-[25px]">SERVICE AREAS: </div>
+            <div className="font-extrabold mb-3 lg:text-[25px]">SERVICE AREAS: </div>
             <div className="text-[#26355d]">
               Elgin, South Elgin, Saints Charles, Gilberts, Bartlett, Wayne,
               Hoffman Estates, Huntley, Crystal lake
