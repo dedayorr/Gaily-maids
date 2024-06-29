@@ -124,39 +124,40 @@ const Offers = () => {
 
           <div className="w-[65%] ml-[5%] mb-7 lg:ml-0">
             <div className="flex justify-between lg:text-[25px]">
-              <div className="font-bold">Mon</div>
-              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+              <div className="font-bold">Monday</div>
+              <div className="text-[#26355d]">8:00 am - 5:00 pm</div>
             </div>
             <div className="flex justify-between lg:text-[25px]">
-              <div className="font-bold">Tue</div>
-              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+              <div className="font-bold">Tuesday</div>
+              <div className="text-[#26355d]">8:00 am - 5:00 pm</div>
             </div>
             <div className="flex justify-between lg:text-[25px]">
-              <div className="font-bold">Wed</div>
-              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+              <div className="font-bold">Wednesday</div>
+              <div className="text-[#26355d]">8:00 am - 5:00 pm</div>
             </div>
             <div className="flex justify-between lg:text-[25px]">
-              <div className="font-bold">Thu</div>
-              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+              <div className="font-bold">Thursday</div>
+              <div className="text-[#26355d]">8:00 am - 5:00 pm</div>
             </div>
             <div className="flex justify-between lg:text-[25px]">
-              <div className="font-bold">Fri</div>
-              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+              <div className="font-bold">Friday</div>
+              <div className="text-[#26355d]">8:00 am - 5:00 pm</div>
             </div>
             <div className="flex gap-[32%] lg:text-[25px] lg:gap-[36%]">
-              <div className="font-bold">Sat</div>
-              <div className="text-[#26355d7b]">Closed</div>
+              <div className="font-bold">Saturday</div>
+              <div className="text-[#26355d]">Closed</div>
             </div>
             <div className="flex gap-[30%] lg:text-[25px] lg:gap-[34%]">
-              <div className="font-bold">Sun</div>
-              <div className="text-[#26355d7b]">Closed</div>
+              <div className="font-bold">Sunday</div>
+              <div className="text-[#26355d]">Closed</div>
             </div>
           </div>
 
           <div className="mx-5 mb-3 lg:mx-0 ">
             <div className="font-extrabold lg:text-[25px]">SERVICE AREAS: </div>
-            <div className="text-[#26355d7b]">
-              Elgin, Bartlett, Wayne, Hoffman Estates, Huntley, Crystal lake
+            <div className="text-[#26355d]">
+              Elgin, South Elgin, Saints Charles, Gilberts, Bartlett, Wayne,
+              Hoffman Estates, Huntley, Crystal lake
             </div>
           </div>
 
