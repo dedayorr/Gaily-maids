@@ -150,7 +150,7 @@ const CleaningProcess = () => {
         <Image
           className={`${styles.process}`}
           src="/cleanprocess.png"
-          alt=""
+          alt="process"
           width={500}
           height={500}
         />
@@ -160,7 +160,7 @@ const CleaningProcess = () => {
         <Image
           className={`${styles.processes}`}
           src="/process-one.png"
-          alt=""
+          alt="process"
           width={100}
           height={100}
         />
@@ -189,7 +189,7 @@ const CleaningProcess = () => {
         <Image
           className={`${styles.processes}`}
           src="/process-two.png"
-          alt=""
+          alt="process"
           width={100}
           height={100}
         />
@@ -250,7 +250,7 @@ const CleaningProcess = () => {
               <Image
                 className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
                 src={TheGailyLogo}
-                alt=""
+                alt="Logo"
                 width={500}
                 height={500}
               />

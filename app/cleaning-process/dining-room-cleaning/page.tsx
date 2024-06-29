@@ -38,7 +38,7 @@ const Dining = () => {
         <Image
           className={`my-[30px] md:my-0`}
           src="/dining-room-one.png"
-          alt=""
+          alt="dining-room"
           width={500}
           height={500}
         />

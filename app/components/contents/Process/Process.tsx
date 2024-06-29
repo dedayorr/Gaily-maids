@@ -29,7 +29,7 @@ const Process = () => {
             <Image
               className={`${styles.image}`}
               src="/mental-health.png"
-              alt=""
+              alt="mental-health"
               width={500}
               height={100}
             />
@@ -58,7 +58,7 @@ const Process = () => {
             <Image
               className={`${styles.image}`}
               src="/physical-health.png"
-              alt=""
+              alt="physical-health"
               width={500}
               height={100}
             />
@@ -89,7 +89,7 @@ const Process = () => {
             <Image
               className={`${styles.image}`}
               src="/emotional-wellbeing.png"
-              alt=""
+              alt="emotion"
               width={500}
               height={100}
             />
@@ -115,7 +115,7 @@ const Process = () => {
             <Image
               className={`${styles.image}`}
               src="/sleep-quality.png"
-              alt=""
+              alt="sleep"
               width={500}
               height={100}
             />
@@ -154,21 +154,21 @@ const Process = () => {
             <Image
               className={`${styles.animatedlist}`}
               src="/kitchen-p.png"
-              alt=""
+              alt="kitchen"
               width={500}
               height={100}
             />
             <Image
               className={`${styles.animatedlist}`}
               src="/laundry-p.png"
-              alt=""
+              alt="laundry"
               width={500}
               height={100}
             />
             <Image
               className={`${styles.animatedlist}`}
               src="/bathroom-p.png"
-              alt=""
+              alt="bathroom"
               width={500}
               height={100}
             />

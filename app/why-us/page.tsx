@@ -47,7 +47,7 @@ const WhyUs = () => {
       <Image
         className="why my-[7%] mx-auto lg:mx-[25%]"
         src="/why.png"
-        alt=""
+        alt="why-us"
         height={500}
         width={500}
       />

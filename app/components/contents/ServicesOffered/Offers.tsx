@@ -96,7 +96,7 @@ const Offers = () => {
           <Image
             className="living_room flex-1 min-w-0 mb-[12%] mr-[-5%] rounded-[10px] "
             src="/dirt.png"
-            alt=""
+            alt="dirt"
             width={200}
             height={100}
             layout="responsive"
@@ -104,7 +104,7 @@ const Offers = () => {
           <Image
             className="living_room flex-1 min-w-0 mt-[12%] ml-[-5%] rounded-[10px]"
             src="/broom.png"
-            alt=""
+            alt="broom"
             width={200}
             height={100}
             layout="responsive"
@@ -117,7 +117,7 @@ const Offers = () => {
         <Image
           className="serviceImage my-[20%] px-[5%] lg:my-0"
           src="/livingroom.png"
-          alt=""
+          alt="living-room"
           width={200}
           height={200}
         />

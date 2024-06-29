@@ -36,7 +36,7 @@ const LivingRoom = () => {
         <Image
           className={`my-[30px] md:my-0`}
           src="/living-room-one.png"
-          alt=""
+          alt="living-room"
           width={500}
           height={500}
         />
@@ -52,7 +52,7 @@ const LivingRoom = () => {
         <Image
           className={`my-[15%] md:my-0`}
           src="/living-room-two.png"
-          alt=""
+          alt="living-room"
           width={500}
           height={500}
         />

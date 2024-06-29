@@ -20,7 +20,7 @@ const Questions = () => {
         <Image
           className="faqnature "
           src="/faq-nature.png"
-          alt=""
+          alt="faq-image"
           height={400}
           width={400}
         />

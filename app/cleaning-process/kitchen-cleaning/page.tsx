@@ -5,9 +5,9 @@ import Image from "next/image";
 const Kitchen = () => {
   return (
     <div className="text-black mt-[80px] mx-[5%]">
-      <h2 className="mb-[10px] text-[30px] font-bold leading-8 text-[#823ec9] lg:text-[45px] lg:mb-[30px]">
+      <h1 className="mb-[10px] text-[30px] font-bold leading-8 text-[#823ec9] lg:text-[45px] lg:mb-[30px]">
         Kitchen Cleaning
-      </h2>
+      </h1>
       <div className="md:flex md:mx-[12%] md:gap-[60px]">
         <div className="flex flex-col gap-[20px] ">
           <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
@@ -39,7 +39,7 @@ const Kitchen = () => {
         <Image
           className={`my-[30px] md:my-0`}
           src="/kitchen-one.png"
-          alt=""
+          alt="kitchen"
           width={500}
           height={500}
         />
@@ -55,7 +55,7 @@ const Kitchen = () => {
         <Image
           className={`my-[15%] md:my-0`}
           src="/kitchen-two.png"
-          alt=""
+          alt="kitchen"
           width={500}
           height={500}
         />

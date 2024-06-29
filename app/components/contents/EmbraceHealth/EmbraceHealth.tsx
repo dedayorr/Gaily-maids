@@ -131,7 +131,7 @@ const EmbraceHealth = () => {
       <Image
         className={`peace-image hidden lg:flex lg:justify-start`}
         src="/peace.png"
-        alt=""
+        alt="embrace-health"
         width={500}
         height={100}
       />
@@ -177,7 +177,7 @@ const EmbraceHealth = () => {
               <Image
                 className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
                 src={TheGailyLogo}
-                alt=""
+                alt="Logo"
                 width={500}
                 height={500}
               />

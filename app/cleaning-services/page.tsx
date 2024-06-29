@@ -138,7 +138,7 @@ const CleaningServicesPage = () => {
             <Image
               className={`${styles.image}`}
               src="/process-image.png"
-              alt=""
+              alt="services"
               width={500}
               height={200}
             />
@@ -166,7 +166,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/apartment-service.png"
-            alt=""
+            alt="apartment-service"
             width={500}
             height={100}
           />
@@ -183,7 +183,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/house-cleaning.png"
-            alt=""
+            alt="house-cleaning"
             width={500}
             height={100}
           />
@@ -234,7 +234,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/kitchen-cleaning.png"
-            alt=""
+            alt="kitchen-cleaning"
             width={500}
             height={100}
           />
@@ -252,7 +252,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/office-cleaning.png"
-            alt=""
+            alt="office-cleaning"
             width={500}
             height={100}
           />
@@ -270,7 +270,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/specialty-cleaning.png"
-            alt=""
+            alt="specialty-cleaning"
             width={500}
             height={100}
           />
@@ -290,7 +290,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/deep-cleaning.png"
-            alt=""
+            alt="deep-cleaning"
             width={500}
             height={100}
           />
@@ -313,7 +313,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/movingin-cleaning.png"
-            alt=""
+            alt="moving-in-cleaning"
             width={500}
             height={100}
           />
@@ -334,7 +334,7 @@ const CleaningServicesPage = () => {
           <Image
             className={`${styles.image2}`}
             src="/movingout-cleaning.png"
-            alt=""
+            alt="moving-out-cleaning"
             width={500}
             height={100}
           />
@@ -378,7 +378,7 @@ const CleaningServicesPage = () => {
               <Image
                 className="logo-estimate mb-[7%] mx-auto lg:mb-[5%]"
                 src={TheGailyLogo}
-                alt=""
+                alt="Logo"
                 width={500}
                 height={500}
               />
