@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./offers.css";
 import Link from "next/link";
+import Map from "../../Map/Map";
 
 const Offers = () => {
   return (
@@ -28,9 +29,8 @@ const Offers = () => {
           team has the solution you are looking for. Alongside basic home
           cleaning, we even help individuals who are moving, running property
           rentals, or who have recently finished a construction project. Our
-          locally-owned office is made up of community-minded professionals
-          who love giving back free time and tranquility to the people they
-          serve.{" "}
+          locally-owned office is made up of community-minded professionals who
+          love giving back free time and tranquility to the people they serve.{" "}
         </p>
       </div>
       <div className=" bg-[#813ec94e] px-[5%] py-[5%] mx-[5%] lg:flex justify-between">
@@ -110,6 +110,71 @@ const Offers = () => {
             layout="responsive"
           />
         </div>
+      </div>
+
+      <div className="flex my-[10%] justify-between lg:mx-[5%]">
+        <div className="text-black ">
+          <div className="mb-7">
+            {" "}
+            <p className="italic cursive text-[25px] text-center lg:text-[35px]">
+              Our Service Area
+            </p>
+            <hr className="w-[15%] border-[1.5px] border-[#823ec9] mx-auto" />
+          </div>
+
+          <div className="w-[65%] ml-[5%] mb-7 lg:ml-0">
+            <div className="flex justify-between lg:text-[25px]">
+              <div className="font-bold">Mon</div>
+              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+            </div>
+            <div className="flex justify-between lg:text-[25px]">
+              <div className="font-bold">Tue</div>
+              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+            </div>
+            <div className="flex justify-between lg:text-[25px]">
+              <div className="font-bold">Wed</div>
+              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+            </div>
+            <div className="flex justify-between lg:text-[25px]">
+              <div className="font-bold">Thu</div>
+              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+            </div>
+            <div className="flex justify-between lg:text-[25px]">
+              <div className="font-bold">Fri</div>
+              <div className="text-[#26355d7b]">8:00 am - 5:00 pm</div>
+            </div>
+            <div className="flex gap-[32%] lg:text-[25px] lg:gap-[36%]">
+              <div className="font-bold">Sat</div>
+              <div className="text-[#26355d7b]">Closed</div>
+            </div>
+            <div className="flex gap-[30%] lg:text-[25px] lg:gap-[34%]">
+              <div className="font-bold">Sun</div>
+              <div className="text-[#26355d7b]">Closed</div>
+            </div>
+          </div>
+
+          <div className="mx-5 mb-3 lg:mx-0 ">
+            <div className="font-extrabold lg:text-[25px]">SERVICE AREAS: </div>
+            <div className="text-[#26355d7b]">
+              Elgin, Bartlett, Wayne, Hoffman Estates, Huntley, Crystal lake
+            </div>
+          </div>
+
+          <a href="tel:+18473939704">
+            <p className="hover:underline ml-5 text-[#823ec9] italic  text-[16px] lg:text-[20px] lg:ml-0">
+              +1-847-393-9704
+            </p>
+          </a>
+        </div>
+
+        {/* <Map/> */}
+        <Image
+          className="map hidden lg:block"
+          src="/map.png"
+          alt="living-room"
+          width={500}
+          height={500}
+        />
       </div>
 
       <div className="lg:my-[10%] flex">
