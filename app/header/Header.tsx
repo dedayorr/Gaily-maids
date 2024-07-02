@@ -48,11 +48,11 @@ const Header = () => {
               <IoMdMail />
             </a>
           </div>
-          <a className="text-[11px] md:text-[18px]" href="tel:+1-847-393-9704">
+          <a className="text-[12px] md:text-[18px] font-extrabold" href="tel:+1-847-393-9704">
             {" "}
             +1-847-393-9704{" "}
           </a>
-          <div className="text-[11px] md:text-[18px]">
+          <div className="text-[11px] font-extrabold md:text-[18px]">
             800 S. Mclean Blvd. Suite B 60123
           </div>
         </div>

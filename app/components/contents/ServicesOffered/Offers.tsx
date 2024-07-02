@@ -158,8 +158,15 @@ const Offers = () => {
               SERVICE AREAS:{" "}
             </div>
             <div className="text-[#26355d]">
-              Elgin, South Elgin, Saints Charles, Gilberts, Bartlett, Wayne,
-              Hoffman Estates, Huntley, Crystal lake
+              Algonquin, Barrington, Bull Valley, Burlington, Carpentersville,
+              Cary, Clare, Elgin, South Elgin, Saints Charles, Gilberts,
+              Bartlett, Wayne, Hoffman Estates, Huntley, Crystal lake, Deer
+              Park, Dundee, East Dundee, Elburn, Fox River Valley Gardens,
+              Garden Prairie, Genoa, Gilberts, Hampshire, Harvard, Hebron,
+              Holiday Hills, Inverness, Johnsburg, Kildeer, Kingston, Lake
+              Barrington, Lake in The Hills, Lakemoor, Maple Park, Marengo,
+              Mccullom Lake, Mchenry, North Barrignton, Oakwood Hills, Pingree
+              Grove, Plato Center.
             </div>
           </div>
 
