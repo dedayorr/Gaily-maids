@@ -160,13 +160,21 @@ const Questions = () => {
               I&apos;m interested in working for you. How do I apply?
             </p>
           </div>
-          <p className="ml-8 lg:text-[16px] text-justify leading-8">Apply <Link href="/hiring" className="italic underline font-extralight text-[#823ec9]">HERE</Link> </p>
+          <p className="ml-8 lg:text-[16px] text-justify leading-8">
+            Apply{" "}
+            <Link
+              href="/hiring"
+              className="italic underline font-extralight text-[#823ec9]"
+            >
+              HERE
+            </Link>{" "}
+          </p>
         </div>
       </div>
 
       <div className="border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
         Still have some questions or concerns? Don&apos;t hesitate to give us a
-        call at <a href="tel:+1-847-393-9704"> +1-847-393-9704 </a> and
+        call at <a href="tel:+1-872-235-7202"> +1-872-235-7202 </a> and
         we&apos;ll be sure to help you!
       </div>
     </div>

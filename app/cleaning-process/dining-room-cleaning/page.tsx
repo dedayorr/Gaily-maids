@@ -12,10 +12,10 @@ const Dining = () => {
         <div className="flex flex-col gap-[20px] ">
           <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
             Cleaning the dining area is an important part of maintaining a
-            pleasant and inviting space for meals and gatherings. Whether it&apos;s a
-            formal dining room or an informal dining area within your kitchen,
-            regular cleaning helps ensure hygiene, tidiness, and comfort for you
-            and your guests.
+            pleasant and inviting space for meals and gatherings. Whether
+            it&apos;s a formal dining room or an informal dining area within
+            your kitchen, regular cleaning helps ensure hygiene, tidiness, and
+            comfort for you and your guests.
           </p>
           <p className="font-bold text-xl lg:text-[25px]">
             You can trust your dining room cleanings to Gaily Maids because we
@@ -85,11 +85,7 @@ const Dining = () => {
       </div>
 
       <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
-        Contact us today at{" "}
-        <a href="tel:+1-847-393-9704">
-            {" "}
-            +1-847-393-9704{" "}
-          </a>
+        Contact us today at <a href="tel:+1-872-235-7202"> +1-872-235-7202 </a>
         to schedule your first cleaning and discover why Gaily Maids is the
         trusted choice for countless homes and businesses.
       </div>

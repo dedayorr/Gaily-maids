@@ -48,9 +48,9 @@ const Header = () => {
               <IoMdMail />
             </a>
           </div>
-          <a className="text-[13px] md:text-[18px] font-extrabold" href="tel:+1-847-393-9704">
+          <a className="text-[13px] md:text-[18px] font-extrabold" href="tel:+1-872-235-7202">
             {" "}
-            +1-847-393-9704{" "}
+            +1-872-235-7202{" "}
           </a>
           <div className="text-[11px] font-extrabold md:text-[18px]">
             800 S. Mclean Blvd. Suite B 60123
@@ -212,7 +212,7 @@ const Header = () => {
 
             <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
-              <a href="tel:+18473939704">
+              <a href="tel:+18722357202">
                 <p>Contact Us</p>
               </a>
             </div>

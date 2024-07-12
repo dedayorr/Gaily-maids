@@ -57,10 +57,10 @@ const Footer = () => {
 
         <a
           className=" flex justify-center mx-auto text-[18px] text-[#823ec9] md:text-[18px] lg:text-[25px] lg:justify-normal lg:mb-[1%] font-thin"
-          href="tel:+18473939704"
+          href="tel:+18722357202"
         >
           {" "}
-          +1-847-393-9704{" "}
+          +1-872-235-7202{" "}
         </a>
         <div className="flex justify-center text-[28px] text-[#823ec9] gap-[20px] md:text-[25px] md:gap-[20px] lg:text-[35px] lg:justify-normal">
           <FaFacebook />
