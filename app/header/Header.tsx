@@ -12,7 +12,7 @@ import Marquee from "../components/marquee/Marquee";
 import "./header.css";
 import Estimate from "../estimatePopUp/Estimate";
 import Gailyminds from "../../public/static/images/Gailyminds.png";
-import TheGailyLogo from "../../public/static/images/TheGailyLogo.png"
+import TheGailyLogo from "../../public/static/images/TheGailyLogo.png";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -48,7 +48,10 @@ const Header = () => {
               <IoMdMail />
             </a>
           </div>
-          <a className="text-[13px] md:text-[18px] font-extrabold" href="tel:+1-872-235-7202">
+          <a
+            className="text-[13px] md:text-[18px] font-extrabold"
+            href="tel:+1-872-235-7202"
+          >
             {" "}
             +1-872-235-7202{" "}
           </a>
@@ -56,7 +59,9 @@ const Header = () => {
             800 S. Mclean Blvd. Suite B 60123
           </div>
         </div>
-        <Marquee text="The objective of cleaning is not just to clean, but to feel happiness living within that environment." />
+        <p className="bg-[#26355D] text-[14px] text-center px-5 font-bold">
+        GET $25 OFF YOUR FIRST CLEANING!{" "}
+        </p>
         <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9f3] h-[80px] lg:h-[100px]">
           <Link href="/" className=" Logo ml- ">
             {" "}
