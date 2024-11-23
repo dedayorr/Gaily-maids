@@ -64,7 +64,13 @@ const Footer = () => {
         </a>
         <div className="flex justify-center text-[28px] text-[#823ec9] gap-[20px] md:text-[25px] md:gap-[20px] lg:text-[35px] lg:justify-normal">
           <FaFacebook />
-          <AiFillInstagram />
+          <a
+            href="https://www.instagram.com/gailymaids?igsh=eWh0a2ZwN216dDkz"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillInstagram />{" "}
+          </a>
           <a
             href="mailto:gailymaids@gmail.com"
             target="_blank"

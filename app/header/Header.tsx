@@ -39,7 +39,14 @@ const Header = () => {
         <div className="text-[#2f1e42] bg-white flex items-center justify-between h-[30px] px-[1%] lg:h-[40px]">
           <div className="flex text-[12px] gap-[2px] md:text-[18px] md:gap-[10px] ">
             <FaFacebook />
-            <AiFillInstagram />
+            <a
+              href="https://www.instagram.com/gailymaids?igsh=eWh0a2ZwN216dDkz"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillInstagram />{" "}
+            </a>
+
             <a
               href="mailto:gailymaids@gmail.com"
               target="_blank"
