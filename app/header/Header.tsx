@@ -36,8 +36,8 @@ const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-40">
-        <div className="text-[#2f1e42] bg-white flex items-center justify-between h-[30px] px-[3%] lg:h-[40px]">
-          <div className="flex text-[11px] gap-[2px] md:text-[18px] md:gap-[10px] ">
+        <div className="text-[#2f1e42] bg-white flex items-center justify-between h-[30px] px-[1%] lg:h-[40px]">
+          <div className="flex text-[12px] gap-[2px] md:text-[18px] md:gap-[10px] ">
             <FaFacebook />
             <AiFillInstagram />
             <a
@@ -49,18 +49,18 @@ const Header = () => {
             </a>
           </div>
           <a
-            className="text-[13px] md:text-[18px] font-extrabold"
-            href="tel:+1-872-235-7202"
+            className="text-[12px] md:text-[18px] font-extrabold"
+            href="tel:+18474403683"
           >
             {" "}
-            +1-872-235-7202{" "}
+            +1 (847) 440-3683{" "}
           </a>
           <div className="text-[11px] font-extrabold md:text-[18px]">
             800 S. Mclean Blvd. Suite B 60123
           </div>
         </div>
         <p className="bg-[#26355D] text-[14px] text-center px-5 font-bold">
-        GET $25 OFF YOUR FIRST CLEANING!{" "}
+          GET $25 OFF YOUR FIRST CLEANING!{" "}
         </p>
         <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9f3] h-[80px] lg:h-[100px]">
           <Link href="/" className=" Logo ml- ">
@@ -98,7 +98,7 @@ const Header = () => {
               <p className="lg:hover:text-xl">We&apos;re Hiring</p>
             </Link>
             <Link href="/faq">
-              <p className="lg:hover:text-xl">Faq</p>
+              <p className="lg:hover:text-xl">FAQ</p>
             </Link>
           </div>
         </div>
@@ -205,7 +205,7 @@ const Header = () => {
               onClick={closeNav}
               className="ml-[5%] text-[18px] mt-[8%] font-medium text-[#823ec9]"
             >
-              <Link href="/faq">Faq</Link>
+              <Link href="/faq">FAQ</Link>
             </p>
 
             <button
@@ -217,7 +217,7 @@ const Header = () => {
 
             <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
-              <a href="tel:+18722357202">
+              <a href="tel:+18474403683">
                 <p>Contact Us</p>
               </a>
             </div>

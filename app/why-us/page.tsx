@@ -59,8 +59,8 @@ const WhyUs = () => {
         you can focus on what matters most to you.
       </p>
 
-      <div className="border p-2 font-bold text-center w-[98%] mx-auto border-[#26355D] text-[#26355D] mt-[10%] leading-8  lg:text-[30px] lg:p-8">
-        Contact us today at <a href="tel:+1-872-235-7202"> +1-872-235-7202 </a>
+      <div className="cursor-pointer border p-2 font-bold text-center w-[98%] mx-auto border-[#26355D] text-[#26355D] mt-[10%] leading-8  lg:text-[30px] lg:p-8">
+        Contact us today at <a href="tel:+18474403683"> +1 (847) 440-3683 </a>
         to schedule your first cleaning and discover why Gaily Maids is the
         trusted choice for countless homes and businesses.
       </div>

@@ -350,10 +350,10 @@ const CleaningServicesPage = () => {
           </p>
         </div>
       </div>
-      <div className="border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
-        Discover the benefits of a deeply cleaned apartment. Contact us today at   <a href="tel:+1-872-235-7202">
+      <div className="cursor-pointer border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
+        Discover the benefits of a deeply cleaned apartment. Contact us today at   <a href="tel:+18474403683">
             {" "}
-            +1-872-235-7202{" "}
+            +1 (847) 440-3683{" "}
           </a>
       </div>
       <button

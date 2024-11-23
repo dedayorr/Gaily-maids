@@ -12,10 +12,10 @@ const Bathroom = () => {
         <div className="flex flex-col gap-[20px] ">
           <p className="leading-8 lg:leading-[180%] text-justify lg:text-[20px]">
             Bathroom cleaning is a crucial part of maintaining a hygienic and
-            pleasant home environment. Given the bathroom&apos;s role as a place for
-            personal hygiene, it&apos;s essential to keep it clean to prevent the
-            buildup of germs, mold, and mildew. Regular and thorough cleaning
-            ensures the bathroom remains a safe and inviting space.
+            pleasant home environment. Given the bathroom&apos;s role as a place
+            for personal hygiene, it&apos;s essential to keep it clean to
+            prevent the buildup of germs, mold, and mildew. Regular and thorough
+            cleaning ensures the bathroom remains a safe and inviting space.
           </p>
           <p className="font-bold text-xl lg:text-[25px]">
             Some of our bathroom cleaning services include:
@@ -86,12 +86,8 @@ const Bathroom = () => {
         </div>
       </div>
 
-      <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
-        Contact us today at{" "}
-        <a href="tel:+1-872-235-7202">
-            {" "}
-            +1-872-235-7202{" "}
-          </a>
+      <div className="cursor-pointer border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
+        Contact us today at <a href="tel:+18474403683"> +1 (847) 440-3683 </a>
         to schedule your first cleaning and discover why Gaily Maids is the
         trusted choice for countless homes and businesses.
       </div>

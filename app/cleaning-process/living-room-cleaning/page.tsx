@@ -81,8 +81,8 @@ const LivingRoom = () => {
         </div>
       </div>
 
-      <div className="border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
-        Contact us today at <a href="tel:+1-872-235-7202"> +1-872-235-7202 </a>
+      <div className="cursor-pointer border p-2 font-bold text-center w-[98%] mx-auto text-[#823ec9] mt-[10%] leading-8 lg:text-[25px]">
+        Contact us today at <a href="tel:+18474403683"> +1 (847) 440-3683 </a>
         to schedule your first cleaning and discover why Gaily Maids is the
         trusted choice for countless homes and businesses.
       </div>
