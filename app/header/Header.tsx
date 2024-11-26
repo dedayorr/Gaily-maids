@@ -8,7 +8,7 @@ import { IoMdMail } from "react-icons/io";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import Marquee from "../components/marquee/Marquee";
+// import Marquee from "../components/marquee/Marquee";
 import "./header.css";
 import Estimate from "../estimatePopUp/Estimate";
 import Gailyminds from "../../public/static/images/Gailyminds.png";
@@ -66,7 +66,7 @@ const Header = () => {
             800 S. Mclean Blvd. Suite B 60123
           </div>
         </div>
-        <p className="bg-[#26355D] text-[14px] text-center px-5 font-bold">
+        <p className="bg-[#26355D] text-[18px] text-center px-5 font-bold lg:text-[30px]">
           GET $25 OFF YOUR FIRST CLEANING!{" "}
         </p>
         <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9f3] h-[80px] lg:h-[100px]">
