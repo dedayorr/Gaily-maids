@@ -9,8 +9,14 @@ import Hero from "./components/contents/HeroSection/Hero";
 import EmbraceHealth from "./components/contents/EmbraceHealth/EmbraceHealth";
 import Faq from "./components/contents/FAQ/Faq";
 import Image from "next/image";
+import { useState } from "react";
+import OfferPopup from "./offerPopUp/OfferPopup";
 
 export default function Home() {
+  const [openOffer, setOpenOffer] = useState(false);
+  const closeModal = () => {
+    setOpenOffer(false);
+  };
   return (
     <main className="text-black ">
       <div className="lg:text-[20px]">
@@ -18,12 +24,15 @@ export default function Home() {
 Click For Offer
        </div> */}
         <Image
+          onClick={() => setOpenOffer(true)}
           className="fixed right-0 bottom-[5%]"
           src="/specialOffer.png"
           height={300}
           width={130}
           alt=""
         />
+        {openOffer && <OfferPopup closeModal={closeModal } />}
+
         <Hero />
         <Offers />
         <Process />
