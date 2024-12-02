@@ -23,15 +23,23 @@ export default function Home() {
         {/* <div className="bg-[#6b9ff9] h-[70px] w-[70px] fixed right-0 top-[50%] rounded-lg text-[20px] font-bold text-white">
 Click For Offer
        </div> */}
-        <Image
+        {/* <Image
           onClick={() => setOpenOffer(true)}
           className="fixed right-0 bottom-[5%]"
           src="/specialOffer.png"
           height={300}
           width={130}
           alt=""
+        /> */}
+        <Image
+          onClick={() => setOpenOffer(true)}
+          className="fixed right-0 bottom-[5%]"
+          src="/specialOffer2.png"
+          height={300}
+          width={130}
+          alt=""
         />
-        {openOffer && <OfferPopup closeModal={closeModal } />}
+        {openOffer && <OfferPopup closeModal={closeModal} />}
 
         <Hero />
         <Offers />
