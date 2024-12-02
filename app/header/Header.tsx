@@ -38,7 +38,13 @@ const Header = () => {
       <header className="sticky top-0 z-40">
         <div className="text-[#2f1e42] bg-white flex items-center justify-between h-[30px] px-[1%] lg:h-[40px]">
           <div className="flex text-[12px] gap-[2px] md:text-[18px] md:gap-[10px] ">
-            <FaFacebook />
+            <a
+              href="https://www.facebook.com/profile.php?id=61561687303413"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook />{" "}
+            </a>
             <a
               href="https://www.instagram.com/gailymaids?igsh=eWh0a2ZwN216dDkz"
               target="_blank"

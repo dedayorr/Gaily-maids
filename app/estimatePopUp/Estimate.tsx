@@ -130,7 +130,7 @@ const Estimate: React.FC<EstimateProps> = ({ showModal, closeModal }) => {
             className="estimate relative  text-black bg-white w-full h-[94%] mx-[5%] rounded-[5px] overflow-auto lg:w-[60%] lg:rounded-[15px]"
             onSubmit={handleSubmit}
           >
-            <div className="estimate-bg flex flex-col gap-[15px] py-[10%] px-[5%] lg:py-[6%]">
+            <div className="bg-[#1766EE44] flex flex-col gap-[15px] py-[10%] px-[5%] lg:py-[6%]">
               <FaTimes
                 onClick={closeModal}
                 className="text-[#823ec9] absolute right-[3%] top-[2%] text-2xl lg:text-3xl"

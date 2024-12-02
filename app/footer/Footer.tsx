@@ -63,7 +63,13 @@ const Footer = () => {
           +1 (847) 440-3683{" "}
         </a>
         <div className="flex justify-center text-[28px] text-[#823ec9] gap-[20px] md:text-[25px] md:gap-[20px] lg:text-[35px] lg:justify-normal">
-          <FaFacebook />
+          <a
+            href="https://www.facebook.com/profile.php?id=61561687303413"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaFacebook />{" "}
+          </a>
           <a
             href="https://www.instagram.com/gailymaids?igsh=eWh0a2ZwN216dDkz"
             target="_blank"
