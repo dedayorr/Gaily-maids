@@ -73,8 +73,9 @@ const Process = () => {
                 decreasing the risk of infections and illnesses.
               </li>
               <li className="leading-8 text-justify ">
-                <span className="font-bold">Encourages Physical Activity: 
-                {" "}</span>
+                <span className="font-bold">
+                  Encourages Physical Activity:{" "}
+                </span>
                 The act of cleaning itself is a form of physical exercise.
                 Activities such as vacuuming, mopping, and scrubbing can help
                 burn calories and keep you active.
@@ -147,29 +148,29 @@ const Process = () => {
             When you&apos;re balancing a busy family life, long hours at the
             office, and other important aspects of your weekly routine, finding
             time to keep your house in order can be difficult. Even though life
-            gets busy, coming home should never be a chore – and with Gaily
+            gets busy, coming home should never be a chore and with Gaily
             Maids, it won&apos;t be.
           </div>
-          <div className="hidden lg:flex justify-center my-[5%]">
+          <div className="hidden w-full lg:flex justify-center my-[5%] gap-[5%]">
             <Image
-              className={`${styles.animatedlist}`}
+              className="w-full"
               src="/kitchen-p.png"
               alt="kitchen"
-              width={500}
+              width={300}
               height={100}
             />
             <Image
-              className={`${styles.animatedlist}`}
+              className="w-full"
               src="/laundry-p.png"
               alt="laundry"
-              width={500}
+              width={300}
               height={100}
             />
             <Image
-              className={`${styles.animatedlist}`}
+              className="w-full"
               src="/bathroom-p.png"
               alt="bathroom"
-              width={500}
+              width={300}
               height={100}
             />
           </div>
