@@ -33,7 +33,7 @@ Click For Offer
         /> */}
         <Image
           onClick={() => setOpenOffer(true)}
-          className="fixed right-0 bottom-[5%]"
+          className="fixed right-0 bottom-[5%] shadow-lg"
           src="/specialOffer2.png"
           height={300}
           width={130}
