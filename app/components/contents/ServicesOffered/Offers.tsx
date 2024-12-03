@@ -69,7 +69,7 @@ const Offers = () => {
         </div>
         <div className="w-[80%] hidden lg:grid grid-cols-3 gap-5  justify-between items-center p-5">
           <Image
-            className="living_room rounded-[5px] w-full h-full object-cover hover:scale-125"
+            className="living_room rounded-[5px] w-full  object-cover hover:scale-125"
             src="/newimage1.png"
             alt="dirt"
             width={500}
@@ -77,7 +77,7 @@ const Offers = () => {
             // layout="responsive"
           />
           <Image
-            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
+            className="living_room  rounded-[5px] w-full object-cover hover:scale-125"
             src="/newimage2.png"
             alt="broom"
             width={500}
@@ -85,7 +85,7 @@ const Offers = () => {
             // layout="responsive"
           />
           <Image
-            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
+            className="living_room  rounded-[5px] w-full  object-cover hover:scale-125"
             src="/newimage3.png"
             alt="broom"
             width={500}
@@ -101,7 +101,7 @@ const Offers = () => {
             // layout="responsive"
           />
           <Image
-            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
+            className="living_room  rounded-[5px] w-full object-cover hover:scale-125"
             src="/newimage5.png"
             alt="broom"
             width={500}
