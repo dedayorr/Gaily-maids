@@ -8,35 +8,10 @@ import Map from "../../Map/Map";
 const Offers = () => {
   return (
     <div className="">
-      <div className="mx-[5%] my-[20%]  flex flex-col gap-[15px] md:my-[13%] lg:my-[8%]">
-        <h2 className="text-[25px] font-semibold leading-8 text-[#823ec9] lg:text-[40px] lg:mb-4">
-          Gaily Maids Commitment to Excellence
-        </h2>
-        <p className="leading-8 text-justify">
-          {" "}
-          Your home is more than just a house it&apos;s where memories are made
-          and moments are cherished. Though life can be complicated, the simple
-          things shouldn&apos;t be. Gaily Maids strives to take the stress out
-          of your day so you can do life your way. With years of experience and
-          an advanced, time-tested cleaning process, we can help you reclaim
-          time with your loved ones.{" "}
-        </p>
-        <p className="leading-8 text-justify">
-          {" "}
-          Our cleaning services for houses are trusted by homeowners across the
-          country. Whether you need a one time clean for a special occasion or
-          regular housekeeping weekly, monthly, or on a custom schedule, our
-          team has the solution you are looking for. Alongside basic home
-          cleaning, we even help individuals who are moving, running property
-          rentals, or who have recently finished a construction project. Our
-          locally-owned office is made up of community-minded professionals who
-          love giving back free time and tranquility to the people they serve.{" "}
-        </p>
-      </div>
-      <div className=" bg-[#813ec94e] px-[5%] py-[5%] mx-[5%] lg:flex justify-between">
+      <div className="mt-[10%] bg-[#813ec94e] px-[5%] py-[5%] mx-[5%] lg:flex justify-between">
         <div className="flex flex-col gap-[20px]">
           {" "}
-          <p className="text-[] font-semibold lg:text-[22px]">
+          <p className="text-[24px] font-semibold lg:text-[30px]">
             Our custom cleaning services include:
           </p>
           <ol className="list-disc custom-list-disc ml-[10%] flex flex-col text-[#26355D] gap-[10px] lg:ml-[5%]">
@@ -92,24 +67,82 @@ const Offers = () => {
             </p>
           </Link> */}
         </div>
-        <div className="hidden lg:flex h-[300px] w-[60%] justify-between items-center px-[2%]">
+        <div className="hidden lg:grid grid-cols-3 gap-x-5  w-[100%] justify-between items-center px-[2%]">
           <Image
-            className="living_room flex-1 min-w-0 mb-[12%] mr-[-5%] rounded-[10px] "
+            className="living_room rounded-[10px] "
             src="/dirt.png"
             alt="dirt"
-            width={200}
-            height={100}
+            width={500}
+            height={500}
             layout="responsive"
           />
           <Image
-            className="living_room flex-1 min-w-0 mt-[12%] ml-[-5%] rounded-[10px]"
+            className="living_room  rounded-[10px]"
             src="/broom.png"
             alt="broom"
-            width={200}
-            height={100}
+            width={500}
+            height={500}
+            layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[10px]"
+            src="/broom.png"
+            alt="broom"
+            width={500}
+            height={500}
+            layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[10px]"
+            src="/broom.png"
+            alt="broom"
+            width={500}
+            height={500}
+            layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[10px]"
+            src="/broom.png"
+            alt="broom"
+            width={500}
+            height={500}
+            layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[10px]"
+            src="/broom.png"
+            alt="broom"
+            width={500}
+            height={500}
             layout="responsive"
           />
         </div>
+      </div>
+
+      <div className="mx-[5%] my-[20%]  flex flex-col gap-[15px] md:my-[13%] lg:my-[8%]">
+        <h2 className="text-[25px] font-semibold leading-8 text-[#823ec9] lg:text-[40px] lg:mb-4">
+          Gaily Maids Commitment to Excellence
+        </h2>
+        <p className="leading-8 text-justify">
+          {" "}
+          Your home is more than just a house it&apos;s where memories are made
+          and moments are cherished. Though life can be complicated, the simple
+          things shouldn&apos;t be. Gaily Maids strives to take the stress out
+          of your day so you can do life your way. With years of experience and
+          an advanced, time-tested cleaning process, we can help you reclaim
+          time with your loved ones.{" "}
+        </p>
+        <p className="leading-8 text-justify">
+          {" "}
+          Our cleaning services for houses are trusted by homeowners across the
+          country. Whether you need a one time clean for a special occasion or
+          regular housekeeping weekly, monthly, or on a custom schedule, our
+          team has the solution you are looking for. Alongside basic home
+          cleaning, we even help individuals who are moving, running property
+          rentals, or who have recently finished a construction project. Our
+          locally-owned office is made up of community-minded professionals who
+          love giving back free time and tranquility to the people they serve.{" "}
+        </p>
       </div>
 
       <div className="flex my-[10%] justify-between lg:mx-[5%]">

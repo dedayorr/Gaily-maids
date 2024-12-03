@@ -3,12 +3,12 @@
   width: 100%;
 }
 
-.living_room{
-  height: 100px;
+.living_room {
+  height: 400px;
   width: 100%;
   box-shadow: rgba(249, 249, 252, 0.958) 0px 7px 39px 0px;
 }
 
-.NateBerkus{
+.NateBerkus {
   font-family: cursive;
 }

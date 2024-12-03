@@ -23,10 +23,10 @@ const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
   return (
     <>
       <Modal>
-        <div className="bg-white text-white w-[90%] rounded-md py-[5%]">
+        <div className="relative bg-white text-white w-[90%] rounded-md py-[5%] lg:w-[45%] lg:py-[2%] lg:rounded-xl">
           <FaTimes
             onClick={closeModal}
-            className="text-[#823ec9] absolute right-[6%] top-[4%] text-2xl lg:text-3xl"
+            className="text-[#823ec9] absolute right-[4%] top-[2%] text-2xl "
           />
           <Image
             className="mx-auto"
@@ -47,7 +47,7 @@ const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
             layout="vertical"
             onFinish={onFinish}
             initialValues={{ phone: "" }}
-            className="mx-5"
+            className="mx-5 lg:mx-[10%]"
           >
             {/* Name Field */}
             <Form.Item

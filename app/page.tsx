@@ -1,8 +1,4 @@
 "use client";
-// import Image from "next/image";
-// import Link from "next/link";
-// import Header from "./components/Header/Header";
-// import Services from "./components/contents/services";
 import Offers from "./components/contents/ServicesOffered/Offers";
 import Process from "./components/contents/Process/Process";
 import Hero from "./components/contents/HeroSection/Hero";
@@ -33,7 +29,7 @@ Click For Offer
         /> */}
         <Image
           onClick={() => setOpenOffer(true)}
-          className="fixed right-0 bottom-[5%] shadow-lg"
+          className="fixed right-0 bottom-[5%] shadow-lg lg:w-[180px] lg:bottom-[15%]"
           src="/specialOffer2.png"
           height={300}
           width={130}
