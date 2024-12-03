@@ -29,13 +29,13 @@ const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
             className="text-[#823ec9] absolute right-[4%] top-[2%] text-2xl "
           />
           <Image
-            className="mx-auto"
+            className="mx-auto w-[130px]  lg:w-[30%] lg:h-[150px]"
             src="/offerlogo.png"
-            height={300}
-            width={130}
+            height={500}
+            width={500}
             alt=""
           />
-          <h1 className="text-black text-[17px] font-extrabold text-center mt-3 ">
+          <h1 className="text-black text-[17px] font-extrabold text-center mt-3 lg:text-2xl">
             $25 OFF YOUR FIRST CLEANING
           </h1>
           <p className="text-center">
