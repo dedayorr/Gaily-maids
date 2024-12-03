@@ -8,6 +8,16 @@ import Map from "../../Map/Map";
 const Offers = () => {
   return (
     <div className="">
+      <div className="md:hidden mx-[5%] mt-[5%]">
+        <Image
+          className="living_room  rounded-[5px] w-full h-full object-cover "
+          src="/newimage4.png"
+          alt="broom"
+          width={500}
+          height={500}
+          // layout="responsive"
+        />
+      </div>
       <div className="mt-[10%] bg-[#813ec94e] px-[5%] py-[3%] mx-[3%] lg:flex justify-between">
         <div className="flex flex-col gap-[20px] ">
           {" "}
@@ -118,7 +128,16 @@ const Offers = () => {
           />
         </div>
       </div>
-
+      <div className="md:hidden mx-[5%] mt-[5%]">
+        <Image
+          className="living_room  rounded-[5px] w-full object-cover"
+          src="/newimage5.png"
+          alt="broom"
+          width={500}
+          height={500}
+          // layout="responsive"
+        />
+      </div>
       <div className="mx-[5%] my-[20%]  flex flex-col gap-[15px] md:my-[13%] lg:my-[8%]">
         <h2 className="text-[25px] font-semibold leading-8 text-[#823ec9] lg:text-[40px] lg:mb-4">
           Gaily Maids Commitment to Excellence
