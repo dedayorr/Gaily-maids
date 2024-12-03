@@ -7,8 +7,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
   }
 
+  .Hero::before {
+    content: "";
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/hero-four.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
 /* } */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
