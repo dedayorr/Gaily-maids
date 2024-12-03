@@ -6,10 +6,10 @@ import {
   MailOutlined,
   UserOutlined,
   PhoneOutlined,
-  MessageOutlined,
+  // MessageOutlined,
 } from "@ant-design/icons";
 import { FaTimes } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 interface OfferPopupProps {
   closeModal: any;
@@ -18,32 +18,31 @@ interface OfferPopupProps {
 const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
   const [form] = Form.useForm();
 
-  // const onFinish = (values: any) => {
-  //   emailjs
-  //     .send(
-  //       "service_og1ae8q",
-  //       "template_vothj2g",
-  //       {
-  //         name: values.name,
-  //         email: values.email,
-  //         phone: values.phone,
-  //         message: values.message,
-  //         to_email: "gailymaids@gmail.com",
-  //       },
-  //       "prU2mq4C_eMpPOd3_"
-  //     )
-  //     .then(
-  //       (response) => {
-  //         message.success("Email sent successfully!");
-  //         form.resetFields();
-  //         closeModal();
-  //       },
-  //       (error) => {
-  //         message.error("Failed to send email");
-  //         console.error(error);
-  //       }
-  //     );
-  // };
+  const onFinish = (values: any) => {
+    // Configure with your EmailJS credentials
+    emailjs.send(
+      'YOUR_SERVICE_ID', 
+      'YOUR_TEMPLATE_ID', 
+      {
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        message: values.message,
+        to_email: 'gailymaids@gmail.com'
+      },
+      'YOUR_PUBLIC_KEY'
+    ).then(
+      (response) => {
+        message.success('Email sent successfully!');
+        form.resetFields();
+        closeModal();
+      },
+      (error) => {
+        message.error('Failed to send email');
+        console.error(error);
+      }
+    );
+  };
   return (
     <>
       <Modal>
@@ -65,76 +64,76 @@ const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
           <p className="text-center">
             Enter your details and redeem your offer
           </p>
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
+
+          <Form
+            form={form}
+            layout="vertical"
+            onFinish={onFinish}
+            initialValues={{ phone: "" }}
             className="mx-5 lg:mx-[10%]"
           >
-            {/* Hidden Access Key Field */}
-            <input
-              type="hidden"
-              name="access_key"
-              value="0210082d-70a1-44ad-b600-b81aaef8ee97"
-            />
-
             {/* Name Field */}
-            <div style={{ marginBottom: "px" }}>
-              <label className="text-[#823ec9] text-[16px] ">Name</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-                required
-                className="w-full p-2 border rounded h-[35px]"
-              />
-            </div>
+            <Form.Item
+              label="Name"
+              name="name"
+              rules={[{ required: true, message: "Please enter your name" }]}
+              style={{ marginBottom: "10px" }}
+            >
+              <Input prefix={<UserOutlined />} placeholder="Enter your name" />
+            </Form.Item>
 
             {/* Email Field */}
-            <div style={{ marginBottom: "px" }}>
-              <label className="text-[#823ec9] text-[16px] ">Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                className="w-full p-2 border rounded h-[35px]"
-              />
-            </div>
+            <Form.Item
+              label="Email"
+              name="email"
+              rules={[
+                { required: true, message: "Please enter your email" },
+                {
+                  type: "email",
+                  message: "Please enter a valid email address",
+                },
+              ]}
+              style={{ marginBottom: "10px" }}
+            >
+              <Input prefix={<MailOutlined />} placeholder="Enter your email" />
+            </Form.Item>
 
-            {/* Phone Number Field */}
-            <div style={{ marginBottom: "" }}>
-              <label className="text-[#823ec9] text-[16px] ">
-                Phone Number <span className="text-black">(Optional)</span>
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Enter your phone number"
-                pattern="[0-9]{10,15}"
-                className="w-full p-2 border rounded h-[35px]"
+            {/* Phone Number Field (Optional) */}
+            <Form.Item
+              label="Phone Number"
+              name="phone"
+              rules={[
+                {
+                  pattern: /^[0-9]{10,15}$/,
+                  message: "Please enter a valid phone number",
+                  validateTrigger: "onBlur",
+                },
+              ]}
+              style={{ marginBottom: "10px" }}
+            >
+              <Input
+                prefix={<PhoneOutlined />}
+                placeholder="Enter your phone number (optional)"
               />
-            </div>
+            </Form.Item>
 
             {/* Message Field */}
-            <div style={{ marginBottom: "" }}>
-              <label className="text-[#823ec9] text-[16px] ">Message</label>
-              <textarea
-                name="message"
-                placeholder="Enter your message"
-                rows={4}
-                required
-                className="w-full p-2 border rounded text-black "
-              />
-            </div>
+            <Form.Item
+              label="Message"
+              name="message"
+              // rules={[{ required: true, message: "Please enter your message" }]}
+              style={{ marginBottom: "10px" }}
+            >
+              <Input.TextArea placeholder="Enter your message" rows={4} />
+            </Form.Item>
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full bg-blue-500 text-white p-2 rounded"
-            >
-              Submit
-            </button>
-          </form>
+            <Form.Item>
+              <Button type="primary" htmlType="submit">
+                Submit
+              </Button>
+            </Form.Item>
+          </Form>
         </div>
       </Modal>
     </>

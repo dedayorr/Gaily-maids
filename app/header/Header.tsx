@@ -39,7 +39,7 @@ const Header = () => {
         <div className="text-[#2f1e42] bg-white flex items-center justify-between h-[30px] px-[1%] lg:h-[40px]">
           <div className="flex text-[12px] gap-[2px] md:text-[18px] md:gap-[10px] ">
             <a
-              href="https://www.facebook.com/profile.php?id=61561687303413"
+              href="https://www.facebook.com/profile.php?id=61570113383769"
               target="_blank"
               rel="noreferrer"
             >

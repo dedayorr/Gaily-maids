@@ -232,7 +232,7 @@ const Offers = () => {
         {/* <Map/> */}
         <Image
           className="map hidden lg:block"
-          src="/map.png"
+          src="/Map.png"
           alt="living-room"
           width={500}
           height={500}
