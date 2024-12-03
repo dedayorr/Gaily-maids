@@ -1,17 +1,14 @@
 /* @media (min-width: 767px) { */
   .Hero {
     background-image: url("/hero-four.png");
-    height: 650px;
+    height:100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
   }
 
-  .overlay{
-    height: 650px;
-  }
 /* } */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
