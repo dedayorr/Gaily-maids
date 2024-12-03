@@ -102,7 +102,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
-            src="/broom.png"
+            src="/newimage5.png"
             alt="broom"
             width={500}
             height={500}
@@ -110,7 +110,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
-            src="/broom.png"
+            src="/newimage6.png"
             alt="broom"
             width={500}
             height={500}

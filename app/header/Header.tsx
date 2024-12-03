@@ -72,7 +72,7 @@ const Header = () => {
             800 S. Mclean Blvd. Suite B 60123
           </div>
         </div>
-        <p className="bg-[#000] text-[18px] text-center px-5 font-bold lg:text-[30px] lg:tracking-widest">
+        <p className="bg-[#000] text-white text-[18px] text-center px-5 font-bold lg:text-[30px] lg:tracking-widest">
           GET $25 OFF YOUR FIRST CLEANING!{" "}
         </p>
         <div className="sticky top-0 flex justify-between items-center px-[5%] bg-[#813ec9f3] h-[80px] lg:h-[100px]">
