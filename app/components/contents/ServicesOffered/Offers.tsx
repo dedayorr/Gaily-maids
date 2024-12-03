@@ -8,8 +8,8 @@ import Map from "../../Map/Map";
 const Offers = () => {
   return (
     <div className="">
-      <div className="mt-[10%] bg-[#813ec94e] px-[5%] py-[5%] mx-[5%] lg:flex justify-between">
-        <div className="flex flex-col gap-[20px]">
+      <div className="mt-[10%] bg-[#813ec94e] px-[5%] py-[3%] mx-[3%] lg:flex justify-between">
+        <div className="flex flex-col gap-[20px] ">
           {" "}
           <p className="text-[24px] font-semibold lg:text-[30px]">
             Our custom cleaning services include:
@@ -67,54 +67,54 @@ const Offers = () => {
             </p>
           </Link> */}
         </div>
-        <div className="hidden lg:grid grid-cols-3 gap-x-5  w-[100%] justify-between items-center px-[2%]">
+        <div className="w-[80%] hidden lg:grid grid-cols-3 gap-5  justify-between items-center p-5">
           <Image
-            className="living_room rounded-[10px] "
-            src="/dirt.png"
+            className="living_room rounded-[5px] w-full h-full object-cover hover:scale-125"
+            src="/newimage1.png"
             alt="dirt"
             width={500}
             height={500}
-            layout="responsive"
+            // layout="responsive"
           />
           <Image
-            className="living_room  rounded-[10px]"
+            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
+            src="/newimage2.png"
+            alt="broom"
+            width={500}
+            height={500}
+            // layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
+            src="/newimage3.png"
+            alt="broom"
+            width={500}
+            height={500}
+            // layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
+            src="/newimage4.png"
+            alt="broom"
+            width={500}
+            height={500}
+            // layout="responsive"
+          />
+          <Image
+            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
             src="/broom.png"
             alt="broom"
             width={500}
             height={500}
-            layout="responsive"
+            // layout="responsive"
           />
           <Image
-            className="living_room  rounded-[10px]"
+            className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
             src="/broom.png"
             alt="broom"
             width={500}
             height={500}
-            layout="responsive"
-          />
-          <Image
-            className="living_room  rounded-[10px]"
-            src="/broom.png"
-            alt="broom"
-            width={500}
-            height={500}
-            layout="responsive"
-          />
-          <Image
-            className="living_room  rounded-[10px]"
-            src="/broom.png"
-            alt="broom"
-            width={500}
-            height={500}
-            layout="responsive"
-          />
-          <Image
-            className="living_room  rounded-[10px]"
-            src="/broom.png"
-            alt="broom"
-            width={500}
-            height={500}
-            layout="responsive"
+            // layout="responsive"
           />
         </div>
       </div>
