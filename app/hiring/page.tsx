@@ -35,38 +35,38 @@ const Hiring = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    const templateParams = {
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      email: formData.email,
-      phone: formData.phone,
-      // workedWithCleaningBusiness: formData.workedWithCleaningBusiness
-      //   ? "Yes"
-      //   : "No",
-      partTime: formData.partTime ? "Yes" : "No",
-      fullTime: formData.fullTime ? "Yes" : "No",
-      workedWithCB: formData.workedWithCB === "true" ? "Yes" : "No",
-      hasCar: formData.hasCar === "true" ? "Yes" : "No",
-      hasInsurance: formData.hasInsurance === "true" ? "Yes" : "No",
-    };
+    // const templateParams = {
+    //   firstName: formData.firstName,
+    //   lastName: formData.lastName,
+    //   email: formData.email,
+    //   phone: formData.phone,
+    // workedWithCleaningBusiness: formData.workedWithCleaningBusiness
+    //   ? "Yes"
+    //   : "No",
+    //   partTime: formData.partTime ? "Yes" : "No",
+    //   fullTime: formData.fullTime ? "Yes" : "No",
+    //   workedWithCB: formData.workedWithCB === "true" ? "Yes" : "No",
+    //   hasCar: formData.hasCar === "true" ? "Yes" : "No",
+    //   hasInsurance: formData.hasInsurance === "true" ? "Yes" : "No",
+    // };
 
-    emailjs
-      .send(
-        "service_qay4sdq",
-        "template_5ot0m66",
-        templateParams,
-        "prU2mq4C_eMpPOd3_"
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setIsLoading(false);
-          setShowThankYou(true);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
+    // emailjs
+    //   .send(
+    //     "service_qay4sdq",
+    //     "template_5ot0m66",
+    //     templateParams,
+    //     "prU2mq4C_eMpPOd3_"
+    //   )
+    //   .then(
+    //     (response) => {
+    //       console.log("SUCCESS!", response.status, response.text);
+    //       setIsLoading(false);
+    //       setShowThankYou(true);
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error);
+    //     }
+    //   );
   };
 
   const isFormValid =
@@ -108,177 +108,117 @@ const Hiring = () => {
         competitive pay? Then come live the Gaily Maids™ life!
       </p>{" "}
       <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
         className="max-w-md mx-auto mt-5 p-6 bg-white rounded shadow-md"
-        onSubmit={handleSubmit}
       >
+        <input
+          type="hidden"
+          name="access_key"
+          value="0210082d-70a1-44ad-b600-b81aaef8ee97"
+        />
+
+        {/* First Name */}
         <div className="mb-4">
           <label className="block text-gray-700">First Name</label>
           <input
             type="text"
             name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
+            required
             className="text-black w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
+
+        {/* Last Name */}
         <div className="mb-4">
           <label className="block text-gray-700">Last Name</label>
           <input
             type="text"
             name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
+            required
             className="text-black w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
+
+        {/* Email */}
         <div className="mb-4">
           <label className="block text-gray-700">Email</label>
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            required
             className="text-black w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
+
+        {/* Phone Number */}
         <div className="mb-4">
           <label className="block text-gray-700">Phone Number</label>
           <input
             type="tel"
             name="phone"
-            value={formData.phone}
-            onChange={handleChange}
+            required
             className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
 
+        {/* Part Time / Full Time */}
         <div className="flex gap-[20px]">
-          {" "}
           <div className="my-4 flex gap-[10px] items-center">
-            <label className=" text-gray-700 ">Part Time</label>
-            <input
-              type="checkbox"
-              name="partTime"
-              // checked={formData.workedWithCleaningBusiness}
-              onChange={handleChange}
-              className=""
-            />
+            <label className="text-gray-700">Part Time</label>
+            <input type="checkbox" name="partTime" />
           </div>
           <div className="my-4 flex gap-[10px] items-center">
-            <label className=" text-gray-700 ">Full Time</label>
-            <input
-              type="checkbox"
-              name="fullTime"
-              // checked={formData.workedWithCleaningBusiness}
-              onChange={handleChange}
-              className=""
-            />
+            <label className="text-gray-700">Full Time</label>
+            <input type="checkbox" name="fullTime" />
           </div>
         </div>
-        {/* 
+
+        {/* Worked with a Cleaning Business */}
         <div className="mb-4">
           <label className="block text-gray-700">
-            Have you worked with a cleaning business before?
-          </label>
-          <input
-            type="checkbox"
-            name="workedWithCleaningBusiness"
-            // checked={formData.workedWithCleaningBusiness}
-            onChange={handleChange}
-            className="mt-2"
-          />
-        </div> */}
-        <div className="mb-4">
-          <label className="block text-gray-700">
-            {" "}
-            Have you worked with a cleaning business before?
+            Worked with a cleaning business before?
           </label>
           <div className="flex items-center">
             <label className="mr-4 text-black">
-              <input
-                type="radio"
-                name="workedWithCB"
-                value="true"
-                // checked={formData.hasInsurance === 'true'}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Yes
+              <input type="radio" name="workedWithCB" value="true" /> Yes
             </label>
             <label className="text-black">
-              <input
-                type="radio"
-                name="workedWithCB"
-                value="false"
-                // checked={formData.hasInsurance === 'false'}
-                onChange={handleChange}
-                className="mr-2 "
-              />
-              No
+              <input type="radio" name="workedWithCB" value="false" /> No
             </label>
           </div>
         </div>
 
+        {/* Car Ownership */}
         <div className="mb-4">
           <label className="block text-gray-700">Do you have a car?</label>
           <div className="flex items-center">
             <label className="mr-4 text-black">
-              <input
-                type="radio"
-                name="hasCar"
-                value="true"
-                // checked={formData.hasCar === 'true'}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Yes
+              <input type="radio" name="hasCar" value="true" /> Yes
             </label>
             <label className="text-black">
-              <input
-                type="radio"
-                name="hasCar"
-                value="false"
-                // checked={formData.hasCar === 'false'}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              No
+              <input type="radio" name="hasCar" value="false" /> No
             </label>
           </div>
         </div>
+
+        {/* Insurance */}
         <div className="mb-4">
           <label className="block text-gray-700">Do you have insurance?</label>
           <div className="flex items-center">
             <label className="mr-4 text-black">
-              <input
-                type="radio"
-                name="hasInsurance"
-                value="true"
-                // checked={formData.hasInsurance === 'true'}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Yes
+              <input type="radio" name="hasInsurance" value="true" /> Yes
             </label>
             <label className="text-black">
-              <input
-                type="radio"
-                name="hasInsurance"
-                value="false"
-                // checked={formData.hasInsurance === 'false'}
-                onChange={handleChange}
-                className="mr-2 "
-              />
-              No
+              <input type="radio" name="hasInsurance" value="false" /> No
             </label>
           </div>
         </div>
+
+        {/* Submit Button */}
         <button
           type="submit"
-          disabled={!isFormValid}
-          className={`bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]  ${
-            !isFormValid ? "bg-[#828080] opacity-50 cursor-not-allowed" : ""
-          }`}
+          className="bg-[#823ec9] text-white w-[50%] mx-auto p-[2%] lg:w-[30%] lg:text-[20px] lg:p-[1%] hover:bg-white hover:text-[#823ec9] hover:border hover:border-[#823ec9]"
         >
           Submit
         </button>

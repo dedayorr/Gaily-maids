@@ -9,7 +9,7 @@ import {
   // MessageOutlined,
 } from "@ant-design/icons";
 import { FaTimes } from "react-icons/fa";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 interface OfferPopupProps {
   closeModal: any;
@@ -20,28 +20,30 @@ const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
 
   const onFinish = (values: any) => {
     // Configure with your EmailJS credentials
-    emailjs.send(
-      'YOUR_SERVICE_ID', 
-      'YOUR_TEMPLATE_ID', 
-      {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-        message: values.message,
-        to_email: 'gailymaids@gmail.com'
-      },
-      'YOUR_PUBLIC_KEY'
-    ).then(
-      (response) => {
-        message.success('Email sent successfully!');
-        form.resetFields();
-        closeModal();
-      },
-      (error) => {
-        message.error('Failed to send email');
-        console.error(error);
-      }
-    );
+    emailjs
+      .send(
+        "service_qay4sdq",
+        "template_5ot0m66",
+        {
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+          to_email: "gailymaids@gmail.com",
+        },
+        "prU2mq4C_eMpPOd3_"
+      )
+      .then(
+        (response) => {
+          message.success("Email sent successfully!");
+          form.resetFields();
+          closeModal();
+        },
+        (error) => {
+          message.error("Failed to send email");
+          console.error(error);
+        }
+      );
   };
   return (
     <>
