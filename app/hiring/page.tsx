@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import Modal from "../components/Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
 
@@ -10,7 +10,6 @@ const Hiring = () => {
     lastName: "",
     email: "",
     phone: "",
-    // workedWithCleaningBusiness: false,
     partTime: false,
     fullTime: false,
     workedWithCB: "",
@@ -31,52 +30,23 @@ const Hiring = () => {
     }));
   };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    setIsLoading(true);
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   const formElement = e.target as HTMLFormElement;
+  //   const formDataToSubmit = new FormData(formElement);
 
-    // const templateParams = {
-    //   firstName: formData.firstName,
-    //   lastName: formData.lastName,
-    //   email: formData.email,
-    //   phone: formData.phone,
-    // workedWithCleaningBusiness: formData.workedWithCleaningBusiness
-    //   ? "Yes"
-    //   : "No",
-    //   partTime: formData.partTime ? "Yes" : "No",
-    //   fullTime: formData.fullTime ? "Yes" : "No",
-    //   workedWithCB: formData.workedWithCB === "true" ? "Yes" : "No",
-    //   hasCar: formData.hasCar === "true" ? "Yes" : "No",
-    //   hasInsurance: formData.hasInsurance === "true" ? "Yes" : "No",
-    // };
-
-    // emailjs
-    //   .send(
-    //     "service_qay4sdq",
-    //     "template_5ot0m66",
-    //     templateParams,
-    //     "prU2mq4C_eMpPOd3_"
-    //   )
-    //   .then(
-    //     (response) => {
-    //       console.log("SUCCESS!", response.status, response.text);
-    //       setIsLoading(false);
-    //       setShowThankYou(true);
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error);
-    //     }
-    //   );
-  };
-
-  const isFormValid =
-    formData.firstName &&
-    formData.lastName &&
-    formData.email &&
-    formData.phone &&
-    formData.workedWithCB &&
-    formData.hasCar &&
-    formData.hasInsurance;
+  //   // Submit the form to Web3Forms
+  //   fetch("https://api.web3forms.com/submit", {
+  //     method: "POST",
+  //     body: formDataToSubmit,
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log("Success:", data);
+  //       resetForm(); // Reset the form after successful submission
+  //     })
+  //     .catch((error) => console.error("Error:", error));
+  // };
 
   const resetForm = () => {
     setFormData({
@@ -84,7 +54,6 @@ const Hiring = () => {
       lastName: "",
       email: "",
       phone: "",
-      // workedWithCleaningBusiness: false,
       partTime: false,
       fullTime: false,
       hasCar: "",
@@ -110,6 +79,7 @@ const Hiring = () => {
       <form
         action="https://api.web3forms.com/submit"
         method="POST"
+        // onSubmit={handleSubmit}
         className="max-w-md mx-auto mt-5 p-6 bg-white rounded shadow-md"
       >
         <input
