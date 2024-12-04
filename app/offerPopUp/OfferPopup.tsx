@@ -35,7 +35,9 @@ const OfferPopup: React.FC<OfferPopupProps> = ({ closeModal }) => {
       )
       .then(
         (response) => {
-          message.success("Email sent successfully!");
+          message.success(
+            "Form sent successfully. We'll get back to you soon!"
+          );
           form.resetFields();
           closeModal();
         },
