@@ -11,7 +11,7 @@ const Offers = () => {
       <div className="md:hidden mx-[5%] mt-[5%]">
         <Image
           className="living_room  rounded-[5px] w-full h-full object-cover "
-          src="/newimage4.png"
+          src="/deep-cleaning.png"
           alt="broom"
           width={500}
           height={500}
@@ -80,7 +80,7 @@ const Offers = () => {
         <div className="w-[80%] hidden lg:grid grid-cols-3 gap-5  justify-between items-center p-5">
           <Image
             className="living_room rounded-[5px] w-full  object-cover hover:scale-125"
-            src="/newimage1.png"
+            src="/deep-cleaning.png"
             alt="dirt"
             width={500}
             height={500}
@@ -88,7 +88,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full object-cover hover:scale-125"
-            src="/newimage2.png"
+            src="/detailed-cleaning.png"
             alt="broom"
             width={500}
             height={500}
@@ -96,7 +96,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full  object-cover hover:scale-125"
-            src="/newimage3.png"
+            src="/dining-room-two.png"
             alt="broom"
             width={500}
             height={500}
@@ -104,7 +104,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
-            src="/newimage4.png"
+            src="/cleaning-service-one.png"
             alt="broom"
             width={500}
             height={500}
@@ -120,7 +120,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full h-full object-cover hover:scale-125"
-            src="/newimage6.png"
+            src="/dining-room-one.png"
             alt="broom"
             width={500}
             height={500}
@@ -217,7 +217,7 @@ const Offers = () => {
               Garden Prairie, Genoa, Gilberts, Hampshire, Harvard, Hebron,
               Holiday Hills, Inverness, Johnsburg, Kildeer, Kingston, Lake
               Barrington, Lake in The Hills, Lakemoor, Maple Park, Marengo,
-              Mccullom Lake, Mchenry, North Barrignton, Oakwood Hills, Pingree
+              Mccullom Lake, Mchenry, North Barrington, Oakwood Hills, Pingree
               Grove, Plato Center.
             </div>
           </div>
