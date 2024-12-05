@@ -11,7 +11,7 @@ const Offers = () => {
       <div className="md:hidden mx-[5%] mt-[5%]">
         <Image
           className="living_room  rounded-[5px] w-full h-full object-cover "
-          src="/deep-cleaning.png"
+          src="/bedroom-two.png"
           alt="broom"
           width={500}
           height={500}
@@ -79,8 +79,8 @@ const Offers = () => {
         </div>
         <div className="w-[80%] hidden lg:grid grid-cols-3 gap-5  justify-between items-center p-5">
           <Image
-            className="living_room rounded-[5px] w-full  object-cover hover:scale-125"
-            src="/deep-cleaning.png"
+            className="living_room rounded-[5px] object-cover hover:scale-125"
+            src="/newbedroom.png"
             alt="dirt"
             width={500}
             height={500}
@@ -88,7 +88,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full object-cover hover:scale-125"
-            src="/detailed-cleaning.png"
+            src="/bathroom-p.png"
             alt="broom"
             width={500}
             height={500}
@@ -112,7 +112,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full object-cover hover:scale-125"
-            src="/newimage5.png"
+            src="/clean-kitchen-one.png"
             alt="broom"
             width={500}
             height={500}
