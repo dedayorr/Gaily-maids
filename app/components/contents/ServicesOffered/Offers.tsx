@@ -11,7 +11,7 @@ const Offers = () => {
       <div className="md:hidden mx-[5%] mt-[5%]">
         <Image
           className="living_room  rounded-[5px] w-full h-full object-cover "
-          src="/bedroom-two.png"
+          src="/newbedroom.png"
           alt="broom"
           width={500}
           height={500}
@@ -96,7 +96,7 @@ const Offers = () => {
           />
           <Image
             className="living_room  rounded-[5px] w-full  object-cover hover:scale-125"
-            src="/dining-room-two.png"
+            src="/newtoilet.png"
             alt="broom"
             width={500}
             height={500}
@@ -131,7 +131,7 @@ const Offers = () => {
       <div className="md:hidden mx-[5%] mt-[5%]">
         <Image
           className="living_room  rounded-[5px] w-full object-cover"
-          src="/newimage5.png"
+          src="/newbed.png"
           alt="broom"
           width={500}
           height={500}
