@@ -174,7 +174,7 @@ const Questions = () => {
 
       <div className="cursor-pointer border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
         Still have some questions or concerns? Don&apos;t hesitate to give us a
-        call at <a href="tel:+18474403683"> +1 (847) 440-3683 </a> and
+        call at <a href="tel:+18472207472"> +1 (847) 220-7472 </a> and
         we&apos;ll be sure to help you!
       </div>
     </div>

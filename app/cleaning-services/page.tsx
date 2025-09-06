@@ -351,9 +351,9 @@ const CleaningServicesPage = () => {
         </div>
       </div>
       <div className="cursor-pointer border-[2px] border-[#26355D] text-[#26355D] mx-[5%] my-[10%] h-[150px] flex flex-col justify-center items-center text-center font-semibold text-[17px] lg:text-[30px]">
-        Discover the benefits of a deeply cleaned apartment. Contact us today at   <a href="tel:+18474403683">
+        Discover the benefits of a deeply cleaned apartment. Contact us today at   <a href="tel:+18472207472">
             {" "}
-            +1 (847) 440-3683{" "}
+            +1 (847) 220-7472{" "}
           </a>
       </div>
       <button

@@ -57,10 +57,11 @@ const Footer = () => {
 
         <a
           className="cursor-pointer flex justify-center mx-auto text-[18px] text-[#823ec9] md:text-[18px] lg:text-[25px] lg:justify-normal lg:mb-[1%] font-thin"
-          href="tel:+18474403683"
+          href="tel:+18472207472"
         >
           {" "}
-          +1 (847) 440-3683{" "}
+          +1 (847) 220-7472
+          {" "}
         </a>
         <div className="flex justify-center text-[28px] text-[#823ec9] gap-[20px] md:text-[25px] md:gap-[20px] lg:text-[35px] lg:justify-normal">
           <a

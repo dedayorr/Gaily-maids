@@ -8,6 +8,8 @@ import { IoMdMail } from "react-icons/io";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
+import { FaHouseUser } from "react-icons/fa";
+
 // import Marquee from "../components/marquee/Marquee";
 import "./header.css";
 import Estimate from "../estimatePopUp/Estimate";
@@ -63,13 +65,13 @@ const Header = () => {
           </div>
           <a
             className="text-[12px] md:text-[18px] font-extrabold"
-            href="tel:+18474403683"
+            href="tel:+18472207472"
           >
             {" "}
-            +1 (847) 440-3683{" "}
+            +1 (847) 220-7472{" "}
           </a>
           <div className="text-[11px] font-extrabold md:text-[18px]">
-            800 S. Mclean Blvd. Suite B 60123
+            <FaHouseUser className="text-2xl" />
           </div>
         </div>
         <p className="bg-[#000] text-white text-[18px] text-center px-5 font-bold lg:text-[30px] lg:tracking-widest">
@@ -230,7 +232,7 @@ const Header = () => {
 
             <div className="flex text-[#5f2b96] gap-[5%] items-center ml-[5%] mt-[5%] underline text-[20px] italic ">
               {/* <FaPhoneVolume /> */}
-              <a href="tel:+18474403683">
+              <a href="tel:+18472207472">
                 <p>Contact Us</p>
               </a>
             </div>
